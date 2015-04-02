@@ -45,8 +45,6 @@ If we feel like there are going to be a lot of people completing the task:
 -------------------------------------------------------------------------------------------------------------
 STIMULI
 
-
-
 A: obj vs sub agreement with dative vs nominative possessors
 
 Mari olvasott a költő versét.
@@ -85,7 +83,6 @@ Juli a zenésznek hallotta dalát.
 
 Mari a költőnek olvasott versét.
 Mari a költőnek olvasta versét.
-
 
 A/3: different word oreders with dative post verbal possessors
 

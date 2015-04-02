@@ -1,5 +1,5 @@
 var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice",
-                rshuffle("target", "filler"))));
+                rshuffle("target"/*, "filler"*/))));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -80,14 +80,24 @@ var items = [
     // Group 1, for example, would have negation, the modifier néhány and the
     // modifier minden. Each participant would see one of these, the next
     // participant another one, and so on.
+    //
+    // layout: [["target", 1], ..., sentence from B]
+    // layout: [["target", 1], ..., sentence from C]
+    //
+    // layout: [["target", 2], ..., sentence from B]
+    // layout: [["target", 2], ..., sentence from C]
 
-    [["target", [1]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
-    [["target", [1]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
-    [["target", [1]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
+    [["target", 1], "AcceptabilityJudgment", {s: "Mari olvasott a költő minden versét."}],
+    [["target", 1], "AcceptabilityJudgment", {s: "Mari nem olvasott a költő versét."}],
 
-    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
-    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
-    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
+    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő minden versét."}],
+    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költő versét."}],
+
+    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek minden versét."}],
+    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott a költőnek versét."}],
+
+    [["target", [4, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek néhány versét."}],
+    [["target", [4, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költőnek versét."}],
 
     // nn filler sentences; do they have to be part of a group?
 
@@ -116,11 +126,10 @@ var items = [
     ["filler", "AcceptabilityJudgment", {s: "János ivott meg egy korsóval a vacsorán."}],
     ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval meg a vacsorán."}],
     ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval a vacsorán meg."}],
-
+    ["filler", "AcceptabilityJudgment", {s: "János megivott egy korsóval a vacsorán."}],
     ["filler", "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából."}],
     ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István haza az iskolából."}],
     ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István az iskolából haza."}],
-
     ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagát a tévében."}],
     ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagukat a tévében."}],
     ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látták sajátmagukat a tévében."}],
