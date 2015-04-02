@@ -56,11 +56,7 @@ var items = [
     ["practice", "AcceptabilityJudgment", {s: "Péter látja az autót."}],
     ["practice", "AcceptabilityJudgment", {s: "Kereste Petőfinek egy könyvét."}],
 
-    // Real sentences. Here the grouping becomes important.
-
-    // The first question will be chosen if the first sentence from the
-    // previous two items is chosen; the second question will be chosen if the
-    // second sentence from the previous pair of items is chosen.
+    // These, without groups, show up for everyone.
 
     ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
 
@@ -84,8 +80,8 @@ var items = [
     // layout: [["target", 1], ..., sentence from B]
     // layout: [["target", 1], ..., sentence from C]
     //
-    // layout: [["target", 2], ..., sentence from B]
-    // layout: [["target", 2], ..., sentence from C]
+    // layout: [["target", [2, 1]], ..., sentence from B]
+    // layout: [["target", [2, 1]], ..., sentence from C]
 
     [["target", 1], "AcceptabilityJudgment", {s: "Mari olvasott a költő minden versét."}],
     [["target", 1], "AcceptabilityJudgment", {s: "Mari nem olvasott a költő versét."}],
@@ -93,11 +89,47 @@ var items = [
     [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő minden versét."}],
     [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költő versét."}],
 
-    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek minden versét."}],
-    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott a költőnek versét."}],
+    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek minden versét"}],
+    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott a költőnek versét"}],
 
-    [["target", [4, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek néhány versét."}],
-    [["target", [4, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költőnek versét."}],
+    [["target", [4, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek néhány versét"}],
+    [["target", [4, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költőnek versét"}],
+
+    [["target", [5, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd minden lányát"}],
+    [["target", [5, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert a szomszéd lányát"}],
+
+    [["target", [6, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd minden lányát"}],
+    [["target", [6, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte a szomszéd lányát"}],
+
+    [["target", [7, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak minden lányát"}],
+    [["target", [7, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert a szomszédnak lányát"}],
+
+    [["target", [8, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak minden lányát"}],
+    [["target", [8, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte a szomszédnak lányát"}],
+
+    [["target", [9, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő minden tájképét"}],
+    [["target", [9, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett a festő tájképét"}],
+
+    [["target", [10, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő minden tájképét"}],
+    [["target", [10, 1]], "AcceptabilityJudgment", {s: "Ádám nem kereste a festő tájképét"}],
+
+    [["target", [11, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek minden tájképét"}],
+    [["target", [11, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett a festőnek tájképét"}],
+
+    [["target", [12, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek minden tájképét"}],
+    [["target", [12, 1]], "AcceptabilityJudgment", {s: "Ádám nem kereste a festőnek tájképét"}],
+
+    [["target", [13, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész minden dalát"}],
+    [["target", [13, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott a zenész dalát"}],
+
+    [["target", [14, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész minden dalát"}],
+    [["target", [14, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta a zenész dalát"}],
+
+    [["target", [15, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek minden dalát"}],
+    [["target", [15, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott a zenésznek dalát"}],
+
+    [["target", [16, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek minden dalát"}],
+    [["target", [16, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta a zenésznek dalát"}],
 
     // nn filler sentences; do they have to be part of a group?
 
