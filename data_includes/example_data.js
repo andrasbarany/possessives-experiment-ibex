@@ -1,5 +1,5 @@
 var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice",
-                rshuffle("target", "filler"))));
+                rshuffle("target", /*"filler"*/))));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -63,7 +63,6 @@ var items = [
     // second sentence from the previous pair of items is chosen.
 
     ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
-    ["target", "AcceptabilityJudgment", {s: "Péternek ismerek egy barátját."}],
 
     // Splitting the sentences up into groups. We are testing conditions across
     // groups of participants. This means that not all participants will see
@@ -82,13 +81,48 @@ var items = [
     // modifier minden. Each participant would see one of these, the next
     // participant another one, and so on.
 
-    [["target", 1], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
-    [["target", 1], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
-    [["target", 1], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
+    [["target", [1, 1]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
+    [["target", [1, 2]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
+    [["target", [1, 3]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
+
+    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
+    [["target", [2, 2]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
+    [["target", [2, 3]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
 
     // nn filler sentences; do they have to be part of a group?
 
-    ["filler", "AcceptabilityJudgment", {s: "Ismerem a nővérét."}],
-    ["filler", "AcceptabilityJudgment", {s: "Péter haza ment."}],
+    ["filler", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["filler", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
+    ["filler", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
+    ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
+    ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
+    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
+    ["filler", "AcceptabilityJudgment", {s: "A kutya Maritól futott el."}],
+    ["filler", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsoráját."}],
+    ["filler", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsorát."}],
+    ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejezte."}],
+
+    ["filler", "AcceptabilityJudgment", {s: "Két gyerek adnak egy könyvet Marinak."}],
+    ["filler", "AcceptabilityJudgment", {s: "Marinak adnak két gyerek egy könyvet."}],
+    ["filler", "AcceptabilityJudgment", {s: "A rendőr megállank ház."}],
+    ["filler", "AcceptabilityJudgment", {s: "A kutya elfutnak Marinak."}],
+    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutya Maritól."}],
+    ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőr a ház."}],
+    ["filler", "AcceptabilityJudgment", {s: "Megállnak a ház melett a rendőr."}],
+    ["filler", "AcceptabilityJudgment", {s: "Az együttes befejez a koncertet."}],
+    ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejez."}],
+    ["filler", "AcceptabilityJudgment", {s: "Ádám a megeszi vacsora."}],
+
+    ["filler", "AcceptabilityJudgment", {s: "János ivott meg egy korsóval a vacsorán."}],
+    ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval meg a vacsorán."}],
+    ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval a vacsorán meg."}],
+
+    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából."}],
+    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István haza az iskolából."}],
+    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István az iskolából haza."}],
+
+    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagát a tévében."}],
+    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagukat a tévében."}],
+    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látták sajátmagukat a tévében."}],
 
 ];

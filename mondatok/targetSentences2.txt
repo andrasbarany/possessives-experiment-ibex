@@ -1,0 +1,236 @@
+
+
+DESIGN
+three blocks, one subject does one block.
+
+1 A:B
+sentences to be compared A, A/2, B, B/2 = 48 sentences + 30 fillers
+
+answers question:
+
+- what is the difference between the acceptance of nominative vs dative
+  possessors and sub/obj agreement
+
+- what effect does extrapolation and modifiers have on this
+
+(i think we should use only one modifer for now, we can include another test
+later on that compares two midifeirs)
+
+
+2 A:C
+sentences to be compared A, A/2, C, C/2 = 48 sentences + 30 fillers
+
+questions:
+
+- what is the difference between the acceptance of nominative vs dative
+  possessors and sub/obj agreement
+
+- what effect does negation have on this
+
+
+3 MISC
+sentences to be compared (A/2, C/2, C/3) and A/3 A(dative possessors only) = 30 + 30 fillers
+
+questions
+
+- is there a difference between negation of the VP or the focus compared with
+  no negation in sentences where the dative possessor has been extracted.
+
+- is there a difference in acceptance between the possible post verbal word
+  orders of dative possessors and their possessum.
+
+If we feel like there are going to be a lot of people completing the task:
+4: difference between modifiers.
+
+-------------------------------------------------------------------------------------------------------------
+STIMULI
+
+
+
+A: obj vs sub agreement with dative vs nominative possessors
+
+Mari olvasott a költő versét.
+Mari olvasta a költő versét.
+Mari olvasott a költőnek versét.
+Mari olvasta a költőnek versét.
+
+Péter ismert a szomszéd lányát.
+Péter ismerte a szomszéd lányát.
+Péter ismert a szomszédnak lányát.
+Péter ismerte a szomszédnak lányát.
+
+Ádám keresett a festő tájképét.
+Ádám kereste a festő tájképét.
+Ádám keresett a festőnek tájképét.
+Ádám kereste a festőnek tájképét.
+
+Juli hallott a zenész dalát.
+Juli hallotta a zenész dalát.
+Juli hallott a zenésznek dalát.
+Juli hallotta a zenésznek dalát.
+
+A/2: extracted dative possessor
+
+Mari a költőnek olvasott versét.
+Mari a költőnek olvasta versét.
+
+Péter  a szomszédnak ismert lányát.
+Péter  a szomszédnak ismerte lányát.
+
+Ádám a festőnek keresett tájképét.
+Ádám a festőnek kereste tájképét.
+
+Juli a zenésznek hallott dalát.
+Juli a zenésznek hallotta dalát.
+
+Mari a költőnek olvasott versét.
+Mari a költőnek olvasta versét.
+
+
+A/3: different word oreders with dative post verbal possessors
+
+Mari olvasott versét a költőnek.
+Mari olvasta versét a költőnek.
+
+Péter ismert lányát a szomszédnak.
+Péter ismerte lányát a szomszédnak.
+
+Ádám keresett tájképét a festőnek.
+Ádám kereste tájképét  a festőnek.
+
+Juli hallott dalát a zenésznek.
+Juli hallotta dalát a zenésznek.
+
+B: Modifiers with subject vs object agreement + dative/nominative possessors
+
+Mari olvasott a költő minden versét.
+Mari olvasta a költő minden versét.
+Mari olvasott a költőnek minden versét.
+Mari olvasta a költőnek néhány versét.
+
+Péter ismert a szomszéd minden lányát.
+Péter ismerte a szomszéd minden lányát.
+Péter ismert a szomszédnak minden lányát.
+Péter ismerte a szomszédnak minden lányát.
+
+Ádám keresett a festő minden tájképét.
+Ádám kereste a festő minden tájképét.
+Ádám keresett a festőnek minden tájképét.
+Ádám kereste a festőnek minden tájképét.
+
+Juli hallott a zenész minden dalát.
+Juli hallotta a zenész minden dalát.
+Juli hallott a zenésznek minden dalát.
+Juli hallotta a zenésznek minden dalát.
+
+B/2: extracted
+
+Mari a költőnek olvasott néhány versét.
+Mari a költőnek olvasta néhány versét.
+
+Péter a szomszédnak ismert minden lányát.
+Péter a szomszédnak ismerte minden lányát.
+
+Ádám a festőnek keresett néhány tájképét.
+Ádám a festőnek kereste néhány tájképét.
+
+Juli a zenésznek hallott minden dalát.
+Juli a zenésznek hallotta minden dalát.
+
+C: negation
+
+Mari nem olvasott a költő versét.
+Mari nem olvasta a költő versét.
+Mari nem olvasott a költőnek versét.
+Mari nem olvasta a költőnek versét.
+
+Péter nem ismert a szomszéd lányát.
+Péter nem ismerte a szomszéd lányát.
+Péter nem ismert a szomszédnak lányát.
+Péter nem ismerte a szomszédnak lányát.
+
+Ádám nem keresett a festő tájképét.
+Ádám nem kereste a festő tájképét.
+Ádám nem keresett a festőnek tájképét.
+Ádám nem kereste a festőnek tájképét.
+
+Juli nem hallott a zenész dalát.
+Juli nem hallotta a zenész dalát.
+Juli nem hallott a zenésznek dalát.
+Juli nem hallotta a zenésznek dalát.
+
+C/2: negation and extraction
+
+Mari a költőnek nem olvasott versét.
+Mari a költőnek nem olvasta versét.
+
+Péter  a szomszédnak nem ismert lányát.
+Péter  a szomszédnak nem ismerte lányát.
+
+Ádám a festőnek nem keresett tájképét.
+Ádám a festőnek nem kereste tájképét.
+
+Juli a zenésznek nem hallott dalát.
+Juli a zenésznek nem hallotta dalát.
+
+Mari a költőnek nem olvasott versét.
+Mari a költőnek nem olvasta versét.
+
+C/3 negation of extracted possessor as focus
+
+Mari nem a költőnek olvasott versét.
+Mari nem a költőnek olvasta versét.
+
+Péter nem a szomszédnak ismert lányát.
+Péter a szomszédnak ismerte lányát.
+
+Ádám nem a festőnek keresett tájképét.
+Ádám nem a festőnek kereste tájképét.
+
+Juli nem a zenésznek hallott dalát.
+Juli nem a zenésznek hallotta dalát.
+
+Mari nem a költőnek olvasott versét.
+Mari nem a költőnek olvasta versét.
+
+Fillers:
+
+jó
+
+Egy könyvet adnak a gyerekek Marinak.
+Marinak adnak egy könyvet a gyerekek.
+Két gyerek ad egy könyvet Marinak.
+Megállnak a rendőrök a ház melett.
+A rendőrök a ház mellett álltak meg.
+Elfutnak a kutyák Maritól.
+A kutya Maritól futott el.
+Ádám megeszi a vacsoráját.
+Ádám megeszi a vacsorát.
+A koncertet az együttes befejezte.
+
+rossz
+
+Két gyerek adnak egy könyvet Marinak.
+Marinak adnak két gyerek egy könyvet.
+A rendőr megállank ház.
+A kutya elfutnak Marinak.
+Elfutnak a kutya Maritól.
+Megállnak a rendőr a ház.
+Megállnak a ház melett a rendőr.
+Az együttes befejez a koncertet.
+A koncertet az együttes befejez.
+Ádám a megeszi vacsora.
+
+közepesek
+
+János ivott meg egy korsóval a vacsorán.
+János ivott egy korsóval meg a vacsorán.
+János ivott egy korsóval a vacsorán meg.
+
+Tegnap ment haza István az iskolából.
+Tegnap ment István haza az iskolából.
+Tegnap ment István az iskolából haza.
+
+Imre és Juli látta sajátmagát a tévében.
+Imre és Juli látta sajátmagukat a tévében.
+Imre és Juli látták sajátmagukat a tévében.
