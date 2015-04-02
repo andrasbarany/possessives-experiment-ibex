@@ -1,0 +1,252 @@
+#
+# Results on Thursday March 26 2015 18:41:50 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+# Design number was non-random = 0
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,2,0,practice,NULL,NULL,7,NULL,3996
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,3,0,practice,NULL,NULL,7,NULL,2102
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,4,0,practice,NULL,NULL,5,NULL,4063
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Word number.
+# 9. Word.
+# 10. Reading time.
+# 11. Newline?
+# 12. Sentence (or sentence MD5).
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,1,The,351,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,2,journalist,287,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,3,interviewed,184,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,4,an,128,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,5,actress,152,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,6,who,144,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,7,he,144,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,8,knew,168,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,9,to,168,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,10,be,160,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,11,shy,160,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,12,of,160,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,13,publicity,160,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,14,after,160,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,15,meeting,159,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,16,on,168,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,17,a,169,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,18,previous,175,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,DashedSentence,5,0,s1,1,19,occasion.,176,False,The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion.
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Question (NULL if none).
+# 9. Answer.
+# 10. Whether or not answer was correct (NULL if N/A).
+# 11. Time taken to answer.
+1427395310,4a52c9830e6314540baffa7c2ffb7cca,Question,5,1,s1,1,The actress was:,shy,1,2337
+#
+# Results on Thursday March 26 2015 18:42:45 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+# Design number was non-random = 1
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,2,0,practice,NULL,NULL,7,NULL,1401
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,3,0,practice,NULL,NULL,6,NULL,648
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,4,0,practice,NULL,NULL,5,NULL,464
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,6,0,s2,NULL,undefined
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,6,0,s2,NULL,NULL,5,NULL,2027
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,5,0,s1,NULL,undefined
+1427395366,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,5,0,s1,NULL,NULL,5,NULL,1006
+#
+# Results on Thursday March 26 2015 18:45:02 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+# Design number was non-random = 2
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,2,0,practice,NULL,NULL,7,NULL,1759
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,3,0,practice,NULL,NULL,6,NULL,887
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,4,0,practice,NULL,NULL,5,NULL,1854
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,6,0,s2,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,6,0,s2,NULL,NULL,5,NULL,4401
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,5,0,s1,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,5,0,s1,NULL,NULL,4,NULL,1184
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,8,0,f,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,8,0,f,NULL,NULL,7,NULL,1690
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,8,0,f,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,8,0,f,NULL,NULL,6,NULL,497
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,7,0,f,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,7,0,f,NULL,NULL,5,NULL,781
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,7,0,f,NULL,undefined
+1427395502,4a52c9830e6314540baffa7c2ffb7cca,AcceptabilityJudgment,7,0,f,NULL,NULL,7,NULL,1938
+#
+# Results on Friday March 27 2015 12:10:04 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+# Design number was non-random = 3
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,2,0,practice,NULL,NULL,3,NULL,3208
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,3,0,practice,NULL,NULL,4,NULL,1891
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,4,0,practice,NULL,NULL,7,NULL,4252
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,6,0,s2,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,6,0,s2,NULL,NULL,6,NULL,1085
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,5,0,s1,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,5,0,s1,NULL,NULL,5,NULL,1185
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,7,0,f1,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,7,0,f1,NULL,NULL,5,NULL,2133
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,8,0,f2,NULL,undefined
+1427458205,ff09581c70c99308c38018246a84f969,AcceptabilityJudgment,8,0,f2,NULL,NULL,4,NULL,1150
+#
+# Results on Thursday April 02 2015 10:25:16 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+# Design number was non-random = 4
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,2,0,practice,NULL,NULL,7,NULL,4018
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,3,0,practice,NULL,NULL,7,NULL,2290
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,4,0,practice,NULL,NULL,6,NULL,3892
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,6,0,s2,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,6,0,s2,NULL,NULL,6,NULL,5176
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,5,0,s1,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,5,0,s1,NULL,NULL,4,NULL,2534
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,7,0,f1,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,7,0,f1,NULL,NULL,7,NULL,2547
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,8,0,f2,NULL,undefined
+1427970317,92b3f83548886fd938d8f029753023ad,AcceptabilityJudgment,8,0,f2,NULL,NULL,7,NULL,1690
