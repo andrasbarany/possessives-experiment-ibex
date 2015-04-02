@@ -1,4 +1,5 @@
-var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice", rshuffle("target"))), sepWith("sep", rshuffle("filler")));
+var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice",
+                rshuffle("target", "filler"))));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -55,14 +56,35 @@ var items = [
     ["practice", "AcceptabilityJudgment", {s: "Péter látja az autót."}],
     ["practice", "AcceptabilityJudgment", {s: "Kereste Petőfinek egy könyvét."}],
 
-
     // Real sentences. Here the grouping becomes important.
 
-    // The first question will be chosen if the first sentence from the previous two items is chosen;
-    // the second question will be chosen if the second sentence from the previous pair of items is chosen.
+    // The first question will be chosen if the first sentence from the
+    // previous two items is chosen; the second question will be chosen if the
+    // second sentence from the previous pair of items is chosen.
 
     ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
     ["target", "AcceptabilityJudgment", {s: "Péternek ismerek egy barátját."}],
+
+    // Splitting the sentences up into groups. We are testing conditions across
+    // groups of participants. This means that not all participants will see
+    // the same examples, but we can compare results across participants.
+    //
+    // The idea is that there are three blocks of examples. Each participant
+    // will see examples from one of these blocks and when all blocks have been
+    // seen, the next participant gets the first block again. So for 5
+    // participants R1-R5, R1-3 will see blocks B1-3, R4 will see B1, R5 will
+    // see B2 etc.
+    //
+    // This is implemented by using the Latin square-aspect of ibex, more
+    // specifically its group features.
+    //
+    // Group 1, for example, would have negation, the modifier néhány and the
+    // modifier minden. Each participant would see one of these, the next
+    // participant another one, and so on.
+
+    [["target", 1], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
+    [["target", 1], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
+    [["target", 1], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
 
     // nn filler sentences; do they have to be part of a group?
 
