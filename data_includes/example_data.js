@@ -82,12 +82,12 @@ var items = [
     // participant another one, and so on.
 
     [["target", [1, 1]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
-    [["target", [1, 2]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
-    [["target", [1, 3]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
+    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
+    [["target", [3, 1]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
 
-    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
+    [["target", [1, 2]], "AcceptabilityJudgment", {s: "Nem látunk Marinak egy nővérét."}],
     [["target", [2, 2]], "AcceptabilityJudgment", {s: "Látunk Marinak néhány nővérét."}],
-    [["target", [2, 3]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
+    [["target", [3, 2]], "AcceptabilityJudgment", {s: "Látunk Marinak minden nővérét."}],
 
     // nn filler sentences; do they have to be part of a group?
 
