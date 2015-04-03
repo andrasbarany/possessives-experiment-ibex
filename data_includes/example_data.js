@@ -1,4 +1,4 @@
-var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice",
+var shuffleSequence = seq("intro", sepWith("sep", seq("practice",
                 rshuffle("target"/*, "filler"*/))));
 //var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle("target", "sep"/*, "filler"*/)));
 var practiceItemTypes = ["practice"];
@@ -257,7 +257,7 @@ var items = [
     [["target", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
     [["target", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
     //[["sep", [38, 1]], "Separator", {transfer: 0}],
-    [["target", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalát a zenésznek."}], // A/3
+    [["target", [25, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalát a zenésznek."}], // A/3
 
     [["target", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
     [["target", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],

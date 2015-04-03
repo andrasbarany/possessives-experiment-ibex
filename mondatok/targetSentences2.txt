@@ -176,16 +176,13 @@ Mari nem a költőnek olvasott versét.
 Mari nem a költőnek olvasta versét.
 
 Péter nem a szomszédnak ismert lányát.
-Péter a szomszédnak ismerte lányát.
+Péter nem a szomszédnak ismerte lányát.
 
 Ádám nem a festőnek keresett tájképét.
 Ádám nem a festőnek kereste tájképét.
 
 Juli nem a zenésznek hallott dalát.
 Juli nem a zenésznek hallotta dalát.
-
-Mari nem a költőnek olvasott versét.
-Mari nem a költőnek olvasta versét.
 
 Fillers:
 
