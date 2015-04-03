@@ -170,9 +170,6 @@ Péter  a szomszédnak nem ismerte lányát.
 Juli a zenésznek nem hallott dalát.
 Juli a zenésznek nem hallotta dalát.
 
-Mari a költőnek nem olvasott versét.
-Mari a költőnek nem olvasta versét.
-
 C/3 negation of extracted possessor as focus
 
 Mari nem a költőnek olvasott versét.
