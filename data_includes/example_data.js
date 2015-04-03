@@ -1,14 +1,14 @@
 //var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice",
 //                rshuffle("target"/*, "filler"*/))));
-var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle("target"/*, "filler"*/)));
+var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle("target", "sep"/*, "filler"*/)));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
-    "Separator", {
+/*    "Separator", {
         transfer: 1000,
         normalMessage: "Please wait for the next sentence.",
         errorMessage: "Wrong. Please wait for the next sentence."
-    },
+    }, */
     "AcceptabilityJudgment", {
         as: ["1", "2", "3", "4", "5", "6", "7"],
         presentAsScale: true,
