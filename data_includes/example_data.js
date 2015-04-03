@@ -5,7 +5,7 @@ var practiceItemTypes = ["practice"];
 
 var defaults = [
     "Separator", {
-        transfer: 1000,
+        transfer: 300,
         normalMessage: "Please wait for the next sentence.",
         errorMessage: "Wrong. Please wait for the next sentence."
     },
@@ -59,7 +59,7 @@ var items = [
 
     // These, without groups, show up for everyone.
 
-    ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
+    // ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
 
     // Splitting the sentences up into groups. We are testing conditions across
     // groups of participants. This means that not all participants will see
@@ -90,11 +90,11 @@ var items = [
 
     [["target", 1], "AcceptabilityJudgment", {s: "Mari olvasott a költő minden versét."}],
     [["target", 1], "AcceptabilityJudgment", {s: "Mari nem olvasott a költő versét."}],
-    [["target", 1], "AcceptabilityJudgment", {s: "Blubb"}],
+    [["sep", 1], "Separator", { }],
 
     [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő minden versét."}],
     [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költő versét."}],
-    [["target", [2, 1]], "AcceptabilityJudgment", {s: "Blubb"}],
+    [["sep", [2, 1]], "Separator", { }],
 
     [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek minden versét."}],
     [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott a költőnek versét."}],
