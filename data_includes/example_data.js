@@ -90,9 +90,11 @@ var items = [
 
     [["target", 1], "AcceptabilityJudgment", {s: "Mari olvasott a költő minden versét."}],
     [["target", 1], "AcceptabilityJudgment", {s: "Mari nem olvasott a költő versét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő minden versét."}],
     [["target", [2, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költő versét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek minden versét."}],
     [["target", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott a költőnek versét."}],
@@ -104,9 +106,11 @@ var items = [
 
     [["target", [5, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd minden lányát."}],
     [["target", [5, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert a szomszéd lányát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [6, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd minden lányát."}],
     [["target", [6, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte a szomszéd lányát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [7, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak minden lányát."}],
     [["target", [7, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert a szomszédnak lányát."}],
@@ -118,9 +122,11 @@ var items = [
 
     [["target", [9, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő minden tájképét."}],
     [["target", [9, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett a festő tájképét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [10, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő minden tájképét."}],
     [["target", [10, 1]], "AcceptabilityJudgment", {s: "Ádám nem kereste a festő tájképét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [11, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek minden tájképét."}],
     [["target", [11, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett a festőnek tájképét."}],
@@ -132,9 +138,11 @@ var items = [
 
     [["target", [13, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész minden dalát."}],
     [["target", [13, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott a zenész dalát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [14, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész minden dalát."}],
     [["target", [14, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta a zenész dalát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [15, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek minden dalát."}],
     [["target", [15, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott a zenésznek dalát."}],
@@ -184,9 +192,11 @@ var items = [
 
     [["target", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
     [["target", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
     [["target", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [27, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
     [["target", [27, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
@@ -198,9 +208,11 @@ var items = [
 
     [["target", [29, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
     [["target", [29, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [30, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
     [["target", [30, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [31, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
     [["target", [31, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
@@ -212,9 +224,11 @@ var items = [
 
     [["target", [33, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
     [["target", [33, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [34, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
     [["target", [34, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [35, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
     [["target", [35, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
@@ -226,9 +240,11 @@ var items = [
 
     [["target", [37, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
     [["target", [37, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
     [["target", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
+    [["sep", 1], "Separator", {transfer: 10, normalMessage: "Loading."}],
 
     [["target", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
     [["target", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
