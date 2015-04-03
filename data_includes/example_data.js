@@ -27,7 +27,7 @@ var defaults = [
 
 var items = [
 
-    ["sep", "Separator", { }],
+//    ["sep", "Separator", { }],
 
     // New in Ibex 0.3-beta19. You can now determine the point in the
     // experiment at which the counter for latin square designs will be
