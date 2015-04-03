@@ -164,40 +164,40 @@ var items = [
     //
     // These are 24-48
 
-    ["target", "AcceptabilityJudgment", {s: "Mari olvasott a költő versét"}]
-    ["target", "AcceptabilityJudgment", {s: "Mari olvasta a költő versét"}]
-    ["target", "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét"}]
-    ["target", "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét"}]
+    ["target", "AcceptabilityJudgment", {s: "Mari olvasott a költő versét"}],
+    ["target", "AcceptabilityJudgment", {s: "Mari olvasta a költő versét"}],
+    ["target", "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét"}],
+    ["target", "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát"}]
-    ["target", "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát"}]
-    ["target", "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát"}]
-    ["target", "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát"}]
+    ["target", "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát"}],
+    ["target", "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát"}],
+    ["target", "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát"}],
+    ["target", "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét"}]
-    ["target", "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét"}]
-    ["target", "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét"}]
-    ["target", "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét"}]
+    ["target", "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét"}],
+    ["target", "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét"}],
+    ["target", "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét"}],
+    ["target", "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát"}]
-    ["target", "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát"}]
-    ["target", "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát"}]
-    ["target", "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát"}]
+    ["target", "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát"}],
+    ["target", "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát"}],
+    ["target", "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát"}],
+    ["target", "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasott versét"}]
-    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasta versét"}]
+    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasott versét"}],
+    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasta versét"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Péter  a szomszédnak ismert lányát"}]
-    ["target", "AcceptabilityJudgment", {s: "Péter  a szomszédnak ismerte lányát"}]
+    ["target", "AcceptabilityJudgment", {s: "Péter  a szomszédnak ismert lányát"}],
+    ["target", "AcceptabilityJudgment", {s: "Péter  a szomszédnak ismerte lányát"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Ádám a festőnek keresett tájképét"}]
-    ["target", "AcceptabilityJudgment", {s: "Ádám a festőnek kereste tájképét"}]
+    ["target", "AcceptabilityJudgment", {s: "Ádám a festőnek keresett tájképét"}],
+    ["target", "AcceptabilityJudgment", {s: "Ádám a festőnek kereste tájképét"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Juli a zenésznek hallott dalát"}]
-    ["target", "AcceptabilityJudgment", {s: "Juli a zenésznek hallotta dalát"}]
+    ["target", "AcceptabilityJudgment", {s: "Juli a zenésznek hallott dalát"}],
+    ["target", "AcceptabilityJudgment", {s: "Juli a zenésznek hallotta dalát"}],
 
-    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasott versét"}]
-    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasta versét"}]
+    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasott versét"}],
+    ["target", "AcceptabilityJudgment", {s: "Mari a költőnek olvasta versét"}],
 
     /*
     [["target", [25, 1]], "AcceptabilityJudgment", {s: "
