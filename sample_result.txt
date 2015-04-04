@@ -1,0 +1,147 @@
+#
+# Results on Saturday April 04 2015 14:36:52 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+# Design number was non-random = 25
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,Form,1,0,intro,NULL,name,András Bárány
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,Form,1,0,intro,NULL,age,28
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,Form,1,0,intro,NULL,place of birth,Budapest
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,Form,1,0,intro,NULL,residence,Cambridge
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,Form,1,0,intro,NULL,consent,yes
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,Form,1,0,intro,NULL,sex,male
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,2,0,Bevezetés,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,2,0,Bevezetés,NULL,NULL,7,NULL,5952
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,3,0,Bevezetés,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,3,0,Bevezetés,NULL,NULL,7,NULL,676
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,4,0,Bevezetés,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,4,0,Bevezetés,NULL,NULL,7,NULL,610
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,30,0,t-C1-ada-nom-sbj,9,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,30,0,t-C1-ada-nom-sbj,9,NULL,7,NULL,916
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,63,0,t-C2-pet-ext-obj,20,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,63,0,t-C2-pet-ext-obj,20,NULL,7,NULL,624
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,27,0,t-C1-pet-dat-obj,8,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,27,0,t-C1-pet-dat-obj,8,NULL,7,NULL,216
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,102,0,t-A1-ada-nom-sbj,33,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,102,0,t-A1-ada-nom-sbj,33,NULL,7,NULL,297
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,125,0,t-A2-mar-ext-sbj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,125,0,t-A2-mar-ext-sbj,NULL,NULL,7,NULL,476
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,48,0,t-C1-jul-dat-sbj,15,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,48,0,t-C1-jul-dat-sbj,15,NULL,7,NULL,130
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,9,0,t-C1-mar-nom-obj,2,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,9,0,t-C1-mar-nom-obj,2,NULL,7,NULL,120
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,87,0,t-A1-mar-dat-obj,28,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,87,0,t-A1-mar-dat-obj,28,NULL,7,NULL,262
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,75,0,t-C2-jul-ext-obj,24,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,75,0,t-C2-jul-ext-obj,24,NULL,7,NULL,388
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,42,0,t-C1-jul-nom-sbj,13,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,42,0,t-C1-jul-nom-sbj,13,NULL,7,NULL,107
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,120,0,t-A1-jul-dat-sbj,39,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,120,0,t-A1-jul-dat-sbj,39,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,96,0,t-A1-pet-dat-sbj,31,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,96,0,t-A1-pet-dat-sbj,31,NULL,7,NULL,119
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,33,0,t-C1-ada-nom-obj,10,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,33,0,t-C1-ada-nom-obj,10,NULL,7,NULL,130
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,90,0,t-A1-pet-nom-sbj,29,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,90,0,t-A1-pet-nom-sbj,29,NULL,7,NULL,130
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,130,0,t-A2-ada-ext-obj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,130,0,t-A2-ada-ext-obj,NULL,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,78,0,t-A1-mar-nom-sbj,25,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,78,0,t-A1-mar-nom-sbj,25,NULL,7,NULL,310
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,131,0,t-A2-jul-ext-sbj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,131,0,t-A2-jul-ext-sbj,NULL,NULL,7,NULL,130
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,66,0,t-C2-ada-ext-sbj,21,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,66,0,t-C2-ada-ext-sbj,21,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,57,0,t-C2-mar-ext-obj,18,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,57,0,t-C2-mar-ext-obj,18,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,93,0,t-A1-pet-nom-obj,30,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,93,0,t-A1-pet-nom-obj,30,NULL,7,NULL,152
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,127,0,t-A2-pet-ext-sbj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,127,0,t-A2-pet-ext-sbj,NULL,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,123,0,t-A1-jul-dat-obj,40,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,123,0,t-A1-jul-dat-obj,40,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,84,0,t-A1-mar-dat-sbj,27,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,84,0,t-A1-mar-dat-sbj,27,NULL,7,NULL,106
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,117,0,t-A1-jul-nom-obj,38,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,117,0,t-A1-jul-nom-obj,38,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,12,0,t-C1-mar-dat-sbj,3,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,12,0,t-C1-mar-dat-sbj,3,NULL,7,NULL,546
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,36,0,t-C1-ada-dat-sbj,11,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,36,0,t-C1-ada-dat-sbj,11,NULL,7,NULL,161
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,129,0,t-A2-ada-ext-sbj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,129,0,t-A2-ada-ext-sbj,NULL,NULL,7,NULL,163
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,39,0,t-C1-ada-dat-obj,12,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,39,0,t-C1-ada-dat-obj,12,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,18,0,t-C1-pet-nom-sbj,5,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,18,0,t-C1-pet-nom-sbj,5,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,24,0,t-C1-pet-dat-sbj,7,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,24,0,t-C1-pet-dat-sbj,7,NULL,7,NULL,140
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,105,0,t-A1-ada-nom-obj,34,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,105,0,t-A1-ada-nom-obj,34,NULL,7,NULL,283
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,54,0,t-C2-mar-ext-sbj,17,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,54,0,t-C2-mar-ext-sbj,17,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,60,0,t-C2-pet-ext-sbj,19,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,60,0,t-C2-pet-ext-sbj,19,NULL,7,NULL,142
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,81,0,t-A1-mar-nom-obj,26,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,81,0,t-A1-mar-nom-obj,26,NULL,7,NULL,128
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,51,0,t-C1-jul-dat-obj,16,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,51,0,t-C1-jul-dat-obj,16,NULL,7,NULL,422
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,21,0,t-C1-pet-nom-obj,6,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,21,0,t-C1-pet-nom-obj,6,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,15,0,t-C1-mar-dat-obj,4,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,15,0,t-C1-mar-dat-obj,4,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,126,0,t-A2-mar-ext-obj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,126,0,t-A2-mar-ext-obj,NULL,NULL,7,NULL,130
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,111,0,t-A1-ada-dat-obj,36,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,111,0,t-A1-ada-dat-obj,36,NULL,7,NULL,153
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,72,0,t-C2-jul-ext-sbj,23,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,72,0,t-C2-jul-ext-sbj,23,NULL,7,NULL,118
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,114,0,t-A1-jul-nom-sbj,37,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,114,0,t-A1-jul-nom-sbj,37,NULL,7,NULL,139
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,6,0,t-C1-mar-nom-sbj,1,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,6,0,t-C1-mar-nom-sbj,1,NULL,7,NULL,163
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,132,0,t-A2-jul-ext-obj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,132,0,t-A2-jul-ext-obj,NULL,NULL,7,NULL,141
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,69,0,t-C2-ada-ext-obj,22,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,69,0,t-C2-ada-ext-obj,22,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,45,0,t-C1-jul-nom-obj,14,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,45,0,t-C1-jul-nom-obj,14,NULL,7,NULL,152
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,128,0,t-A2-pet-ext-obj,NULL,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,128,0,t-A2-pet-ext-obj,NULL,NULL,7,NULL,129
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,108,0,t-A1-ada-dat-sbj,35,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,108,0,t-A1-ada-dat-sbj,35,NULL,7,NULL,140
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,99,0,t-A1-pet-dat-obj,32,undefined
+1428158212,b9a3066500b2cc5b0be1529feb7c0527,AcceptabilityJudgment,99,0,t-A1-pet-dat-obj,32,NULL,7,NULL,208
