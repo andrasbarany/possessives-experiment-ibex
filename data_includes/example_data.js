@@ -1,6 +1,10 @@
-var shuffleSequence = seq("intro", sepWith("sep", seq("practice",
-                rshuffle("target"/*, "filler"*/))));
-//var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle("target", "sep"/*, "filler"*/)));
+//var shuffleSequence = seq("intro", sepWith("sep", seq("practice",
+//                rshuffle("target"/*, "filler"*/))));
+var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle("target"/*, "filler"*/)));
+//
+// It seems to work to remove the "sep" from above to avoid having the gaps...:
+//var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle("target"/*, "filler"*/)));
+
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -280,7 +284,7 @@ var items = [
     ["target", "AcceptabilityJudgment", {s: "Juli a zenésznek hallott dalát."}],
     ["target", "AcceptabilityJudgment", {s: "Juli a zenésznek hallotta dalát."}],
 
-    // 41 filler sentences (?!)
+    // 30 filler sentences (?!)
 
     ["filler", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
     ["filler", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
@@ -293,42 +297,43 @@ var items = [
     ["filler", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
     ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
     ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
+
     ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
-
     ["filler", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
     ["filler", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
     ["filler", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
     ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
-    ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
 
+    ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
     ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
     ["filler", "AcceptabilityJudgment", {s: "A kutya Maritól futott el."}],
     ["filler", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsoráját."}],
     ["filler", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsorát."}],
-    ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejezte."}],
 
+    ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejezte."}],
     ["filler", "AcceptabilityJudgment", {s: "Két gyerek adnak egy könyvet Marinak."}],
     ["filler", "AcceptabilityJudgment", {s: "Marinak adnak két gyerek egy könyvet."}],
     ["filler", "AcceptabilityJudgment", {s: "A rendőr megállank ház."}],
     ["filler", "AcceptabilityJudgment", {s: "A kutya elfutnak Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutya Maritól."}],
 
+    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutya Maritól."}],
     ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőr a ház."}],
     ["filler", "AcceptabilityJudgment", {s: "Megállnak a ház melett a rendőr."}],
     ["filler", "AcceptabilityJudgment", {s: "Az együttes befejez a koncertet."}],
     ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejez."}],
-    ["filler", "AcceptabilityJudgment", {s: "Ádám a megeszi vacsora."}],
 
+/*    ["filler", "AcceptabilityJudgment", {s: "Ádám a megeszi vacsora."}],
     ["filler", "AcceptabilityJudgment", {s: "János ivott meg egy korsóval a vacsorán."}],
     ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval meg a vacsorán."}],
     ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval a vacsorán meg."}],
     ["filler", "AcceptabilityJudgment", {s: "János megivott egy korsóval a vacsorán."}],
-    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából."}],
 
+    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából."}],
     ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István haza az iskolából."}],
     ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István az iskolából haza."}],
     ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagát a tévében."}],
     ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagukat a tévében."}],
-    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látták sajátmagukat a tévében."}],
+
+    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látták sajátmagukat a tévében."}], */
 
 ];
