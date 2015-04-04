@@ -11,7 +11,8 @@ jqueryWidget: {
 
         this.html = dget(this.options, "html");
         this.continueOnReturn = dget(this.options, "continueOnReturn", false);
-        this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
+//        this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
+        this.continueMessage = dget(this.options, "continueMessage", "Kattintson ide, hogy elkezedje a felmérést.");
         this.checkedValue = dget(this.options, "checkedValue", "yes");
         this.uncheckedValue = dget(this.options, "uncheckedValue", "no");
         this.validators = dget(this.options, "validators", { });
@@ -19,13 +20,16 @@ jqueryWidget: {
         this.saveReactionTime = dget(this.options, "saveReactionTime", false);
         this.obligatoryErrorGenerator =
             dget(this.options, "obligatoryErrorGenerator",
-                 function (field) { return "The \u2018" + field + "\u2019 field is obligatory."; });
+//                 function (field) { return "The \u2018" + field + "\u2019 field is obligatory."; });
+                 function (field) { return "Legyen szíves töltse ki az űrlapot."; });
         this.obligatoryCheckboxErrorGenerator =
             dget(this.options, "obligatoryCheckboxErrorGenerator",
-                 function (field) { return "You must check the " + field + " checkbox to continue."; });
+//                 function (field) { return "You must check the " + field + " checkbox to continue."; });
+                 function (field) { return "Legyen szíves töltse ki az űrlapot."; });
         this.obligatoryRadioErrorGenerator =
             dget(this.options, "obligatoryRadioErrorGenerator",
-                 function (field) { return "You must select an option for \u2018" + field + "\u2019."; });
+//                 function (field) { return "You must select an option for \u2018" + field + "\u2019."; });
+                 function (field) { return "Legyen szíves töltse ki az űrlapot."; });
 
         var t = this;
 

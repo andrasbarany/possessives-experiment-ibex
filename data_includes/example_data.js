@@ -3,9 +3,9 @@
 // randomly selects elements from among the targets (...startsWith("t")...) and
 // fillers.
 
-var shuffleSequence = seq("intro", seq("practice", rshuffle(startsWith("t")/*, "filler"*/)));
+var shuffleSequence = seq("intro", seq("Bevezetés", rshuffle(startsWith("t")/*, "filler"*/)));
 
-var practiceItemTypes = ["practice"];
+var practiceItemTypes = ["Bevezetés"];
 
 var defaults = [
 /*    "Separator", {
@@ -21,8 +21,8 @@ var defaults = [
     "AcceptabilityJudgment", {
         as: ["1", "2", "3", "4", "5", "6", "7"],
         presentAsScale: true,
-        instructions: "Use number keys or click boxes to answer.",
-        leftComment: "(Bad)", rightComment: "(Good)"
+        instructions: "Kattintson egy számra.",
+        leftComment: "(Természetellenes)", rightComment: "(Természetes)"
     },
     "Message", {
         hideProgressBar: true
@@ -30,7 +30,6 @@ var defaults = [
     "Form", {
         hideProgressBar: true,
         continueOnReturn: true,
-        saveReactionTime: true
     }
 ];
 
@@ -62,9 +61,9 @@ var items = [
     // Three practice items for acceptability judgments. No groups necessary
     // here, everyone can can get the same sentences.
 
-    ["practice", "AcceptabilityJudgment", {s: "Ismerem Mari hugát."}],
-    ["practice", "AcceptabilityJudgment", {s: "Péter látja az autót."}],
-    ["practice", "AcceptabilityJudgment", {s: "Kereste Petőfinek egy könyvét."}],
+    ["Bevezetés", "AcceptabilityJudgment", {s: "Ismerem Mari hugát."}],
+    ["Bevezetés", "AcceptabilityJudgment", {s: "Laci látja az autót."}],
+    ["Bevezetés", "AcceptabilityJudgment", {s: "Péter mentek haza."}],
 
     // These, without groups, show up for everyone.
 
