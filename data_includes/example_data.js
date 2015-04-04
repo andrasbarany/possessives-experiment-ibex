@@ -3,7 +3,7 @@
 // randomly selects elements from among the targets (...startsWith("t")...) and
 // fillers.
 
-var shuffleSequence = seq(/*"intro",*/ seq("practice", rshuffle(startsWith("t")/*, "filler"*/)));
+var shuffleSequence = seq("intro", seq("practice", rshuffle(startsWith("t")/*, "filler"*/)));
 
 var practiceItemTypes = ["practice"];
 
