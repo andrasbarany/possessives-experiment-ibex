@@ -54,13 +54,12 @@ mondja.</p>
 
     <tr>
         <td>Nem:</td>
-        <td><input name="gender" type="text" size="30" class="obligatory" />Férfi</td>
-        <td><input name="gender" type="text" size="30" class="obligatory" />Nő</td>
+        <td><input name="sex" type="radio" value="male" class="obligatory" id="csexmale" />
+                <label for="csexmale">Male</label>
+            <input name="sex" type="radio" value="female" id="csexfemale"/>
+                <label for="csexfemale">Female</label>
+        </td>
     </tr>
-
-<!--    <tr>
-        <td colspan="2"><label class="error" for="age"></label></td>
-    </tr> -->
 
     <tr>
         <td>Születési hely (megye):</td>
@@ -70,6 +69,14 @@ mondja.</p>
     <tr>
         <td>Lakhely (megye):</td>
         <td><input name="residence" type="text" size="30" class="obligatory" /></td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="padding-bottom: 1em;">
+            <input type="checkbox" class="obligatory" name="consent" id="consentcx" />
+            <label for="consentcx">Hozzájárulok, hogy az általam közölt
+                adatokat tudományos célokra felhasználják.</label>
+        </td>
     </tr>
 
 </table>
