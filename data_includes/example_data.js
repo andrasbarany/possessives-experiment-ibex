@@ -105,56 +105,56 @@ var items = [
     // In the second line are sentences from C and D: null possessors with
     // negation (C) and null plural possessors (D).
 
-    [["t-B1-mar-nil-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari olvasott versét."}],
-    [["t-C1-mar-nil-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott versét."}],
+    [["t-B1-mar-nil-sbj", 1], "AcceptabilityJudgment", {s: "Mari olvasott versét."}],
+    [["t-C1-mar-nil-sbj", 1], "AcceptabilityJudgment", {s: "Mari nem olvasott versét."}],
 
-    [["t-B1-mar-nil-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versét."}],
-    [["t-C1-mar-nil-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta versét."}],
+    [["t-B1-mar-nil-obj", [2, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versét."}],
+    [["t-C1-mar-nil-obj", [2, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta versét."}],
 
-    [["t-B1-pet-nil-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányát."}],
-    [["t-C1-pet-nil-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert lányát."}],
+    [["t-B1-pet-nil-sbj", [3, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányát."}],
+    [["t-C1-pet-nil-sbj", [3, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert lányát."}],
 
-    [["t-B1-pet-nil-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányát."}],
-    [["t-C1-pet-nil-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte lányát."}],
+    [["t-B1-pet-nil-obj", [4, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányát."}],
+    [["t-C1-pet-nil-obj", [4, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte lányát."}],
 
-    [["t-B1-ada-nil-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképét."}],
-    [["t-C1-ada-nil-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett tájképét."}],
+    [["t-B1-ada-nil-sbj", [5, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképét."}],
+    [["t-C1-ada-nil-sbj", [5, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett tájképét."}],
 
-    [["t-B1-ada-nil-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám kereste tájképét."}],
-    [["t-C1-ada-nil-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresete tájképét."}],
+    [["t-B1-ada-nil-obj", [6, 1]], "AcceptabilityJudgment", {s: "Ádám kereste tájképét."}],
+    [["t-C1-ada-nil-obj", [6, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresete tájképét."}],
 
-    [["t-B1-jul-nil-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalát."}],
-    [["t-C1-jul-nil-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott dalát."}],
+    [["t-B1-jul-nil-sbj", [7, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalát."}],
+    [["t-C1-jul-nil-sbj", [7, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott dalát."}],
 
-    [["t-B1-jul-nil-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalát."}],
-    [["t-C1-jul-nil-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta dalát."}],
+    [["t-B1-jul-nil-obj", [8, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalát."}],
+    [["t-C1-jul-nil-obj", [8, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta dalát."}],
 
     // The two groups continue with the final blocks: B/2, null possessors and néhány, and
     // D, null plural possessors.
 
-    [["t-B2-mar-nil-sbj", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott néhány versét."}],
-    [["t-D1-mar-nil-sbj", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott versüket."}],
+    [["t-B2-mar-nil-sbj", [9, 1]], "AcceptabilityJudgment", {s: "Mari olvasott néhány versét."}],
+    [["t-D1-mar-nil-sbj", [9, 1]], "AcceptabilityJudgment", {s: "Mari olvasott versüket."}],
 
-    [["t-B2-mar-nil-obj", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta néhány versét."}],
-    [["t-D1-mar-nil-obj", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versüket."}],
+    [["t-B2-mar-nil-obj", [10, 1]], "AcceptabilityJudgment", {s: "Mari olvasta néhány versét."}],
+    [["t-D1-mar-nil-obj", [10, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versüket."}],
 
-    [["t-B2-pet-nil-sbj", [27, 1]], "AcceptabilityJudgment", {s: "Péter ismert néhány lányát."}],
-    [["t-D1-pet-nil-sbj", [27, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányukat."}],
+    [["t-B2-pet-nil-sbj", [11, 1]], "AcceptabilityJudgment", {s: "Péter ismert néhány lányát."}],
+    [["t-D1-pet-nil-sbj", [11, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányukat."}],
 
-    [["t-B2-pet-nil-obj", [28, 1]], "AcceptabilityJudgment", {s: "Péter ismerte néhány lányát."}],
-    [["t-D1-pet-nil-obj", [28, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányukat."}],
+    [["t-B2-pet-nil-obj", [12, 1]], "AcceptabilityJudgment", {s: "Péter ismerte néhány lányát."}],
+    [["t-D1-pet-nil-obj", [12, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányukat."}],
 
-    [["t-B2-ada-nil-sbj", [29, 1]], "AcceptabilityJudgment", {s: "Ádám keresett néhány tájképét."}],
-    [["t-D1-ada-nil-sbj", [29, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképüket."}],
+    [["t-B2-ada-nil-sbj", [13, 1]], "AcceptabilityJudgment", {s: "Ádám keresett néhány tájképét."}],
+    [["t-D1-ada-nil-sbj", [13, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképüket."}],
 
-    [["t-B2-ada-nil-obj", [30, 1]], "AcceptabilityJudgment", {s: "Ádám kereste néhány tájképét."}],
-    [["t-D1-ada-nil-obj", [30, 1]], "AcceptabilityJudgment", {s: "Ádám keresete tájképüket."}],
+    [["t-B2-ada-nil-obj", [14, 1]], "AcceptabilityJudgment", {s: "Ádám kereste néhány tájképét."}],
+    [["t-D1-ada-nil-obj", [14, 1]], "AcceptabilityJudgment", {s: "Ádám keresete tájképüket."}],
 
-    [["t-B2-jul-nil-sbj", [31, 1]], "AcceptabilityJudgment", {s: "Juli hallott néhány dalát."}],
-    [["t-D1-jul-nil-sbj", [31, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalukat."}],
+    [["t-B2-jul-nil-sbj", [15, 1]], "AcceptabilityJudgment", {s: "Juli hallott néhány dalát."}],
+    [["t-D1-jul-nil-sbj", [15, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalukat."}],
 
-    [["t-B2-jul-nil-obj", [32, 1]], "AcceptabilityJudgment", {s: "Juli hallotta néhány dalát."}],
-    [["t-D1-jul-nil-obj", [32, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalukat."}],
+    [["t-B2-jul-nil-obj", [16, 1]], "AcceptabilityJudgment", {s: "Juli hallotta néhány dalát."}],
+    [["t-D1-jul-nil-obj", [16, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalukat."}],
 
 
     // 30 filler sentences (?!)
