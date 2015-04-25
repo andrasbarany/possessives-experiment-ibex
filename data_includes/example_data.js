@@ -76,25 +76,25 @@ var items = [
     //
     // 1-16
 
-    [["t-A1-mar-nom-sbj"], "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
-    [["t-A1-mar-nom-obj"], "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
-    [["t-A1-mar-dat-sbj"], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
-    [["t-A1-mar-dat-obj"], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét."}],
+    ["t-A1-mar-nom-sbj", "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
+    ["t-A1-mar-nom-obj", "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
+    ["t-A1-mar-dat-sbj", "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
+    ["t-A1-mar-dat-obj", "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét."}],
 
-    [["t-A1-pet-nom-sbj"], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
-    [["t-A1-pet-nom-obj"], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
-    [["t-A1-pet-dat-sbj"], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
-    [["t-A1-pet-dat-obj"], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát."}],
+    ["t-A1-pet-nom-sbj", "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
+    ["t-A1-pet-nom-obj", "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
+    ["t-A1-pet-dat-sbj", "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
+    ["t-A1-pet-dat-obj", "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát."}],
 
-    [["t-A1-ada-nom-sbj"], "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
-    [["t-A1-ada-nom-obj"], "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
-    [["t-A1-ada-dat-sbj"], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
-    [["t-A1-ada-dat-obj"], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét."}],
+    ["t-A1-ada-nom-sbj", "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
+    ["t-A1-ada-nom-obj", "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
+    ["t-A1-ada-dat-sbj", "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
+    ["t-A1-ada-dat-obj", "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét."}],
 
-    [["t-A1-jul-nom-sbj"], "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
-    [["t-A1-jul-nom-obj"], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
-    [["t-A1-jul-dat-sbj"], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
-    [["t-A1-jul-dat-obj"], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát."}],
+    ["t-A1-jul-nom-sbj", "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
+    ["t-A1-jul-nom-obj", "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
+    ["t-A1-jul-dat-sbj", "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
+    ["t-A1-jul-dat-obj", "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát."}],
 
     // Here, the two groups of participants diverge in the sentences that they
     // get. Both start out with the 16 sentences from "A" above, but the
