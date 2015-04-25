@@ -1,5 +1,3 @@
-
-
 DESIGN
 three blocks, one subject does one block.
 
@@ -72,8 +70,8 @@ A/2: extracted dative possessor
 Mari a költőnek olvasott versét.            t-A2-mar-ext-sbj
 Mari a költőnek olvasta versét.             t-A2-mar-ext-obj
 
-Péter  a szomszédnak ismert lányát.         t-A2-pet-ext-sbj
-Péter  a szomszédnak ismerte lányát.        t-A2-pet-ext-obj
+Péter a szomszédnak ismert lányát.         t-A2-pet-ext-sbj
+Péter a szomszédnak ismerte lányát.        t-A2-pet-ext-obj
 
 Ádám a festőnek keresett tájképét.          t-A2-ada-ext-sbj
 Ádám a festőnek kereste tájképét.           t-A2-ada-ext-obj
@@ -81,7 +79,7 @@ Péter  a szomszédnak ismerte lányát.        t-A2-pet-ext-obj
 Juli a zenésznek hallott dalát.             t-A2-jul-ext-sbj
 Juli a zenésznek hallotta dalát.            t-A2-jul-ext-obj
 
-A/3: different word oreders with dative post verbal possessors
+A/3: different word orders with dative post verbal possessors
 
 Mari olvasott versét a költőnek.            t-A3-mar-fin-sbj
 Mari olvasta versét a költőnek.             t-A3-mar-fin-obj

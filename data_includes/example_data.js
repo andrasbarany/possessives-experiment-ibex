@@ -3,7 +3,7 @@
 // randomly selects elements from among the targets (...startsWith("t")...) and
 // fillers.
 
-var shuffleSequence = seq("intro", seq("practice", rshuffle(startsWith("t"), "filler")));
+var shuffleSequence = seq("intro", seq("practice", rshuffle(startsWith("t"), startsWith("f"))));
 
 var practiceItemTypes = ["practice"];
 
@@ -69,265 +69,144 @@ var items = [
 
     // ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
 
-    // Splitting the sentences up into groups. We are testing conditions across
-    // groups of participants. This means that not all participants will see
-    // the same examples, but we can compare results across participants.
+    // The following 16 sentences are category "A": obj vs sbj agreement with
+    // dative vs nominative possessors, a kind of baseline. These do not have
+    // have number (e.g. [2, 1]) because they do not belong to a subgroup of
+    // participants: everyone will see these.
     //
-    // The idea is that there are three blocks of examples. Each participant
-    // will see examples from one of these blocks and when all blocks have been
-    // seen, the next participant gets the first block again. So for 5
-    // participants R1-R5, R1-3 will see blocks B1-3, R4 will see B1, R5 will
-    // see B2 etc.
+    // 1-16
+
+    [["t-A1-mar-nom-sbj"], "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
+    [["t-A1-mar-nom-obj"], "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
+    [["t-A1-mar-dat-sbj"], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
+    [["t-A1-mar-dat-obj"], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét."}],
+
+    [["t-A1-pet-nom-sbj"], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
+    [["t-A1-pet-nom-obj"], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
+    [["t-A1-pet-dat-sbj"], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
+    [["t-A1-pet-dat-obj"], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát."}],
+
+    [["t-A1-ada-nom-sbj"], "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
+    [["t-A1-ada-nom-obj"], "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
+    [["t-A1-ada-dat-sbj"], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
+    [["t-A1-ada-dat-obj"], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét."}],
+
+    [["t-A1-jul-nom-sbj"], "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
+    [["t-A1-jul-nom-obj"], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
+    [["t-A1-jul-dat-sbj"], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
+    [["t-A1-jul-dat-obj"], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát."}],
+
+    // Here, the two groups of participants diverge in the sentences that they
+    // get. Both start out with the 16 sentences from "A" above, but the
+    // following are different. Group 1 gets B and B/2: null possessors and
+    // null possessors with modifiers, each with subject and object agreement.
+    // These are shown in the first line of each 2-line paragraph.
     //
-    // This is implemented by using the Latin square-aspect of ibex, more
-    // specifically its group features.
-    //
-    // Group 1, for example, would have negation, the modifier néhány and the
-    // modifier néhány. Each participant would see one of these, the next
-    // participant another one, and so on.
-    //
-    // layout:
-    // [["target", 1], ..., sentence from B]
-    // [["target", 1], ..., sentence from C]
-    //
-    // layout: [["target", [2, 1]], ..., sentence from B]
-    // layout: [["target", [2, 1]], ..., sentence from C]
-    //
-    // 01-16: B, C [Blocks 1, 2]
-    // 01-08: C/3 [Block 3]
+    // In the second line are sentences from C and D: null possessors with
+    // negation (C) and null plural possessors (D).
 
-    [["t-B1-mar-nom-sbj", 1], "AcceptabilityJudgment", {s: "Mari olvasott a költő néhány versét."}],
-    [["t-C1-mar-nom-sbj", 1], "AcceptabilityJudgment", {s: "Mari nem olvasott a költő versét."}],
-    [["sep", 1], "Separator", {transfer: 0}],
+    [["t-B1-mar-nil-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari olvasott versét."}],
+    [["t-C1-mar-nil-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott versét."}],
 
-    [["t-B1-mar-nom-obj", [2, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő néhány versét."}],
-    [["t-C1-mar-nom-obj", [2, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költő versét."}],
-    [["sep", [2, 1]], "Separator", {transfer: 0}],
+    [["t-B1-mar-nil-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versét."}],
+    [["t-C1-mar-nil-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta versét."}],
 
-    [["t-B1-mar-dat-sbj", [3, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek néhány versét."}],
-    [["t-C1-mar-dat-sbj", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasott a költőnek versét."}],
-    [["t-C3-mar-ext-sbj", [3, 1]], "AcceptabilityJudgment", {s: "Mari nem a költőnek olvasott versét."}], // C/3
+    [["t-B1-pet-nil-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányát."}],
+    [["t-C1-pet-nil-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert lányát."}],
 
-    [["t-B1-mar-dat-obj", [4, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek néhány versét."}],
-    [["t-C1-mar-dat-obj", [4, 1]], "AcceptabilityJudgment", {s: "Mari nem olvasta a költőnek versét."}],
-    [["t-C3-mar-ext-obj", [4, 1]], "AcceptabilityJudgment", {s: "Mari nem a költőnek olvasta versét."}], // C/3
+    [["t-B1-pet-nil-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányát."}],
+    [["t-C1-pet-nil-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte lányát."}],
 
-    [["t-B1-pet-nom-sbj", [5, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd néhány lányát."}],
-    [["t-C1-pet-nom-sbj", [5, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert a szomszéd lányát."}],
-    [["sep", [5, 1]], "Separator", {transfer: 0}],
+    [["t-B1-ada-nil-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképét."}],
+    [["t-C1-ada-nil-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett tájképét."}],
 
-    [["t-B1-pet-nom-obj", [6, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd néhány lányát."}],
-    [["t-C1-pet-nom-obj", [6, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte a szomszéd lányát."}],
-    [["sep", [6, 1]], "Separator", {transfer: 0}],
+    [["t-B1-ada-nil-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám kereste tájképét."}],
+    [["t-C1-ada-nil-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresete tájképét."}],
 
-    [["t-B1-pet-dat-sbj", [7, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak néhány lányát."}],
-    [["t-C1-pet-dat-sbj", [7, 1]], "AcceptabilityJudgment", {s: "Péter nem ismert a szomszédnak lányát."}],
-    [["t-C3-pet-ext-sbj", [7, 1]], "AcceptabilityJudgment", {s: "Péter nem a szomszédnak ismert lányát."}], // C/3
+    [["t-B1-jul-nil-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalát."}],
+    [["t-C1-jul-nil-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott dalát."}],
 
-    [["t-B1-pet-dat-obj", [8, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak néhány lányát."}],
-    [["t-C1-pet-dat-obj", [8, 1]], "AcceptabilityJudgment", {s: "Péter nem ismerte a szomszédnak lányát."}],
-    [["t-C3-pet-ext-obj", [8, 1]], "AcceptabilityJudgment", {s: "Péter nem a szomszédnak ismerte lányát."}], //C/3
+    [["t-B1-jul-nil-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalát."}],
+    [["t-C1-jul-nil-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta dalát."}],
 
-    [["t-B1-ada-nom-sbj", [9, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő néhány tájképét."}],
-    [["t-C1-ada-nom-sbj", [9, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett a festő tájképét."}],
-    [["sep", [9, 1]], "Separator", {transfer: 0}],
+    // The two groups continue with the final blocks: B/2, null possessors and néhány, and
+    // D, null plural possessors.
 
-    [["t-B1-ada-nom-obj", [10, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő néhány tájképét."}],
-    [["t-C1-ada-nom-obj", [10, 1]], "AcceptabilityJudgment", {s: "Ádám nem kereste a festő tájképét."}],
-    [["sep", [10, 1]], "Separator", {transfer: 0}],
+    [["t-B2-mar-nil-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari olvasott néhány versét."}],
+    [["t-D1-mar-nil-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari olvasott versüket."}],
 
-    [["t-B1-ada-dat-sbj", [11, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek néhány tájképét."}],
-    [["t-C1-ada-dat-sbj", [11, 1]], "AcceptabilityJudgment", {s: "Ádám nem keresett a festőnek tájképét."}],
-    [["t-C3-ada-ext-sbj", [11, 1]], "AcceptabilityJudgment", {s: "Ádám nem a festőnek keresett tájképét."}], //C/3
+    [["t-B2-mar-nil-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari olvasta néhány versét."}],
+    [["t-D1-mar-nil-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versüket."}],
 
-    [["t-B1-ada-dat-obj", [12, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek néhány tájképét."}],
-    [["t-C1-ada-dat-obj", [12, 1]], "AcceptabilityJudgment", {s: "Ádám nem kereste a festőnek tájképét."}],
-    [["t-C3-ada-ext-obj", [12, 1]], "AcceptabilityJudgment", {s: "Ádám nem a festőnek kereste tájképét."}], //C/3
+    [["t-B2-pet-nil-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter ismert néhány lányát."}],
+    [["t-D1-pet-nil-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányukat."}],
 
-    [["t-B1-jul-nom-sbj", [13, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész néhány dalát."}],
-    [["t-C1-jul-nom-sbj", [13, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott a zenész dalát."}],
-    [["sep", [13, 1]], "Separator", {transfer: 0}],
+    [["t-B2-pet-nil-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter ismerte néhány lányát."}],
+    [["t-D1-pet-nil-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányukat."}],
 
-    [["t-B1-jul-nom-obj", [14, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész néhány dalát."}],
-    [["t-C1-jul-nom-obj", [14, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta a zenész dalát."}],
-    [["sep", [14, 1]], "Separator", {transfer: 0}],
+    [["t-B2-ada-nil-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám keresett néhány tájképét."}],
+    [["t-D1-ada-nil-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképüket."}],
 
-    [["t-B1-jul-dat-sbj", [15, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek néhány dalát."}],
-    [["t-C1-jul-dat-sbj", [15, 1]], "AcceptabilityJudgment", {s: "Juli nem hallott a zenésznek dalát."}],
-    [["t-C3-jul-ext-sbj", [15, 1]], "AcceptabilityJudgment", {s: "Juli nem a zenésznek hallott dalát."}], //C/3
+    [["t-B2-ada-nil-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám kereste néhány tájképét."}],
+    [["t-D1-ada-nil-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám keresete tájképüket."}],
 
-    [["t-B1-jul-dat-obj", [16, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek néhány dalát."}],
-    [["t-C1-jul-dat-obj", [16, 1]], "AcceptabilityJudgment", {s: "Juli nem hallotta a zenésznek dalát."}],
-    [["t-C3-jul-ext-obj", [16, 1]], "AcceptabilityJudgment", {s: "Juli nem a zenésznek hallotta dalát."}], //C/3
+    [["t-B2-jul-nil-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli hallott néhány dalát."}],
+    [["t-D1-jul-nil-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalukat."}],
 
-    // 17-24: B/2, C/2 [Block 1]
-    // 09-16: C/2 [Block 2]
+    [["t-B2-jul-nil-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli hallotta néhány dalát."}],
+    [["t-D1-jul-nil-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalukat."}],
 
-    [["t-B2-mar-ext-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari a költőnek olvasott néhány versét."}],
-    [["t-C2-mar-ext-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari a költőnek nem olvasott versét."}],
-    [["t-C2-mar-ext-sbj", [17, 1]], "AcceptabilityJudgment", {s: "Mari a költőnek nem olvasott versét."}],
-
-    [["t-B2-mar-ext-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari a költőnek olvasta néhány versét."}],
-    [["t-C2-mar-ext-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari a költőnek nem olvasta versét."}],
-    [["t-C2-mar-ext-obj", [18, 1]], "AcceptabilityJudgment", {s: "Mari a költőnek nem olvasta versét."}],
-
-    [["t-B2-pet-ext-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter a szomszédnak ismert néhány lányát."}],
-    [["t-C2-pet-ext-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter a szomszédnak nem ismert lányát."}],
-    [["t-C2-pet-ext-sbj", [19, 1]], "AcceptabilityJudgment", {s: "Péter a szomszédnak nem ismert lányát."}],
-
-    [["t-B2-pet-ext-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter a szomszédnak ismerte néhány lányát."}],
-    [["t-C2-pet-ext-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter a szomszédnak nem ismerte lányát."}],
-    [["t-C2-pet-ext-obj", [20, 1]], "AcceptabilityJudgment", {s: "Péter a szomszédnak nem ismerte lányát."}],
-
-    [["t-B2-ada-ext-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám a festőnek keresett néhány tájképét."}],
-    [["t-C2-ada-ext-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám a festőnek nem keresett tájképét."}],
-    [["t-C2-ada-ext-sbj", [21, 1]], "AcceptabilityJudgment", {s: "Ádám a festőnek nem keresett tájképét."}],
-
-    [["t-B2-ada-ext-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám a festőnek kereste néhány tájképét."}],
-    [["t-C2-ada-ext-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám a festőnek nem kereste tájképét."}],
-    [["t-C2-ada-ext-obj", [22, 1]], "AcceptabilityJudgment", {s: "Ádám a festőnek nem kereste tájképét."}],
-
-    [["t-B2-jul-ext-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli a zenésznek hallott néhány dalát."}],
-    [["t-C2-jul-ext-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli a zenésznek nem hallott dalát."}],
-    [["t-C2-jul-ext-sbj", [23, 1]], "AcceptabilityJudgment", {s: "Juli a zenésznek nem hallott dalát."}],
-
-    [["t-B2-jul-ext-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli a zenésznek hallotta néhány dalát."}],
-    [["t-C2-jul-ext-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli a zenésznek nem hallotta dalát."}],
-    [["t-C2-jul-ext-obj", [24, 1]], "AcceptabilityJudgment", {s: "Juli a zenésznek nem hallotta dalát."}],
-
-    // 24-40: A [Blocks 1, 2]
-    // 17-32: A, dative possessors and A/3 [Block 3]
-
-    [["t-A1-mar-nom-sbj", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
-    [["t-A1-mar-nom-sbj", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költő versét."}],
-    [["t-A3-mar-fin-sbj", [25, 1]], "AcceptabilityJudgment", {s: "Mari olvasott versét a költőnek."}], // A/3
-
-    [["t-A1-mar-nom-obj", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
-    [["t-A1-mar-nom-obj", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költő versét."}],
-    [["t-A3-mar-fin-obj", [26, 1]], "AcceptabilityJudgment", {s: "Mari olvasta versét a költőnek."}], // A/3
-
-    [["t-A1-mar-dat-sbj", [27, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
-    [["t-A1-mar-dat-sbj", [27, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
-    [["t-A1-mar-dat-sbj", [27, 1]], "AcceptabilityJudgment", {s: "Mari olvasott a költőnek versét."}],
-
-    [["t-A1-mar-dat-obj", [28, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét."}],
-    [["t-A1-mar-dat-obj", [28, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét."}],
-    [["t-A1-mar-dat-obj", [28, 1]], "AcceptabilityJudgment", {s: "Mari olvasta a költőnek versét."}],
-
-    [["t-A1-pet-nom-sbj", [29, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
-    [["t-A1-pet-nom-sbj", [29, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszéd lányát."}],
-    [["t-A3-pet-fin-sbj", [29, 1]], "AcceptabilityJudgment", {s: "Péter ismert lányát a szomszédnak."}], // A/3
-
-    [["t-A1-pet-nom-obj", [30, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
-    [["t-A1-pet-nom-obj", [30, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszéd lányát."}],
-    [["t-A3-pet-fin-obj", [30, 1]], "AcceptabilityJudgment", {s: "Péter ismerte lányát a szomszédnak."}], // A/3
-
-    [["t-A1-pet-dat-sbj", [31, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
-    [["t-A1-pet-dat-sbj", [31, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
-    [["t-A1-pet-dat-sbj", [31, 1]], "AcceptabilityJudgment", {s: "Péter ismert a szomszédnak lányát."}],
-
-    [["t-A1-pet-dat-obj", [32, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát."}],
-    [["t-A1-pet-dat-obj", [32, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát."}],
-    [["t-A1-pet-dat-obj", [32, 1]], "AcceptabilityJudgment", {s: "Péter ismerte a szomszédnak lányát."}],
-
-    [["t-A1-ada-nom-sbj", [33, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
-    [["t-A1-ada-nom-sbj", [33, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festő tájképét."}],
-    [["t-A3-ada-fin-sbj", [33, 1]], "AcceptabilityJudgment", {s: "Ádám keresett tájképét a festőnek."}], // A/3
-
-    [["t-A1-ada-nom-obj", [34, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
-    [["t-A1-ada-nom-obj", [34, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festő tájképét."}],
-    [["t-A3-ada-fin-obj", [34, 1]], "AcceptabilityJudgment", {s: "Ádám kereste tájképét  a festőnek."}], // A/3
-
-    [["t-A1-ada-dat-sbj", [35, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
-    [["t-A1-ada-dat-sbj", [35, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
-    [["t-A1-ada-dat-sbj", [35, 1]], "AcceptabilityJudgment", {s: "Ádám keresett a festőnek tájképét."}],
-
-    [["t-A1-ada-dat-obj", [36, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét."}],
-    [["t-A1-ada-dat-obj", [36, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét."}],
-    [["t-A1-ada-dat-obj", [36, 1]], "AcceptabilityJudgment", {s: "Ádám kereste a festőnek tájképét."}],
-
-    [["t-A1-jul-nom-sbj", [37, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
-    [["t-A1-jul-nom-sbj", [37, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenész dalát."}],
-    [["t-A3-jul-fin-sbj", [37, 1]], "AcceptabilityJudgment", {s: "Juli hallott dalát a zenésznek."}], // A/3
-
-    [["t-A1-jul-nom-obj", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
-    [["t-A1-jul-nom-obj", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenész dalát."}],
-    [["t-A3-jul-fin-obj", [38, 1]], "AcceptabilityJudgment", {s: "Juli hallotta dalát a zenésznek."}], // A/3
-
-    [["t-A1-jul-dat-sbj", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
-    [["t-A1-jul-dat-sbj", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
-    [["t-A1-jul-dat-sbj", [39, 1]], "AcceptabilityJudgment", {s: "Juli hallott a zenésznek dalát."}],
-
-    [["t-A1-jul-dat-obj", [40, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát."}],
-    [["t-A1-jul-dat-obj", [40, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát."}],
-    [["t-A1-jul-dat-obj", [40, 1]], "AcceptabilityJudgment", {s: "Juli hallotta a zenésznek dalát."}],
-
-    // A2 shows up in all blocks. These do not have to be grouped.
-    // 41-48: A/2 [Blocks 1, 2]
-    // 32-40: A/2 [Block 3]
-
-    ["t-A2-mar-ext-sbj", "AcceptabilityJudgment", {s: "Mari a költőnek olvasott versét."}],
-    ["t-A2-mar-ext-obj", "AcceptabilityJudgment", {s: "Mari a költőnek olvasta versét."}],
-
-    ["t-A2-pet-ext-sbj", "AcceptabilityJudgment", {s: "Péter  a szomszédnak ismert lányát."}],
-    ["t-A2-pet-ext-obj", "AcceptabilityJudgment", {s: "Péter  a szomszédnak ismerte lányát."}],
-
-    ["t-A2-ada-ext-sbj", "AcceptabilityJudgment", {s: "Ádám a festőnek keresett tájképét."}],
-    ["t-A2-ada-ext-obj", "AcceptabilityJudgment", {s: "Ádám a festőnek kereste tájképét."}],
-
-    ["t-A2-jul-ext-sbj", "AcceptabilityJudgment", {s: "Juli a zenésznek hallott dalát."}],
-    ["t-A2-jul-ext-obj", "AcceptabilityJudgment", {s: "Juli a zenésznek hallotta dalát."}],
 
     // 30 filler sentences (?!)
 
-    ["filler", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
-    ["filler", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
-    ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
+    ["f01", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f02", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
+    ["f03", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
+    ["f04", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
+    ["f05", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
-    ["filler", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
-    ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
+    ["f06", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f07", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
+    ["f08", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
+    ["f09", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
+    ["f10", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
-    ["filler", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
-    ["filler", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
+    ["f11", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
+    ["f12", "AcceptabilityJudgment", {s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f13", "AcceptabilityJudgment", {s: "Marinak adnak egy könyvet a gyerekek."}],
+    ["f14", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak."}],
+    ["f15", "AcceptabilityJudgment", {s: "Megállnak a rendőrök a ház melett."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
-    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
-    ["filler", "AcceptabilityJudgment", {s: "A kutya Maritól futott el."}],
-    ["filler", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsoráját."}],
-    ["filler", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsorát."}],
+    ["f16", "AcceptabilityJudgment", {s: "A rendőrök a ház mellett álltak meg."}],
+    ["f17", "AcceptabilityJudgment", {s: "Elfutnak a kutyák Maritól."}],
+    ["f18", "AcceptabilityJudgment", {s: "A kutya Maritól futott el."}],
+    ["f19", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsoráját."}],
+/*  ["f31", "AcceptabilityJudgment", {s: "Ádám megeszi a vacsorát."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejezte."}],
-    ["filler", "AcceptabilityJudgment", {s: "Két gyerek adnak egy könyvet Marinak."}],
-    ["filler", "AcceptabilityJudgment", {s: "Marinak adnak két gyerek egy könyvet."}],
-    ["filler", "AcceptabilityJudgment", {s: "A rendőr megállank ház."}],
-    ["filler", "AcceptabilityJudgment", {s: "A kutya elfutnak Marinak."}],
+    ["f32", "AcceptabilityJudgment", {s: "A koncertet az együttes befejezte."}],
+    ["f33", "AcceptabilityJudgment", {s: "Két gyerek adnak egy könyvet Marinak."}],
+    ["f34", "AcceptabilityJudgment", {s: "Marinak adnak két gyerek egy könyvet."}],
+    ["f35", "AcceptabilityJudgment", {s: "A rendőr megállank ház."}],
+    ["f36", "AcceptabilityJudgment", {s: "A kutya elfutnak Marinak."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "Elfutnak a kutya Maritól."}],
-    ["filler", "AcceptabilityJudgment", {s: "Megállnak a rendőr a ház."}],
-    ["filler", "AcceptabilityJudgment", {s: "Megállnak a ház melett a rendőr."}],
-    ["filler", "AcceptabilityJudgment", {s: "Az együttes befejez a koncertet."}],
-    ["filler", "AcceptabilityJudgment", {s: "A koncertet az együttes befejez."}],
+    ["f37", "AcceptabilityJudgment", {s: "Elfutnak a kutya Maritól."}],
+    ["f38", "AcceptabilityJudgment", {s: "Megállnak a rendőr a ház."}],
+    ["f39", "AcceptabilityJudgment", {s: "Megállnak a ház melett a rendőr."}],
+    ["f40", "AcceptabilityJudgment", {s: "Az együttes befejez a koncertet."}],
+    ["f41", "AcceptabilityJudgment", {s: "A koncertet az együttes befejez."}], */
 
-/*    ["filler", "AcceptabilityJudgment", {s: "Ádám a megeszi vacsora."}],
-    ["filler", "AcceptabilityJudgment", {s: "János ivott meg egy korsóval a vacsorán."}],
-    ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval meg a vacsorán."}],
-    ["filler", "AcceptabilityJudgment", {s: "János ivott egy korsóval a vacsorán meg."}],
-    ["filler", "AcceptabilityJudgment", {s: "János megivott egy korsóval a vacsorán."}],
+    ["f20", "AcceptabilityJudgment", {s: "Ádám a megeszi vacsora."}],
+    ["f21", "AcceptabilityJudgment", {s: "János ivott meg egy korsóval a vacsorán."}],
+    ["f22", "AcceptabilityJudgment", {s: "János ivott egy korsóval meg a vacsorán."}],
+    ["f23", "AcceptabilityJudgment", {s: "János ivott egy korsóval a vacsorán meg."}],
+    ["f24", "AcceptabilityJudgment", {s: "János megivott egy korsóval a vacsorán."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából."}],
-    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István haza az iskolából."}],
-    ["filler", "AcceptabilityJudgment", {s: "Tegnap ment István az iskolából haza."}],
-    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagát a tévében."}],
-    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagukat a tévében."}],
+    ["f25", "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából."}],
+    ["f26", "AcceptabilityJudgment", {s: "Tegnap ment István haza az iskolából."}],
+    ["f27", "AcceptabilityJudgment", {s: "Tegnap ment István az iskolából haza."}],
+    ["f28", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagát a tévében."}],
+    ["f29", "AcceptabilityJudgment", {s: "Imre és Juli látta sajátmagukat a tévében."}],
 
-    ["filler", "AcceptabilityJudgment", {s: "Imre és Juli látták sajátmagukat a tévében."}], */
+    ["f30", "AcceptabilityJudgment", {s: "Imre és Juli látták sajátmagukat a tévében."}]
 
 ];
