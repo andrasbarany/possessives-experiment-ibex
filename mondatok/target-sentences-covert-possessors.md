@@ -30,7 +30,8 @@ modifiers and negation, ...?
 
 ### Sentences (baseline?)
 
-**A: obj vs sbj agreement with dative vs nominative possessors**
+**CONTEXT**!
+**A: obj vs sbj agreement with dative vs nominative possessors (16)**
 
 Mari olvasott a költő versét.               t-A1-mar-nom-sbj
 Mari olvasta a költő versét.                t-A1-mar-nom-obj
@@ -52,6 +53,40 @@ Juli hallotta a zenész dalát.               t-A1-jul-nom-obj
 Juli hallott a zenésznek dalát.             t-A1-jul-dat-sbj
 Juli hallotta a zenésznek dalát.            t-A1-jul-dat-obj
 
+**A/2: obj vs sbj agreement with dative possessors and csak (24)**
+
+Mari csak a költőnek olvasott versét.       t-A2-mar-ext-sbj
+Mari csak a költőnek olvasta versét.        t-A2-mar-ext-obj
+Mari cask a költőnek versét olvasott.       t-A2-mar-int-sbj
+Mari csak a költőnek versét olvasta.        t-A2-mar-int-obj
+
+Mari csak versét olvasott a költőnek.       t-A2-mar-pos-sbj
+Mari csak versét olvasta a költőnek.        t-A2-mar-pos-obj
+
+Péter csak a szomszédnak ismert lányát.     t-A2-pet-ext-sbj
+Péter csak a szomszédnak ismerte lányát.    t-A2-pet-ext-obj
+Péter csak a szomszédnak lányát ismert.     t-A2-pet-int-sbj
+Péter csak a szomszédnak lányát ismerte.    t-A2-pet-int-obj
+
+Péter csak lányát ismert a szomszédnak.     t-A2-pet-pos-sbj
+Péter csak lányát ismerte a szomszédnak.    t-A2-pet-pos-obj
+
+Ádám csak a festőnek keresett tájképét.     t-A2-ada-ext-sbj
+Ádám csak a festőnek kereste tájképét.      t-A2-ada-ext-obj
+Ádám csak a festőnek tájképét keresett.     t-A2-ada-int-sbj
+Ádám csak a festőnek tájképét kereste.      t-A2-ada-int-obj
+
+Ádám csak tájképét keresett a festőnek.     t-A2-ada-pos-sbj
+Ádám csak tájképét kereste a festőnek.      t-A2-ada-pos-obj
+
+Juli csak a zenésznek hallott dalát.        t-A2-jul-ext-sbj
+Juli csak a zenésznek hallotta dalát.       t-A2-jul-ext-obj
+Juli csak a zenésznek dalát hallott.        t-A2-jul-int-sbj
+Juli csak a zenésznek dalát hallotta.       t-A2-jul-int-obj
+
+Juli csak dalát hallott a zenésznek.        t-A2-jul-pos-obj
+Juli csak dalát hallotta a zenésznek.       t-A2-jul-pos-obj
+
 **B: obj vs sbj agreement with null possessors**
 
 Mari olvasott versét.                       t-B1-mar-nil-sbj
@@ -68,7 +103,7 @@ Juli hallotta dalát.                        t-B1-jul-nil-obj
 
 Could we add a context here? Make these into:
 
-**B': obj vs sbj agreement with null possessors**
+**B': obj vs sbj agreement with null possessors (8)**
 
 Petőfi híres költő volt.
 Mari olvasott versét.                       t-B1x-mar-nil-sbj
@@ -112,23 +147,44 @@ Juli hallotta néhány dalát.                 t-B2-jul-nil-obj
 
 Could we add a context here? Make these into:
 
-**B/2': obj vs sbj agreement with null possessors, néhány and context**
+**B/2': obj vs sbj agreement with null possessors, néhány/minden and context (20)**
 
 Petőfi híres költő volt.
-Mari olvasott néhány versét.                t-B2x-mar-nil-sbj
-Mari olvasta néhány versét.                 t-B2x-mar-nil-obj
+Mari olvasott néhány versét.                t-B2n-mar-nil-sbj
+Mari olvasta néhány versét.                 t-B2n-mar-nil-obj
+
+Petőfi híres költő volt.
+Mari olvasott minden versét.                t-B2m-mar-nil-sbj
+Mari olvasta minden versét.                 t-B2m-mar-nil-obj
 
 A szomszédéknak több gyerekük volt.
-Péter ismert néhány lányát.                 t-B2x-pet-nil-sbj
-Péter ismerte néhány lányát.                t-B2x-pet-nil-obj
+Péter ismert néhány lányát.                 t-B2n-pet-nil-sbj
+Péter ismerte néhány lányát.                t-B2n-pet-nil-obj
+
+A szomszédéknak több gyerekük volt.
+Péter ismert minden lányát.                 t-B2m-pet-nil-sbj
+Péter ismerte minden lányát.                t-B2m-pet-nil-obj
 
 Vasarely absztrakt festő volt.
-Ádám keresett néhány tájképét.              t-B2x-ada-nil-sbj
-Ádám kereste néhány tájképét.               t-B2x-ada-nil-obj
+Ádám keresett néhány tájképét.              t-B2n-ada-nil-sbj
+Ádám kereste néhány tájképét.               t-B2n-ada-nil-obj
+
+Ádám keresett minden tájképét.              t-B2m-ada-nil-sbj
+Ádám kereste minden tájképét.               t-B2m-ada-nil-obj
 
 Koncz Zsuzsa híres magyar énekesnő.
-Juli hallott néhány dalát.                  t-B2x-jul-nil-sbj
-Juli hallotta néhány dalát.                 t-B2x-jul-nil-obj
+Juli hallott néhány dalát.                  t-B2n-jul-nil-sbj
+Juli hallotta néhány dalát.                 t-B2n-jul-nil-obj
+
+Juli hallott minden dalát.                  t-B2m-jul-nil-sbj
+Juli hallotta minden dalát.                 t-B2m-jul-nil-obj
+
+A Dallas híres adás volt.
+Zsuzsa látott néhány adását.                t-B2n-zsu-nil-sbj
+Zsuzsa látta néhány adását.                 t-B2n-zsu-nil-obj
+                                                              
+Zsuzsa látott minden adását.                t-B2m-zsu-nil-sbj
+Zsuzsa látta minden adását.                 t-B2m-zsu-nil-obj
 
 ## Does negation make a difference?
 
