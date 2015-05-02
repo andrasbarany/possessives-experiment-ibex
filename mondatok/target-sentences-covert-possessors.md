@@ -28,26 +28,48 @@ A + C(') + D('): 16 + 8 + 8 =   32 target
 **Are two blocks enough?** We could add *minden* as a modifier, combine
 modifiers and negation, ...?
 
+## Comparison version 2
+
+A(16) + A/2(16) + B'(8) + A/dat(8)  =   48 target?
+                                        30 filler
+                                        78
+
+A(16) + A/2(16) + B'(8) + B/2(20/16)=   60 target   (56)
+                                        30 filler
+                                        90          (86)
+
+A(16) + B'(8) + B/2(20/16) + A/dat(8)  =48 target
+                                        30 filler
+                                        78
+
+A(16) + D'(8) + B'(8) + A/dat(8)       =40 target
+                                        30 filler
+                                        70
+
 ### Sentences (baseline?)
 
 **CONTEXT**!
 **A: obj vs sbj agreement with dative vs nominative possessors (16)**
 
-Mari olvasott a költő versét.               t-A1-mar-nom-sbj
-Mari olvasta a költő versét.                t-A1-mar-nom-obj
-Mari olvasott a költőnek versét.            t-A1-mar-dat-sbj
-Mari olvasta a költőnek versét.             t-A1-mar-dat-obj
+Irodalomórán Petőfit és Arany Jánost olvastak a diákok.
+Mari olvasott Petőfi versét.                t-A1-mar-nom-sbj
+Mari olvasta Petőfi versét.                 t-A1-mar-nom-obj
+Mari olvasott Petőfinek versét.             t-A1-mar-dat-sbj
+Mari olvasta Petőfinek versét.              t-A1-mar-dat-obj
 
+Péterék házában sok családnak van gyereke.
 Péter ismert a szomszéd lányát.             t-A1-pet-nom-sbj
 Péter ismerte a szomszéd lányát.            t-A1-pet-nom-obj
 Péter ismert a szomszédnak lányát.          t-A1-pet-dat-sbj
 Péter ismerte a szomszédnak lányát.         t-A1-pet-dat-obj
 
-Ádám keresett a festő tájképét.             t-A1-ada-nom-sbj
-Ádám kereste a festő tájképét.              t-A1-ada-nom-obj
-Ádám keresett a festőnek tájképét.          t-A1-ada-dat-sbj
-Ádám kereste a festőnek tájképét.           t-A1-ada-dat-obj
+Monet-t és Vasarely-t mutatnak be a kiállításon.
+Ádám keresett Monet tájképét.               t-A1-ada-nom-sbj
+Ádám kereste Monet tájképét.                t-A1-ada-nom-obj
+Ádám keresett Monetnek tájképét.            t-A1-ada-dat-sbj
+Ádám kereste Monetnek tájképét.             t-A1-ada-dat-obj
 
+Zenész és más művész is volt a bulin.
 Juli hallott a zenész dalát.                t-A1-jul-nom-sbj
 Juli hallotta a zenész dalát.               t-A1-jul-nom-obj
 Juli hallott a zenésznek dalát.             t-A1-jul-dat-sbj
@@ -55,37 +77,44 @@ Juli hallotta a zenésznek dalát.            t-A1-jul-dat-obj
 
 **A/2: obj vs sbj agreement with dative possessors and csak (24)**
 
-Mari csak a költőnek olvasott versét.       t-A2-mar-ext-sbj
-Mari csak a költőnek olvasta versét.        t-A2-mar-ext-obj
-Mari cask a költőnek versét olvasott.       t-A2-mar-int-sbj
-Mari csak a költőnek versét olvasta.        t-A2-mar-int-obj
+Irodalomórán Petőfit és Arany Jánost olvastak a diákok.
+Mari csak Petőfinek olvasott versét.       t-A2-mar-ext-sbj
+Mari csak Petőfinek olvasta versét.        t-A2-mar-ext-obj
+Mari csak Petőfinek versét olvasott.       t-A2-mar-int-sbj
+Mari csak Petőfinek versét olvasta.        t-A2-mar-int-obj
+#
+#Mari csak versét olvasott a költőnek.       t-A2-mar-pos-sbj
+#Mari csak versét olvasta a költőnek.        t-A2-mar-pos-obj
+#
 
-Mari csak versét olvasott a költőnek.       t-A2-mar-pos-sbj
-Mari csak versét olvasta a költőnek.        t-A2-mar-pos-obj
-
+Péterék házában sok családnak van gyereke.
 Péter csak a szomszédnak ismert lányát.     t-A2-pet-ext-sbj
 Péter csak a szomszédnak ismerte lányát.    t-A2-pet-ext-obj
 Péter csak a szomszédnak lányát ismert.     t-A2-pet-int-sbj
 Péter csak a szomszédnak lányát ismerte.    t-A2-pet-int-obj
+#
+#Péter csak lányát ismert a szomszédnak.     t-A2-pet-pos-sbj
+#Péter csak lányát ismerte a szomszédnak.    t-A2-pet-pos-obj
+#
 
-Péter csak lányát ismert a szomszédnak.     t-A2-pet-pos-sbj
-Péter csak lányát ismerte a szomszédnak.    t-A2-pet-pos-obj
-
+Monet-t és Vasarely-t mutatnak be a kiállításon.
 Ádám csak a festőnek keresett tájképét.     t-A2-ada-ext-sbj
 Ádám csak a festőnek kereste tájképét.      t-A2-ada-ext-obj
 Ádám csak a festőnek tájképét keresett.     t-A2-ada-int-sbj
 Ádám csak a festőnek tájképét kereste.      t-A2-ada-int-obj
+#
+#Ádám csak tájképét keresett a festőnek.     t-A2-ada-pos-sbj
+#Ádám csak tájképét kereste a festőnek.      t-A2-ada-pos-obj
+#
 
-Ádám csak tájképét keresett a festőnek.     t-A2-ada-pos-sbj
-Ádám csak tájképét kereste a festőnek.      t-A2-ada-pos-obj
-
+Zenész és más művész is volt a bulin.
 Juli csak a zenésznek hallott dalát.        t-A2-jul-ext-sbj
 Juli csak a zenésznek hallotta dalát.       t-A2-jul-ext-obj
 Juli csak a zenésznek dalát hallott.        t-A2-jul-int-sbj
 Juli csak a zenésznek dalát hallotta.       t-A2-jul-int-obj
-
-Juli csak dalát hallott a zenésznek.        t-A2-jul-pos-obj
-Juli csak dalát hallotta a zenésznek.       t-A2-jul-pos-obj
+#
+#Juli csak dalát hallott a zenésznek.        t-A2-jul-pos-obj
+#Juli csak dalát hallotta a zenésznek.       t-A2-jul-pos-obj
 
 **B: obj vs sbj agreement with null possessors**
 
