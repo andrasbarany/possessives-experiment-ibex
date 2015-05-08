@@ -1,6 +1,7 @@
 .Question {
     margin-left: 0;
     padding-left: 0;
+    font-weight: bold;
 }
 .instructions-text {
     font-style: italic;
