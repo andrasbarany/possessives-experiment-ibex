@@ -105,8 +105,8 @@ var items = [
     [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
     [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
     [["t-A1-mar-dat-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
-    
-        [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
+
+    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
     [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
     [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
 
@@ -161,8 +161,8 @@ var items = [
     [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
     [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
     [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-    
-        // 17-32: Block 1: A2, Block 2: B2, Block 3: two repetitions of A/dat
+
+    // 17-32: Block 1: A2, Block 2: B2, Block 3: two repetitions of A/dat
 
     [["t-A2-mar-ext-sbj-2", [17, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari csak Petőfinek olvasott versét."}],
     [["t-B2-mar-nil-sbj-n", [17, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott néhány versét."}],
@@ -232,107 +232,107 @@ var items = [
 
     [["t-B1-mar-nil-sbj-2", [33, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott versét"}],
     [["t-B1-mar-nil-sbj-2", [33, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott versét."}],
-    [["tf31", [33, 1]], "AcceptabilityJudgment", {s: "Ádám a megeszi vacsora.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf31", [33, 1]], "AcceptabilityJudgment", {s: "Biztos hallottad a hírt.", q: "Két gyerek ad egy könyvet Marinak."}],
 
     [["t-B1-mar-nil-obj-2", [34, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasta versét."}],
     [["t-B1-mar-nil-obj-2", [34, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasta versét."}],
-    [["tf32", [34, 1]], "AcceptabilityJudgment", {s: "János ivott meg egy korsóval a vacsorán.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf32", [34, 1]], "AcceptabilityJudgment", {s: "Biztos hallottad a hírt.", q: "Megállnak a rendőrök a ház melett."}],
 
     [["t-B1-mar-nil-sbj-2", [35, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismert lányát."}],
     [["t-B1-mar-nil-sbj-2", [35, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismert lányát."}],
-    [["tf33", [35, 1]], "AcceptabilityJudgment", {s: "János ivott egy korsóval meg a vacsorán.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf33", [35, 1]], "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.", q: "A koncertet az együttes befejezte."}],
 
     [["t-B1-mar-nil-obj-2", [36, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismerte lányát."}],
     [["t-B1-mar-nil-obj-2", [36, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismerte lányát."}],
-    [["tf34", [36, 1]], "AcceptabilityJudgment", {s: "János ivott egy korsóval a vacsorán meg.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf34", [36, 1]], "AcceptabilityJudgment", {s: "Láttad, hogy mi történt?", q: "A rendőr megállank ház."}],
 
     [["t-B1-pet-nil-sbj-2", [37, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám keresett tájképét."}],
     [["t-B1-pet-nil-sbj-2", [37, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám keresett tájképét."}],
-    [["tf35", [37, 1]], "AcceptabilityJudgment", {s: "János megivott egy korsóval a vacsorán.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf35", [37, 1]], "AcceptabilityJudgment", {s: "Láttad, hogy mi történt?", q: "A rendőrök a ház mellett álltak meg."}],
 
     [["t-B1-pet-nil-obj-2", [38, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám kereste tájképét."}],
     [["t-B1-pet-nil-obj-2", [38, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám kereste tájképét."}],
-    [["tf36", [38, 1]], "AcceptabilityJudgment", {s: "Tegnap ment haza István az iskolából.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf36", [38, 1]], "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.", q: "Az együttes befejez a koncertet."}],
 
     [["t-B1-pet-nil-sbj-2", [39, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli talált regényét."}],
     [["t-B1-pet-nil-sbj-2", [39, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli talált regényét."}],
-    [["tf37", [39, 1]], "AcceptabilityJudgment", {s: "Tegnap ment István haza az iskolából.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf37", [39, 1]], "AcceptabilityJudgment", {s: "Mi van Ádámmal?", q: "Ádám a megeszi vacsora."}],
 
     [["t-B1-pet-nil-obj-2", [40, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli találta regényét."}],
     [["t-B1-pet-nil-obj-2", [40, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli találta regényét."}],
-    [["tf38", [40, 1]], "AcceptabilityJudgment", {s: "Tegnap ment István az iskolából haza.", q: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf38", [40, 1]], "AcceptabilityJudgment", {s: "Mi van Ádámmal?", q: "Ádám megeszi a vacsorát."}],
 
     // 40-48: Blocks 1/2: empty, Block 3: 8 fillers that don't show up in 1/2
 
     [["sep", [41, 1]], "Separator", {transfer: 0}],
     [["sep", [41, 1]], "Separator", {transfer: 0}],
-    [["tf39", [41, 1]], "AcceptabilityJudgment", {q: "Imre és Juli látta sajátmagát a tévében.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf39", [41, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: ""}],
 
     [["sep", [42, 1]], "Separator", {transfer: 0}],
     [["sep", [42, 1]], "Separator", {transfer: 0}],
-    [["tf40", [42, 1]], "AcceptabilityJudgment", {q: "Imre és Juli látta sajátmagukat a tévében.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf40", [42, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: ""}],
 
     [["sep", [43, 1]], "Separator", {transfer: 0}],
     [["sep", [43, 1]], "Separator", {transfer: 0}],
-    [["tf41", [43, 1]], "AcceptabilityJudgment", {q: "A kutya Maritól futottak el.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf41", [43, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: ""}],
 
     [["sep", [44, 1]], "Separator", {transfer: 0}],
     [["sep", [44, 1]], "Separator", {transfer: 0}],
-    [["tf42", [44, 1]], "AcceptabilityJudgment", {q: "Tegnap mentek haza István az iskolából.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf42", [44, 1]], "AcceptabilityJudgment", {s: "Hol volt István?", q: "Tegnap ment haza István az iskolából."}],
 
     [["sep", [45, 1]], "Separator", {transfer: 0}],
     [["sep", [45, 1]], "Separator", {transfer: 0}],
-    [["tf43", [45, 1]], "AcceptabilityJudgment", {q: "János megivott egy korsóval a vacsorából.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf43", [45, 1]], "AcceptabilityJudgment", {s: "Hol volt István?", q: "Tegnap ment István haza az iskolából."}],
 
     [["sep", [46, 1]], "Separator", {transfer: 0}],
     [["sep", [46, 1]], "Separator", {transfer: 0}],
-    [["tf44", [46, 1]], "AcceptabilityJudgment", {q: "A kutya Maritól elfutott.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf44", [46, 1]], "AcceptabilityJudgment", {s: "Hol volt István?", q: "Tegnap ment István az iskolából haza."}],
 
     [["sep", [47, 1]], "Separator", {transfer: 0}],
     [["sep", [47, 1]], "Separator", {transfer: 0}],
-    [["tf45", [47, 1]], "AcceptabilityJudgment", {q: "Ádámot megeszi a vacsorát.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf45", [47, 1]], "AcceptabilityJudgment", {s: "Együtt nézték a híradót.", q: "Imre és Juli látta sajátmagát a tévében."}],
 
     [["sep", [48, 1]], "Separator", {transfer: 0}],
     [["sep", [48, 1]], "Separator", {transfer: 0}],
-    [["tf46", [48, 1]], "AcceptabilityJudgment", {q: "Két gyerekek adnak egy könvet Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    [["tf46", [48, 1]], "AcceptabilityJudgment", {s: "Együtt nézték a híradót.", q: "Imre és Juli látta sajátmagukat a tévében."}],
 
     // fillers
 
-    ["f01", "AcceptabilityJudgment", {q: "Egy könyvet adnak a gyerekek Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f02", "AcceptabilityJudgment", {q: "Marinak adnak egy könyvet a gyerekek.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f03", "AcceptabilityJudgment", {q: "Két gyerek ad egy könyvet Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f04", "AcceptabilityJudgment", {q: "Megállnak a rendőrök a ház melett.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f05", "AcceptabilityJudgment", {q: "A rendőrök a ház mellett álltak meg.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f01", "AcceptabilityJudgment", {s: "Ma van az osztályfőnök születésnapja.",               q: "Két gyerek adnak egy könyvet Marinak."}],
+    ["f02", "AcceptabilityJudgment", {s: "Ma az osztáylfőnök születésnapja van.",               q: "Marinak adnak két gyerek egy könyvet."}],
+    ["f03", "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.",               q: "A koncert az együttes befejez."}],
+    ["f04", "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.",               q: "Az együttes befejez a koncertet."}],
+    ["f05", "AcceptabilityJudgment", {s: "Ismerem ezt a kóbor kutyát.",                         q: "A kutya elfutott Marinak."}],
 
-    ["f06", "AcceptabilityJudgment", {q: "Egy könyvet adnak a gyerekek Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f07", "AcceptabilityJudgment", {q: "Marinak adnak egy könyvet a gyerekek.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f08", "AcceptabilityJudgment", {q: "Két gyerek ad egy könyvet Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f09", "AcceptabilityJudgment", {q: "Megállnak a rendőrök a ház melett.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f10", "AcceptabilityJudgment", {q: "A rendőrök a ház mellett álltak meg.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f06", "AcceptabilityJudgment", {s: "Ismerem ezt a kóbor kutyát.",                         q: "Elfutnak a kutya Maritól."}],
+    ["f07", "AcceptabilityJudgment", {s: "Minden házkutatás úgyanúgy kezdődik.",                q: "Megállnak a rendőr a ház."}],
+    ["f08", "AcceptabilityJudgment", {s: "Minden házkutatás úgyanúgy kezdődik.",                q: "A rendőr megállank ház melett."}],
+    ["f09", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                q: "Ádám megeszi vacsora biztosan. "}],
+    ["f10", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                q: "A vacsoráját biztosan Ádám megeszi."}],
 
-    ["f11", "AcceptabilityJudgment", {q: "Elfutnak a kutyák Maritól.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f12", "AcceptabilityJudgment", {q: "Egy könyvet adnak a gyerekek Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f13", "AcceptabilityJudgment", {q: "Marinak adnak egy könyvet a gyerekek.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f14", "AcceptabilityJudgment", {q: "Két gyerek ad egy könyvet Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f15", "AcceptabilityJudgment", {q: "Megállnak a rendőrök a ház melett.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f11", "AcceptabilityJudgment", {s: "Tudom, hogy kit kérdezzek meg, hogy milyen az új sör.",   q: "János ivott egy korsóval meg tegnap este."}],
+    ["f12", "AcceptabilityJudgment", {s: "Tudom, hogy kit kérdezzek meg, hogy milyen az új sör.",   q: "János ivott egy korsóval tegnap este meg."}],
+    ["f13", "AcceptabilityJudgment", {s: "Biztos hallottad a hírt.",                                q: "Tegnap ment a nagyfőnök haza a börtönből."}],
+    ["f14", "AcceptabilityJudgment", {s: "Biztos hallottad a hírt.",                                q: "Tegnap ment a nagyfőnök a börtönből haza."}],
+    ["f15", "AcceptabilityJudgment", {s: "A macskánk már nem tudott egyedül bejönni.",              q: "Cirmi nagyobb volt mint a macskaajtó széles."}],
 
-    ["f16", "AcceptabilityJudgment", {q: "A rendőrök a ház mellett álltak meg.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f17", "AcceptabilityJudgment", {q: "Elfutnak a kutyák Maritól.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f18", "AcceptabilityJudgment", {q: "A kutya Maritól futott el.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f19", "AcceptabilityJudgment", {q: "Ádám megeszi a vacsoráját.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f20", "AcceptabilityJudgment", {q: "Ádám megeszi a vacsorát.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f16", "AcceptabilityJudgment", {s: "A gimiben nekem voltak a legfurcsább barátaim.",          q: "Péter szélesebb volt mint Csaba magas."}],
+    ["f17", "AcceptabilityJudgment", {s: "Nem éri meg feladni az árut.",                            q: "A bélyeg drágább mint amilyen nehéz a csomag."}],
+    ["f18", "AcceptabilityJudgment", {s: "Én mindig vonattal utazom.",                              q: "A benzin drágább mint amilyen gyors az auto."}],
+    ["f19", "AcceptabilityJudgment", {s: "Biztos hallotad a hírt.",                                 q: "Tegnap ment haza a nagyfőnök a börtőnből."}],
+    ["f20", "AcceptabilityJudgment", {s: "Tudom, hogy kit kérdezzek meg, hogy milyen az új sör.",   q: "János ivott meg egy korsóval tegnap este."}],
 
-    ["f21", "AcceptabilityJudgment", {q: "A koncertet az együttes befejezte.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f22", "AcceptabilityJudgment", {q: "Két gyerek adnak egy könyvet Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f23", "AcceptabilityJudgment", {q: "Marinak adnak két gyerek egy könyvet.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f24", "AcceptabilityJudgment", {q: "A rendőr megállnak ház.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f25", "AcceptabilityJudgment", {q: "A kutya elfutnak Marinak.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f21", "AcceptabilityJudgment", {s: "Ma van az osztályfőnök születésnapja.",                   q: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f22", "AcceptabilityJudgment", {s: "Ma az osztályfőnök születésnapja van.",                   q: "Marinak adnak egy könyvet a gyerekek."}],
+    ["f23", "AcceptabilityJudgment", {s: "Ma van a ballagás, az ünnepségre mindent megszerveztek.", q: "Két gyerek ad egy könyvet Marinak."}],
+    ["f24", "AcceptabilityJudgment", {s: "Két gyerek ad egy könyvet Marinak.",                      q: "Az együttes befelyezi a koncertet."}],
+    ["f25", "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.",                   q: "A kutya Maritól futott el."}],
 
-    ["f26", "AcceptabilityJudgment", {q: "Elfutnak a kutya Maritól.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f27", "AcceptabilityJudgment", {q: "Megállnak a rendőr a ház.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f28", "AcceptabilityJudgment", {q: "Megállnak a ház melett a rendőr.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f29", "AcceptabilityJudgment", {q: "Az együttes befejez a koncertet.", s: "Egy könyvet adnak a gyerekek Marinak."}],
-    ["f30", "AcceptabilityJudgment", {q: "A koncertet az együttes befejez.", s: "Egy könyvet adnak a gyerekek Marinak."}],
+    ["f26", "AcceptabilityJudgment", {s: "Ismerem ezt a kóbor kutyát.",                             q: "Maritól futott el a kutya."}],
+    ["f27", "AcceptabilityJudgment", {s: "Ismerem ezt a kóbor kutyát.",                             q: "Megállnak a rendőrök a ház mellett."}],
+    ["f28", "AcceptabilityJudgment", {s: "Minden házkutatás ugyanúgy kezdődik.",                    q: "A rendőrök a ház mellett álltak meg."}],
+    ["f29", "AcceptabilityJudgment", {s: "Minden házkutatás ugyanúgy kezdődik.",                    q: "Ádám biztosan megeszi a vacsoráját."}],
+    ["f30", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                    q: "Ádám megeszi a vacsorát, az biztos."}],
 
 ];
 
