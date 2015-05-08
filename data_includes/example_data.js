@@ -61,9 +61,9 @@ var items = [
     // Three practice items for acceptability judgments. No groups necessary
     // here, everyone can can get the same sentences.
 
-    ["practice", "AcceptabilityJudgment", {s: "Ismerem Mari hugát."}],
-    ["practice", "AcceptabilityJudgment", {s: "Laci látja az autót."}],
-    ["practice", "AcceptabilityJudgment", {s: "Péter mentek haza."}],
+    ["practice", "AcceptabilityJudgment", {s: "Marinak több testvére van.", q: "Ismerem Mari hugát."}],
+    ["practice", "AcceptabilityJudgment", {s: "Az utcán sétaltak.",         q: "Laci látja az autót."}],
+    ["practice", "AcceptabilityJudgment", {s: "Mi történt?",                q: "Péter mentek haza."}],
 
     // These, without groups, show up for everyone.
 
@@ -266,15 +266,15 @@ var items = [
 
     [["sep", [41, 1]], "Separator", {transfer: 0}],
     [["sep", [41, 1]], "Separator", {transfer: 0}],
-    [["tf39", [41, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: ""}],
+    [["tf39", [41, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: "János ivott meg egy korsóval a vacsorán."}],
 
     [["sep", [42, 1]], "Separator", {transfer: 0}],
     [["sep", [42, 1]], "Separator", {transfer: 0}],
-    [["tf40", [42, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: ""}],
+    [["tf40", [42, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: "János ivott egy korsóval meg a vacsorán."}],
 
     [["sep", [43, 1]], "Separator", {transfer: 0}],
     [["sep", [43, 1]], "Separator", {transfer: 0}],
-    [["tf41", [43, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: ""}],
+    [["tf41", [43, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: "János ivott egy korsóval a vacsorán meg."}],
 
     [["sep", [44, 1]], "Separator", {transfer: 0}],
     [["sep", [44, 1]], "Separator", {transfer: 0}],
