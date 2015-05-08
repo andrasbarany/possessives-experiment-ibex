@@ -51,12 +51,12 @@ var items = [
     // NOTE: You could also use the 'Message' controller for the experiment
     // intro (this provides a simple consent checkbox).
 
-/*    ["intro", "Form", {
+    ["intro", "Form", {
         html: { include: "example_intro.html" },
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
-    } ], */
+    } ],
 
     // Three practice items for acceptability judgments. No groups necessary
     // here, everyone can can get the same sentences.
@@ -306,7 +306,7 @@ var items = [
 
     ["f06", "AcceptabilityJudgment", {s: "Ismerem ezt a kóbor kutyát.",                         q: "Elfutnak a kutya Maritól."}],
     ["f07", "AcceptabilityJudgment", {s: "Minden házkutatás úgyanúgy kezdődik.",                q: "Megállnak a rendőr a ház."}],
-    ["f08", "AcceptabilityJudgment", {s: "Minden házkutatás úgyanúgy kezdődik.",                q: "A rendőr megállank ház melett."}],
+    ["f08", "AcceptabilityJudgment", {s: "Minden házkutatás úgyanúgy kezdődik.",                q: "A rendőr megállnak ház melett."}],
     ["f09", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                q: "Ádám megeszi vacsora biztosan. "}],
     ["f10", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                q: "A vacsoráját biztosan Ádám megeszi."}],
 
