@@ -105,8 +105,8 @@ var items = [
     [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
     [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
     [["t-A1-mar-dat-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
-    
-        [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
+
+    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
     [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
     [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
 
@@ -161,7 +161,7 @@ var items = [
     [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
     [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
     [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-    
+
         // 17-32: Block 1: A2, Block 2: B2, Block 3: two repetitions of A/dat
 
     [["t-A2-mar-ext-sbj-2", [17, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari csak Petőfinek olvasott versét."}],
