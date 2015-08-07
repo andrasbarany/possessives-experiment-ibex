@@ -24,8 +24,8 @@ data_results$type = as.factor(data_results$type)
 
 # getting blokks A and B is easy:
 
-blokkA <- data.results[data_results$type=="t-A2-mar-ext-sbj-2"]$subject
-blokkB <- data.results[data_results$type=="t-B2-mar-nil-sbn-n"]$subject
+blokkA <- data_results[data_results$type=="t-A2-mar-ext-sbj-2", ]$subject
+blokkB <- data_results[data_results$type=="t-B2-mar-nil-sbj-n", ]$subject
 blokkC <- alldata_results[alldata_results$type=="tf39", ]$subject
 
 blokkA <- droplevels(blokkA)
