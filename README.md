@@ -2,7 +2,7 @@
 
 Aktuális mondatok:
 
-## Első rész: Acceptability judgments (20 target)
+### Első rész: Acceptability judgments (20 target)
 
 ```
 1.      Péter gyakran járt a szomszédékhoz.
@@ -34,7 +34,7 @@ Aktuális mondatok:
     e.  Végül megtalálta az írónak egy regényét.
 ```
 
-## Második rész: forced choice kontextus nélkül (20 target)
+### Második rész: forced choice kontextus nélkül (20 target)
 
 ```
 5.      Melyik mondat helyesebb?
@@ -62,7 +62,7 @@ Aktuális mondatok:
         "Olvasta Petőfinek a versét." , "Olvasta Petőfinek egy versét."
 ```
 
-## Harmadik rész: forced choice kontextussal (20 target)
+### Harmadik rész: forced choice kontextussal (20 target)
 
 ```
 7.      Kovács János híres festő, de egy verset is írt. — Melyik mondat helyesebb?
@@ -87,7 +87,7 @@ Aktuális mondatok:
         "Péter ismeri a költő tájképet."          , "Péter ismeri a költőnek a tájképet."
         "Péter ismeri a költőnek tájképet."       , "Péter ismeri a költőnek egy tájképet."
         "Péter ismeri a költőnek tájképet."       , "Péter ismeri a költőnek a tájképet."
+        "Péter ismeri a költőnek egy tájképet."   , "Péter ismeri a költőnek a tájképet."
 ```
 
-## Negyedik, ötödik, ...?
-        "Péter ismeri a költőnek egy tájképet."   , "Péter ismeri a költőnek a tájképet."
+### Negyedik, ötödik, ...?
