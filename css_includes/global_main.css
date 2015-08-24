@@ -2,8 +2,7 @@ body {
     color: black;
     background-color: white;
     margin-left: 0;
-    margin-top: 3em;
-    font-family: 'Source Sans Pro';
+    margin-top: 5em;
 }
 .lindent { margin-left: 5em; }
 .sending-results {
