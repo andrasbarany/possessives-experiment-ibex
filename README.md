@@ -1,5 +1,9 @@
 # possessives-experiment-ibex
 
+Aktuális felmérés:
+
+[http://spellout.net/ibexexps/Andraas/magyar3/experiment.html]
+
 Aktuális mondatok:
 
 ### Első rész: Acceptability judgments (20 target)
