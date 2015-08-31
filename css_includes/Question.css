@@ -9,6 +9,7 @@
     clear: left;
     padding-top: 1em;
     font-size: small;
+    font-weight: normal;
 }
 li.normal-answer {
     text-align: left;
@@ -59,4 +60,3 @@ span.fake-link {
 span:hover.fake-link {
     cursor: pointer;
 }
-
