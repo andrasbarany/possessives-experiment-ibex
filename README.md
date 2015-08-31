@@ -6,7 +6,7 @@ http://spellout.net/ibexexps/Andraas/magyar3/experiment.html
 
 Aktuális mondatok:
 
-### Első rész: Acceptability judgments (20 target)
+### Első rész: Acceptability judgments — 5 target fejenként
 
 A kontextus itt csak megkönnyebíti a mondatok értelmezését?
 
@@ -28,7 +28,7 @@ várjuk, hogy a névelőnek van hatása.
     d.  Olvasta Petőfinek a versét.
     e.  Olvasta Petőfinek egy versét.
 
-3.      Ádám nagy Monet-rajongó.
+(3.      Ádám nagy Monet-rajongó.                   Ezeket ne teszteljük!
     a.  Kereste Monet tájképét.
     b.  Kereste Monet egy tájképét.
     c.  Kereste Monetnek tájképét.
@@ -40,10 +40,10 @@ várjuk, hogy a névelőnek van hatása.
     b.  Végül megtalálta az író egy regényét.
     c.  Végül megtalálta az írónak regényét.
     d.  Végül megtalálta az írónak a regényét.
-    e.  Végül megtalálta az írónak egy regényét.
+    e.  Végül megtalálta az írónak egy regényét.)
 ```
 
-### Második rész: forced choice kontextus nélkül (20 target)
+### Második rész: forced choice kontextus nélkül — 10 target fejenként
 
 **Kérdés:** Jobbak a névelős variáncsok mint a névelő nélküliek? Ha van nulla D,
 nem várjuk, hogy a névelőnek van hatása.
@@ -74,7 +74,7 @@ nem várjuk, hogy a névelőnek van hatása.
         "Olvasta Petőfinek a versét." , "Olvasta Petőfinek egy versét."
 ```
 
-### Harmadik rész: forced choice kontextussal (40 target)
+### Harmadik rész: forced choice kontextussal — 20 target fejenként
 
 A kontextus meghatározza, hogy a targetek tárgya határozott-e vagy nem.
 
@@ -131,7 +131,7 @@ rosszabbak mint a határozottak. Nulla D-vel is?
         "Péter látta a költőnek egy tájképet."   , "Péter látta a költőnek a tájképet."
 ```
 
-### Negyedik: Acceptability judgments §3 kontextusaival (20 target?)
+### Negyedik: Acceptability judgments §3 kontextusaival — 10 target fejenként
 
 A kontextus meghatározza, hogy határozott-e a target tárgya.
 
@@ -139,28 +139,28 @@ A kontextus meghatározza, hogy határozott-e a target tárgya.
 elfogadható, azt teszteljük, hogy határozott vagy határozatlan tárggyal jobb-e.
 
 ```
-9.      Kovács János híres festő, de egy verset is írt.
+11.      Kovács János híres festő, de egy verset is írt.
         a.  Mari olvasta a festő versét.
         b.  Mari olvasta a festő egy versét.
         c.  Mari olvasta a festőnek versét.
         d.  Mari olvasta a festőnek egy versét.
         e.  Mari olvasta a festőnek a versét.
 
-10 .    Kovács János híres festő, de több verset is írt.
+12 .    Kovács János híres festő, de több verset is írt.
         a.  Mari olvasta a festő versét.
         b.  Mari olvasta a festő egy versét.
         c.  Mari olvasta a festőnek versét.
         d.  Mari olvasta a festőnek egy versét.
         e.  Mari olvasta a festőnek a versét.
 
-11.     Schmitt Anna ismert költő, de egy tájképet is festett.
+13.     Schmitt Anna ismert költő, de egy tájképet is festett.
         a.  Péter látta a költő tájképét.
         b.  Péter látta a költő egy tájképét.
         c.  Péter látta a költőnek tájképét.
         d.  Péter látta a költőnek egy tájképét.
         e.  Péter látta a költőnek a tájképét.
 
-12.     Schmitt Anna ismert költő, de több tájképet is festett.
+14.     Schmitt Anna ismert költő, de több tájképet is festett.
         a.  Péter látta a költő tájképét.
         b.  Péter látta a költő egy tájképét.
         c.  Péter látta a költőnek tájképét.
@@ -168,6 +168,22 @@ elfogadható, azt teszteljük, hogy határozott vagy határozatlan tárggyal job
         e.  Péter látta a költőnek a tájképét.
 ```
 
-### Ötödik, ...?
+### Csoportosítás
 
+#### Blokk A
 
+- 1.: 5 acceptability judgment
+- 5.: 10 forced choice
+- 7./8.: 20 forced choice
+- 11./12.: 10 acceptability judgment
+
+Összesen **45 target**. Plusz 50-60 filler? 15 AJ kontextussal/nélkül, 15 FC kontextussal/nélkül?
+
+#### Blokk B
+
+- 2.: 5 acceptability judgment
+- 6.: 10 forced choice
+- 9./10.: 20 forced choice 
+- 13./14.: 10 acceptability judgment
+
+Összesen **45 target**. Plusz a fillerek.
