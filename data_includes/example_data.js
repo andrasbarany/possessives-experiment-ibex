@@ -28,6 +28,9 @@ var defaults = [
         presentAsScale: false,
         instructions: "Válasszon egy mondatot."
     },
+    "Question", {
+        instructions: "Válasszon egy mondatot."
+    },
     "Message", {
         hideProgressBar: true
     },

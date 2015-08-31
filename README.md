@@ -183,7 +183,7 @@ elfogadható, azt teszteljük, hogy határozott vagy határozatlan tárggyal job
 
 - 2.: 5 acceptability judgment
 - 6.: 10 forced choice
-- 9./10.: 20 forced choice 
+- 9./10.: 20 forced choice
 - 13./14.: 10 acceptability judgment
 
 Összesen **45 target**. Plusz a fillerek.
