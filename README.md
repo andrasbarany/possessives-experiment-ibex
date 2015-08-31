@@ -15,11 +15,11 @@ várjuk, hogy a névelőnek van hatása.
 
 ```
 1.      Péter gyakran járt a szomszédékhoz.
-    a.  Ismerte a szomszéd nővérét.
-    b.  Ismerte a szomszéd egy nővérét.
-    c.  Ismerte a szomszédnak nővérét.
-    d.  Ismerte a szomszédnak a nővérét.
-    e.  Ismerte a szomszédnak egy nővérét.
+    a.  Ismerte a szomszéd nővérét.                 t-A1-pet-nom-def
+    b.  Ismerte a szomszéd egy nővérét.             t-A1-pet-nom-ind
+    c.  Ismerte a szomszédnak nővérét.              t-A1-pet-dat-nil
+    d.  Ismerte a szomszédnak a nővérét.            t-A1-pet-dat-def
+    e.  Ismerte a szomszédnak egy nővérét.          t-A1-pet-dat-ind
 
 2.      Mari imádja a magyar irodalmat.
     a.  Olvasta Petőfi versét.
