@@ -73,58 +73,29 @@ var items = [
 
     // ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
 
-    // Splitting the sentences up into groups. We are testing conditions across
-    // groups of participants. This means that not all participants will see
-    // the same examples, but we can compare results across participants.
+    // Két blokkunk van ebben a felmérésben (2015 szeptember)
+    // Blokk A: 5 AJ, 10 FC, 20 FC, 10 AJ, plusz fillerek
+    // Blokk B: 5 AJ, 10 FC, 20 FC, 10 AJ, plusz fillerek
     //
-    // The idea is that there are three blocks of examples. Each participant
-    // will see examples from one of these blocks and when all blocks have been
-    // seen, the next participant gets the first block again. So for 5
-    // participants R1-R5, R1-3 will see blocks B1-3, R4 will see B1, R5 will
-    // see B2 etc.
+    // [["...", 1], A]
+    // [["...", 1], B]
     //
-    // This is implemented by using the Latin square-aspect of ibex, more
-    // specifically its group features.
+    // [["...", [2, 1], A]
+    // [["...", [2, 1], B]
     //
-    // We have three different blocks.
-    //
-    // Block 1: A (16) + A2 (16) + B (8) = 40 + 30 filler
-    // Block 2: A (16) + B2 (16) + B (8) = 40 + 30 filler
-    // Block 3: A/dat (8) * 4 = 32 + 46 filler
-    //
-    // ["...", 1], A]
-    // ["...", 1], A]
-    // ["...", 1], A/dat]
-    //
-    // ["...", [2, 1], A]
-    // ["...", [2, 1], A]
-    // ["...", [2, 1], A/dat]
-    //
-    // 01-16: Acceptability judgments.
+    // 01-05: Acceptability judgments.
 
-    ["t-A1-pet-nom-sbj-1", "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszéd nővérét."}],
-    ["t-A1-pet-nom-ind-1", "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszéd egy nővérét."}],
-    ["t-A1-pet-dat-non-1", "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak nővérét."}],
-    ["t-A1-pet-dat-def-1", "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak a nővérét."}],
-    ["t-A1-pet-dat-ind-1", "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak egy nővérét."}],
+    [["t-A1-pet-nom-def", 1], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszéd nővérét."}],
+    [["t-A1-pet-nom-ind", 1], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszéd egy nővérét."}],
+    [["t-A1-pet-dat-nil", 1], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak nővérét."}],
+    [["t-A1-pet-dat-def", 1], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak a nővérét."}],
+    [["t-A1-pet-dat-ind", 1], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak egy nővérét."}],
 
-    ["t-A1-mar-nom-sbj-1", "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfi versét."}],
-    ["t-A1-mar-nom-ind-1", "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfi egy versét."}],
-    ["t-A1-mar-dat-non-1", "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek versét."}],
-    ["t-A1-mar-dat-def-1", "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek a versét."}],
-    ["t-A1-mar-dat-ind-1", "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek egy versét."}],
-
-    ["t-A1-ada-nom-sbj-1", "AcceptabilityJudgment",  {s: "Ádám nagy Monet-rajongó.", q: "Kereste Monet tájképét."}],
-    ["t-A1-ada-nom-ind-1", "AcceptabilityJudgment",  {s: "Ádám nagy Monet-rajongó.", q: "Kereste Monet egy tájképét."}],
-    ["t-A1-ada-dat-non-1", "AcceptabilityJudgment",  {s: "Ádám nagy Monet-rajongó.", q: "Kereste Monetnek tájképét."}],
-    ["t-A1-ada-dat-def-1", "AcceptabilityJudgment",  {s: "Ádám nagy Monet-rajongó.", q: "Kereste Monetnek a tájképét."}],
-    ["t-A1-ada-dat-ind-1", "AcceptabilityJudgment",  {s: "Ádám nagy Monet-rajongó.", q: "Kereste Monetnek egy tájképét."}],
-
-    ["t-A1-jul-nom-sbj-1", "AcceptabilityJudgment",  {s: "Juli sok időt töltött a könyvesboltban.", q: "Végül megtalálta az író regényét."}],
-    ["t-A1-jul-nom-ind-1", "AcceptabilityJudgment",  {s: "Juli sok időt töltött a könyvesboltban.", q: "Végül megtalálta az író egy regényét."}],
-    ["t-A1-jul-dat-non-1", "AcceptabilityJudgment",  {s: "Juli sok időt töltött a könyvesboltban.", q: "Végül megtalálta az írónak regényét."}],
-    ["t-A1-jul-dat-def-1", "AcceptabilityJudgment",  {s: "Juli sok időt töltött a könyvesboltban.", q: "Végül megtalálta az írónak a regényét."}],
-    ["t-A1-jul-dat-ind-1", "AcceptabilityJudgment",  {s: "Juli sok időt töltött a könyvesboltban.", q: "Végül megtalálta az írónak egy regényét."}],
+    [["t-B1-mar-nom-def", 1], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfi versét."}],
+    [["t-B1-mar-nom-ind", 1], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfi egy versét."}],
+    [["t-B1-mar-dat-nil", 1], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek versét."}],
+    [["t-B1-mar-dat-def", 1], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek a versét."}],
+    [["t-B1-mar-dat-ind", 1], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek egy versét."}],
 
     // 17-41: Forced choice on the previous data.
     //
