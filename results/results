@@ -1,0 +1,160 @@
+#
+# Results on Friday August 07 2015 12:10:50 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0
+# Design number was non-random = 0
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,2,0,practice,NULL,Ismerem Mari egy hugát.,6,NULL,521
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,3,0,practice,NULL,Laci látja az autót.,6,NULL,590
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,4,0,practice,NULL,Péter mentek haza.,6,NULL,507
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,Question,6,0,t-B1-pet-dat-ind-1,NULL,Melyik mondat helyesebb?,Ismerte a szomszédnak nővérét.,NULL,1141
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,8,0,t-D1-mar-dat-ind-1,NULL,undefined
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,8,0,t-D1-mar-dat-ind-1,NULL,Mari olvasta a költő egy versét.,5,NULL,734
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,5,0,t-A1-pet-nom-sbj-1,NULL,undefined
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,5,0,t-A1-pet-nom-sbj-1,NULL,Ismerte a szomszéd nővérét.,4,NULL,3565
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,9,0,t-E1-mar-dat-ind-1,NULL,undefined
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,AcceptabilityJudgment,9,0,t-E1-mar-dat-ind-1,NULL,Mari a festőnek tegnap olvasta a versét.,7,NULL,5395
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,ForcedQuestion,7,0,t-C1-mar-dat-ind-1,NULL,undefined
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Question (NULL if none).
+# 9. Answer.
+# 10. Whether or not answer was correct (NULL if N/A).
+# 11. Time taken to answer.
+1438949451,7ef2051d4d99fbc6d387cba8e1552263,ForcedQuestion,7,0,t-C1-mar-dat-ind-1,NULL,Melyik mondat helyesebb?,Mari olvasta költőnek egy versét.,NULL,18504
+#
+# Results on Thursday August 20 2015 07:34:45 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:41.0) Gecko/20100101 Firefox/41.0
+# Design number was non-random = 1
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,2,0,practice,NULL,undefined
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,2,0,practice,NULL,Ismerem Mari egy hugát.,7,NULL,975
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,3,0,practice,NULL,undefined
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,3,0,practice,NULL,Laci látja az autót.,7,NULL,452
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,4,0,practice,NULL,undefined
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,4,0,practice,NULL,Péter mentek haza.,7,NULL,404
+1440056086,85565c6ef698409b1584e89d80d07068,ForcedQuestion,7,0,t-C1-mar-dat-ind-1,NULL,undefined
+1440056086,85565c6ef698409b1584e89d80d07068,ForcedQuestion,7,0,t-C1-mar-dat-ind-1,NULL,Melyik mondat helyesebb?,Mari olvasta a költő egy versét.,NULL,3860
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1440056086,85565c6ef698409b1584e89d80d07068,Question,6,0,t-B1-pet-dat-ind-1,NULL,Melyik mondat helyesebb?,Ismerte a szomszédnak nővérét.,NULL,1081
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,9,0,t-E1-mar-dat-ind-1,NULL,undefined
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,9,0,t-E1-mar-dat-ind-1,NULL,Mari a festőnek tegnap olvasta a versét.,4,NULL,40458
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,5,0,t-A1-pet-nom-sbj-1,NULL,undefined
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,5,0,t-A1-pet-nom-sbj-1,NULL,Ismerte a szomszéd nővérét.,3,NULL,644
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,8,0,t-D1-mar-dat-ind-1,NULL,undefined
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Question (NULL if none).
+# 9. Answer.
+# 10. Whether or not answer was correct (NULL if N/A).
+# 11. Time taken to answer.
+1440056086,85565c6ef698409b1584e89d80d07068,AcceptabilityJudgment,8,0,t-D1-mar-dat-ind-1,NULL,Mari olvasta a költő egy versét.,2,NULL,717

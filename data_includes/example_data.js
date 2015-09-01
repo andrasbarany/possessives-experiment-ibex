@@ -3,7 +3,7 @@
 // randomly selects elements from among the targets (...startsWith("t")...) and
 // fillers.
 
-var shuffleSequence = seq("intro", seq("practice", rshuffle(startsWith("t"), startsWith("f"))));
+var shuffleSequence = /*seq("intro", */seq("practice", rshuffle(startsWith("t"), startsWith("f")));//);
 
 var practiceItemTypes = ["practice"];
 
@@ -23,6 +23,13 @@ var defaults = [
         presentAsScale: true,
         instructions: "Kattintson egy számra.",
         leftComment: "(Természetellenes)", rightComment: "(Természetes)"
+    },
+    "ForcedQuestion", {
+        presentAsScale: false,
+        instructions: "Válasszon egy mondatot."
+    },
+    "Question", {
+        instructions: "Válasszon egy mondatot."
     },
     "Message", {
         hideProgressBar: true
@@ -61,7 +68,7 @@ var items = [
     // Three practice items for acceptability judgments. No groups necessary
     // here, everyone can can get the same sentences.
 
-    ["practice", "AcceptabilityJudgment", {s: "Marinak több testvére van.", q: "Ismerem Mari hugát."}],
+    ["practice", "AcceptabilityJudgment", {s: "Marinak több testvére van.", q: "Ismerem Mari egy hugát."}],
     ["practice", "AcceptabilityJudgment", {s: "Az utcán sétaltak.",         q: "Laci látja az autót."}],
     ["practice", "AcceptabilityJudgment", {s: "Mi történt?",                q: "Péter mentek haza."}],
 
@@ -69,217 +76,128 @@ var items = [
 
     // ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
 
-    // Splitting the sentences up into groups. We are testing conditions across
-    // groups of participants. This means that not all participants will see
-    // the same examples, but we can compare results across participants.
+    // Két blokkunk van ebben a felmérésben (2015 szeptember)
+    // Blokk A: 5 AJ, 10 FC, 20 FC, 10 AJ, plusz fillerek
+    // Blokk B: 5 AJ, 10 FC, 20 FC, 10 AJ, plusz fillerek
     //
-    // The idea is that there are three blocks of examples. Each participant
-    // will see examples from one of these blocks and when all blocks have been
-    // seen, the next participant gets the first block again. So for 5
-    // participants R1-R5, R1-3 will see blocks B1-3, R4 will see B1, R5 will
-    // see B2 etc.
+    // [["...", 1], A]
+    // [["...", 1], B]
     //
-    // This is implemented by using the Latin square-aspect of ibex, more
-    // specifically its group features.
+    // [["...", [2, 1], A]
+    // [["...", [2, 1], B]
     //
-    // We have three different blocks.
+    // 01-05: Acceptability judgments.
+
+    [["t-A1-pet-nom-def", 1], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszéd nővérét."}],
+    [["t-A1-pet-nom-ind", [2, 1]], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszéd egy nővérét."}],
+    [["t-A1-pet-dat-nil", [3, 1]], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak nővérét."}],
+    [["t-A1-pet-dat-def", [4, 1]], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak a nővérét."}],
+    [["t-A1-pet-dat-ind", [5, 1]], "AcceptabilityJudgment",  {s: "Péter gyakran járt a szomszédékhoz.", q: "Ismerte a szomszédnak egy nővérét."}],
+
+    [["t-B1-mar-nom-def", 1], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfi versét."}],
+    [["t-B1-mar-nom-ind", [2, 1]], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfi egy versét."}],
+    [["t-B1-mar-dat-nil", [3, 1]], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek versét."}],
+    [["t-B1-mar-dat-def", [4, 1]], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek a versét."}],
+    [["t-B1-mar-dat-ind", [5, 1]], "AcceptabilityJudgment",  {s: "Mari imádja a magyar irodalmat.", q: "Olvasta Petőfinek egy versét."}],
+
+    // 06-15: Forced choice, kontextus nélkül.
+
+    [["t-A2-pet-fc-0", [6, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd nővérét."        , "Ismerte a szomszédnak nővérét."            ]}] ,
+    [["t-A2-pet-fc-1", [7, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd nővérét."        , "Ismerte a szomszédnak a nővérét."          ]}] ,
+    [["t-A2-pet-fc-2", [8, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd nővérét."        , "Ismerte a szomszédnak egy nővérét."        ]}] ,
+    [["t-A2-pet-fc-3", [9, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd nővérét."        , "Ismerte a szomszéd egy nővérét."           ]}] ,
+    [["t-A2-pet-fc-4", [10, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd egy nővérét."    , "Ismerte a szomszédnak nővérét."        ]}]     ,
+    [["t-A2-pet-fc-5", [11, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd egy nővérét."    , "Ismerte a szomszédnak egy nővérét."    ]}]     ,
+    [["t-A2-pet-fc-6", [12, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszéd egy nővérét."    , "Ismerte a szomszédnak a nővérét."      ]}]     ,
+    [["t-A2-pet-fc-7", [13, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszédnak a nővérét."   , "Ismerte a szomszédnak nővérét."       ]}]      ,
+    [["t-A2-pet-fc-8", [14, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszédnak a nővérét."   , "Ismerte a szomszédnak egy nővérét."   ]}]      ,
+    [["t-A2-pet-fc-9", [15, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Ismerte a szomszédnak egy nővérét." , "Ismerte a szomszédnak nővérét."     ]}]        ,
+
+    [["t-B2-mar-fc-0", [6, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi versét."      , "Olvasta Petőfi egy versét."                     ]}] ,
+    [["t-B2-mar-fc-1", [7, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi versét."      , "Olvasta Petőfinek versét."                      ]}] ,
+    [["t-B2-mar-fc-2", [8, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi versét."      , "Olvasta Petőfinek a versét."                    ]}] ,
+    [["t-B2-mar-fc-3", [9, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi versét."      , "Olvasta Petőfinek egy versét."                  ]}] ,
+    [["t-B2-mar-fc-4", [10, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi egy versét."  , "Olvasta Petőfinek versét."                      ]}] ,
+    [["t-B2-mar-fc-5", [11, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi egy versét."  , "Olvasta Petőfinek a versét."                    ]}] ,
+    [["t-B2-mar-fc-6", [12, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfi egy versét."  , "Olvasta Petőfinek egy versét."                  ]}] ,
+    [["t-B2-mar-fc-7", [13, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfinek versét."   , "Olvasta Petőfinek a versét."                    ]}] ,
+    [["t-B2-mar-fc-8", [14, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfinek versét."   , "Olvasta Petőfinek egy versét."                  ]}] ,
+    [["t-B2-mar-fc-9", [15, 1]], "Question" , {q: "Melyik mondat helyesebb?" , as: ["Olvasta Petőfinek a versét." , "Olvasta Petőfinek egy versét."                  ]}] ,
+
+    // 16-35: Forced choice kontextussal. Egy határozott, egy határozatlan.
     //
-    // Block 1: A (16) + A2 (16) + B (8) = 40 + 30 filler
-    // Block 2: A (16) + B2 (16) + B (8) = 40 + 30 filler
-    // Block 3: A/dat (8) * 4 = 32 + 46 filler
-    //
-    // ["...", 1], A]
-    // ["...", 1], A]
-    // ["...", 1], A/dat]
-    //
-    // ["...", [2, 1], A]
-    // ["...", [2, 1], A]
-    // ["...", [2, 1], A/dat]
-    //
-    // 01-16: A for Blocks 1/2, two repetitions of A/dat for Block 3
 
-    [["t-A1-mar-nom-sbj-2", 1], "AcceptabilityJudgment",        {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfi versét."}],
-    [["t-A1-mar-nom-sbj-2", 1], "AcceptabilityJudgment",        {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfi versét."}],
-    [["t-A1-mar-dat-sbj-2", 1], "AcceptabilityJudgment",        {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
+    [["t-A3-pet-fc-def-0", [16, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költő tájképet."            ]}]   ,
+    [["t-A3-pet-fc-def-1", [17, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költőnek tájképet."         ]}]   ,
+    [["t-A3-pet-fc-def-2", [18, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költőnek egy tájképet."     ]}]   ,
+    [["t-A3-pet-fc-def-3", [19, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költőnek a tájképet."       ]}]   ,
+    [["t-A3-pet-fc-def-4", [20, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő tájképet."         , "Péter látta a költőnek tájképet."       ]}]     ,
+    [["t-A3-pet-fc-def-5", [21, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő tájképet."         , "Péter látta a költőnek egy tájképet."       ]}] ,
+    [["t-A3-pet-fc-def-6", [22, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő tájképet."         , "Péter látta a költőnek a tájképet."       ]}]   ,
+    [["t-A3-pet-fc-def-7", [23, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költőnek tájképet."      , "Péter látta a költőnek egy tájképet."       ]}] ,
+    [["t-A3-pet-fc-def-8", [24, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költőnek tájképet."      , "Péter látta a költőnek a tájképet."       ]}]   ,
+    [["t-A3-pet-fc-def-9", [25, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de egy tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költőnek egy tájképet."  , "Péter látta a költőnek a tájképet."       ]}]   ,
 
-<<<<<<< HEAD
-    [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
-    [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
-    [["t-A1-mar-dat-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
+    [["t-A3-pet-fc-ind-0", [26, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költő tájképet."            ]}]   ,
+    [["t-A3-pet-fc-ind-1", [27, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költőnek tájképet."         ]}]   ,
+    [["t-A3-pet-fc-ind-2", [28, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költőnek egy tájképet."     ]}]   ,
+    [["t-A3-pet-fc-ind-3", [29, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő egy tájképét."     , "Péter látta a költőnek a tájképet."       ]}]   ,
+    [["t-A3-pet-fc-ind-4", [30, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő tájképet."         , "Péter látta a költőnek tájképet."       ]}]     ,
+    [["t-A3-pet-fc-ind-5", [31, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő tájképet."         , "Péter látta a költőnek egy tájképet."       ]}] ,
+    [["t-A3-pet-fc-ind-6", [32, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költő tájképet."         , "Péter látta a költőnek a tájképet."       ]}]   ,
+    [["t-A3-pet-fc-ind-7", [33, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költőnek tájképet."      , "Péter látta a költőnek egy tájképet."       ]}] ,
+    [["t-A3-pet-fc-ind-8", [34, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költőnek tájképet."      , "Péter látta a költőnek a tájképet."       ]}]   ,
+    [["t-A3-pet-fc-ind-9", [35, 1]], "ForcedQuestion" , {s: "Schmitt Anna ismert költő, de több tájképet is festett." , q: "Melyik mondat helyesebb?" , as: ["Péter látta a költőnek egy tájképet."  , "Péter látta a költőnek a tájképet."       ]}]   ,
 
-    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petofit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-=======
-    [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
-    [["t-A1-mar-nom-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfi versét."}],
-    [["t-A1-mar-dat-obj-2", [2, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
->>>>>>> e24fa912f06ab548f507bef6f5937437185c57c5
+    [["t-B3-mar-fc-def-0", [16, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festő versét."            ]}]   ,
+    [["t-B3-mar-fc-def-1", [17, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festőnek versét."         ]}]   ,
+    [["t-B3-mar-fc-def-2", [18, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festőnek egy versét."     ]}]   ,
+    [["t-B3-mar-fc-def-3", [19, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festőnek a versét."       ]}]   ,
+    [["t-B3-mar-fc-def-4", [20, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő versét."        , "Mari olvasta a festőnek versét."       ]}]     ,
+    [["t-B3-mar-fc-def-5", [21, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő versét."        , "Mari olvasta a festőnek egy versét."       ]}] ,
+    [["t-B3-mar-fc-def-6", [22, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő versét."        , "Mari olvasta a festőnek a versét."       ]}]   ,
+    [["t-B3-mar-fc-def-7", [23, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festőnek versét."     , "Mari olvasta a festőnek egy versét."       ]}] ,
+    [["t-B3-mar-fc-def-8", [24, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festőnek versét."     , "Mari olvasta a festőnek a versét."       ]}]   ,
+    [["t-B3-mar-fc-def-9", [25, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de egy verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festőnek egy versét." , "Mari olvasta a festőnek a versét."       ]}]   ,
 
-    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-    [["t-A1-mar-dat-sbj-2", [3, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
+    [["t-B3-mar-fc-ind-0", [26, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festő versét."            ]}]   ,
+    [["t-B3-mar-fc-ind-1", [27, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festőnek versét."         ]}]   ,
+    [["t-B3-mar-fc-ind-2", [28, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festőnek egy versét."     ]}]   ,
+    [["t-B3-mar-fc-ind-3", [29, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő egy versét."    , "Mari olvasta a festőnek a versét."       ]}]   ,
+    [["t-B3-mar-fc-ind-4", [30, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő versét."        , "Mari olvasta a festőnek versét."       ]}]     ,
+    [["t-B3-mar-fc-ind-5", [31, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő versét."        , "Mari olvasta a festőnek egy versét."       ]}] ,
+    [["t-B3-mar-fc-ind-6", [32, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festő versét."        , "Mari olvasta a festőnek a versét."       ]}]   ,
+    [["t-B3-mar-fc-ind-7", [33, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festőnek versét."     , "Mari olvasta a festőnek egy versét."       ]}] ,
+    [["t-B3-mar-fc-ind-8", [34, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festőnek versét."     , "Mari olvasta a festőnek a versét."       ]}]   ,
+    [["t-B3-mar-fc-ind-9", [35, 1]], "ForcedQuestion" , {s: "Kovács János híres festő, de több verset is írt." , q: "Melyik mondat helyesebb?" , as: ["Mari olvasta a festőnek egy versét." , "Mari olvasta a festőnek a versét."       ]}]   ,
 
-    [["t-A1-mar-dat-obj-2", [4, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
-    [["t-A1-mar-dat-obj-2", [4, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
-    [["t-A1-mar-dat-obj-2", [4, 1]], "AcceptabilityJudgment",   {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
+    // 36-45: 10 AJ kontextussal. Egy határozott, egy határozatlan.
 
-    [["t-A1-pet-nom-sbj-2", [5, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszéd lányát."}],
-    [["t-A1-pet-nom-sbj-2", [5, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszéd lányát."}],
-    [["t-A1-pet-dat-sbj-2", [5, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszédnak lányát."}],
+    [["t-A4-pet-nom-def", [36, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de egy tájképet is festett.", q: "Péter látta a költő tájképét."}],
+    [["t-A4-pet-nom-ind", [37, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de egy tájképet is festett.", q: "Péter látta a költő egy tájképét."}],
+    [["t-A4-pet-dat-nil", [38, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de egy tájképet is festett.", q: "Péter látta a költőnek tájképét."}],
+    [["t-A4-pet-dat-def", [39, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de egy tájképet is festett.", q: "Péter látta a költőnek egy tájképét."}],
+    [["t-A4-pet-dat-ind", [40, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de egy tájképet is festett.", q: "Péter látta a költőnek a tájképét."}],
 
-    [["t-A1-pet-nom-obj-2", [6, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszéd lányát."}],
-    [["t-A1-pet-nom-obj-2", [6, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszéd lányát."}],
-    [["t-A1-pet-dat-obj-2", [6, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszédnak lányát."}],
+    [["t-A5-pet-nom-def", [41, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de több tájképet is festett.", q: "Péter látta a költő tájképét."}],
+    [["t-A5-pet-nom-ind", [42, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de több tájképet is festett.", q: "Péter látta a költő egy tájképét."}],
+    [["t-A5-pet-dat-nil", [43, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de több tájképet is festett.", q: "Péter látta a költőnek tájképét."}],
+    [["t-A5-pet-dat-def", [44, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de több tájképet is festett.", q: "Péter látta a költőnek egy tájképét."}],
+    [["t-A5-pet-dat-ind", [45, 1]], "AcceptabilityJudgment",  {s: "Schmitt Anna ismert költő, de több tájképet is festett.", q: "Péter látta a költőnek a tájképét."}],
 
-    [["t-A1-pet-dat-sbj-2", [7, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszédnak lányát."}],
-    [["t-A1-pet-dat-sbj-2", [7, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszédnak lányát."}],
-    [["t-A1-pet-dat-sbj-2", [7, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszédnak lányát."}],
+    [["t-B4-mar-nom-def", [36, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festő versét."}],
+    [["t-B4-mar-nom-ind", [37, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festő egy versét."}],
+    [["t-B4-mar-dat-nil", [38, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festőnek versét."}],
+    [["t-B4-mar-dat-def", [39, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festőnek egy versét."}],
+    [["t-B4-mar-dat-ind", [40, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festőnek a versét."}],
 
-    [["t-A1-pet-dat-obj-2", [8, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszédnak lányát."}],
-    [["t-A1-pet-dat-obj-2", [8, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszédnak lányát."}],
-    [["t-A1-pet-dat-obj-2", [8, 1]], "AcceptabilityJudgment",   {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszédnak lányát."}],
+    [["t-B5-mar-nom-def", [41, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festő versét."}],
+    [["t-B5-mar-nom-ind", [42, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festő egy versét."}],
+    [["t-B5-mar-dat-nil", [43, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festőnek versét."}],
+    [["t-B5-mar-dat-def", [44, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festőnek egy versét."}],
+    [["t-B5-mar-dat-ind", [45, 1]], "AcceptabilityJudgment",  {s: "Kovács János híres festő, de több verset is írt.", q: "Mari olvasta a festőnek a versét."}],
 
-    [["t-A1-ada-nom-sbj-2", [9, 1]], "AcceptabilityJudgment",   {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monet tájképét."}],
-    [["t-A1-ada-nom-sbj-2", [9, 1]], "AcceptabilityJudgment",   {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monet tájképét."}],
-    [["t-A1-ada-dat-sbj-2", [9, 1]], "AcceptabilityJudgment",   {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monetnek tájképét."}],
-
-    [["t-A1-ada-nom-obj-2", [10, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monet tájképét."}],
-    [["t-A1-ada-nom-obj-2", [10, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monet tájképét."}],
-    [["t-A1-ada-dat-obj-2", [10, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monetnek tájképét."}],
-
-    [["t-A1-ada-dat-sbj-2", [11, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monetnek tájképét."}],
-    [["t-A1-ada-dat-sbj-2", [11, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monetnek tájképét."}],
-    [["t-A3-ada-dat-sbj-2", [11, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monetnek tájképét."}],
-
-    [["t-A1-ada-dat-obj-2", [12, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monetnek tájképét."}],
-    [["t-A1-ada-dat-obj-2", [12, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monetnek tájképét."}],
-    [["t-A3-ada-dat-obj-2", [12, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monetnek tájképét."}],
-
-    [["t-A1-jul-nom-sbj-2", [13, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az író regényét."}],
-    [["t-A1-jul-nom-sbj-2", [13, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az író regényét."}],
-    [["t-A1-jul-dat-sbj-2", [13, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az írónak regényét."}],
-
-    [["t-A1-jul-nom-obj-2", [14, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az író regényét."}],
-    [["t-A1-jul-nom-obj-2", [14, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az író regényét."}],
-    [["t-A1-jul-dat-obj-2", [14, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-
-    [["t-A1-jul-dat-sbj-2", [15, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az írónak regényét."}],
-    [["t-A1-jul-dat-sbj-2", [15, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az írónak regényét."}],
-    [["t-A1-jul-dat-sbj-2", [15, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az írónak regényét."}],
-
-    [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-    [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-    [["t-A1-jul-dat-obj-2", [16, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-<<<<<<< HEAD
-
-        // 17-32: Block 1: A2, Block 2: B2, Block 3: two repetitions of A/dat
-=======
->>>>>>> e24fa912f06ab548f507bef6f5937437185c57c5
-
-    // 17-32: Block 1: A2, Block 2: B2, Block 3: two repetitions of A/dat
-
-    [["t-A2-mar-ext-sbj-2", [17, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari csak Petőfinek olvasott versét."}],
-    [["t-B2-mar-nil-sbj-n", [17, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott néhány versét."}],
-    [["t-A1-mar-dat-sbj-2", [17, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-
-    [["t-A2-mar-ext-obj-2", [18, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari csak Petőfinek olvasta versét."}],
-    [["t-B2-mar-nil-obj-n", [18, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasta néhány versét."}],
-    [["t-A1-mar-dat-obj-2", [18, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
-
-    [["t-A2-mar-int-sbj-2", [19, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari csak Petőfinek versét olvasott."}],
-    [["t-B2-mar-nil-sbj-m", [19, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott minden versét."}],
-    [["t-A1-mar-dat-sbj-2", [19, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasott Petőfinek versét."}],
-
-    [["t-A2-mar-int-obj-2", [20, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari csak Petőfinek versét olvasta."}],
-    [["t-B2-mar-nil-obj-m", [20, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasta minden versét."}],
-    [["t-A1-mar-dat-obj-2", [20, 1]], "AcceptabilityJudgment",  {s: "Irodalomórán Petőfit és Arany Jánost olvastak a diákok.", q: "Mari olvasta Petőfinek versét."}],
-
-    [["t-A2-pet-ext-sbj-2", [21, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter csak a szomszédnak ismert lányát."}],
-    [["t-B2-pet-nil-sbj-n", [21, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismert néhány lányát."}],
-    [["t-A1-pet-dat-sbj-2", [21, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszédnak lányát."}],
-
-    [["t-A2-pet-ext-obj-2", [22, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter csak a szomszédnak ismerte lányát."}],
-    [["t-B2-pet-nil-obj-n", [22, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismerte néhány lányát."}],
-    [["t-A1-pet-dat-obj-2", [22, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszédnak lányát."}],
-
-    [["t-A2-pet-int-sbj-2", [23, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter csak a szomszédnak lányát ismert."}],
-    [["t-B2-pet-nil-sbj-m", [23, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismert minden lányát."}],
-    [["t-A1-pet-dat-sbj-2", [23, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismert a szomszédnak lányát."}],
-
-    [["t-A2-pet-int-obj-2", [24, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter csak a szomszédnak lányát ismerte."}],
-    [["t-B2-pet-nil-obj-m", [24, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismerte minden lányát."}],
-    [["t-A1-pet-dat-obj-2", [24, 1]], "AcceptabilityJudgment",  {s: "Péterék házában sok családnak van gyereke.",              q: "Péter ismerte a szomszédnak lányát."}],
-
-    [["t-A2-ada-ext-sbj-2", [25, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám csak Monetnek keresett tájképét."}],
-    [["t-B2-ada-nil-sbj-n", [25, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám keresett néhány tájképét."}],
-    [["t-A1-ada-dat-sbj-2", [25, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monetnek tájképét."}],
-
-    [["t-A2-ada-ext-obj-2", [26, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám csak Monetnek kereste tájképét."}],
-    [["t-B2-ada-nil-obj-n", [26, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám kereste néhány tájképét."}],
-    [["t-A1-ada-dat-obj-2", [26, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monetnek tájképét."}],
-
-    [["t-A2-ada-int-sbj-2", [27, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám csak Monetnek tájképét keresett."}],
-    [["t-B2-ada-nil-sbj-m", [27, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám keresett minden tájképét."}],
-    [["t-A1-ada-dat-sbj-2", [27, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám keresett Monetnek tájképét."}],
-
-    [["t-A2-ada-int-obj-2", [28, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám csak Monetnek tájképét kereste."}],
-    [["t-B2-ada-nil-obj-m", [28, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám kereste minden tájképét."}],
-    [["t-A1-ada-dat-obj-2", [28, 1]], "AcceptabilityJudgment",  {s: "Monet-t és Vasarelyt mutatnak be a kiállításon.",         q: "Ádám kereste Monetnek tájképét."}],
-
-    [["t-A2-jul-ext-sbj-2", [29, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli csak az írónak talált regényét."}],
-    [["t-B2-jul-nil-sbj-n", [29, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli talált néhány regényét."}],
-    [["t-A1-jul-dat-sbj-2", [29, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az írónak regényét."}],
-
-    [["t-A2-jul-ext-obj-2", [30, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli csak az írónak találta regényét."}],
-    [["t-B2-jul-nil-obj-n", [30, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli találta néhány regényét."}],
-    [["t-A1-jul-dat-obj-2", [30, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-
-    [["t-A2-jul-int-sbj-2", [31, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli csak az írónak regényét talált."}],
-    [["t-B2-jul-nil-sbj-m", [31, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli talált minden regényét."}],
-    [["t-A1-jul-dat-sbj-2", [31, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli talált az írónak regényét."}],
-
-    [["t-A2-jul-int-obj-2", [32, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli csak az írónak regényét találta."}],
-    [["t-B2-jul-nil-obj-m", [32, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli találta minden regényét."}],
-    [["t-A1-jul-dat-obj-2", [32, 1]], "AcceptabilityJudgment",  {s: "Juli híres írók és zenészek műveit kereste.",             q: "Juli találta az írónak regényét."}],
-
-    // 32-40: Blocks 1/2: B, Block 3: 8 fillers that don't show up in 1/2
-
-    [["t-B1-mar-nil-sbj-2", [33, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott versét"}],
-    [["t-B1-mar-nil-sbj-2", [33, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasott versét."}],
-    [["tf31", [33, 1]], "AcceptabilityJudgment", {s: "Biztos hallottad a hírt.", q: "Két gyerek ad egy könyvet Marinak."}],
-
-    [["t-B1-mar-nil-obj-2", [34, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasta versét."}],
-    [["t-B1-mar-nil-obj-2", [34, 1]], "AcceptabilityJudgment",  {s: "Petőfi híres költő volt.",                                q: "Mari olvasta versét."}],
-    [["tf32", [34, 1]], "AcceptabilityJudgment", {s: "Biztos hallottad a hírt.", q: "Megállnak a rendőrök a ház melett."}],
-
-    [["t-B1-mar-nil-sbj-2", [35, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismert lányát."}],
-    [["t-B1-mar-nil-sbj-2", [35, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismert lányát."}],
-    [["tf33", [35, 1]], "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.", q: "A koncertet az együttes befejezte."}],
-
-    [["t-B1-mar-nil-obj-2", [36, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismerte lányát."}],
-    [["t-B1-mar-nil-obj-2", [36, 1]], "AcceptabilityJudgment",  {s: "A szomszédnak több gyereke van.",                         q: "Péter ismerte lányát."}],
-    [["tf34", [36, 1]], "AcceptabilityJudgment", {s: "Láttad, hogy mi történt?", q: "A rendőr megállank ház."}],
-
-    [["t-B1-pet-nil-sbj-2", [37, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám keresett tájképét."}],
-    [["t-B1-pet-nil-sbj-2", [37, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám keresett tájképét."}],
-    [["tf35", [37, 1]], "AcceptabilityJudgment", {s: "Láttad, hogy mi történt?", q: "A rendőrök a ház mellett álltak meg."}],
-
-    [["t-B1-pet-nil-obj-2", [38, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám kereste tájképét."}],
-    [["t-B1-pet-nil-obj-2", [38, 1]], "AcceptabilityJudgment",  {s: "Vasarely absztrakt festő volt.",                          q: "Ádám kereste tájképét."}],
-    [["tf36", [38, 1]], "AcceptabilityJudgment", {s: "Tíz óra után már tilos zajt csinálni.", q: "Az együttes befejez a koncertet."}],
-
-    [["t-B1-pet-nil-sbj-2", [39, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli talált regényét."}],
-    [["t-B1-pet-nil-sbj-2", [39, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli talált regényét."}],
-    [["tf37", [39, 1]], "AcceptabilityJudgment", {s: "Mi van Ádámmal?", q: "Ádám a megeszi vacsora."}],
-
-    [["t-B1-pet-nil-obj-2", [40, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli találta regényét."}],
-    [["t-B1-pet-nil-obj-2", [40, 1]], "AcceptabilityJudgment",  {s: "Szabó Magda híres magyar író volt.",                      q: "Juli találta regényét."}],
-    [["tf38", [40, 1]], "AcceptabilityJudgment", {s: "Mi van Ádámmal?", q: "Ádám megeszi a vacsorát."}],
-
-    // 40-48: Blocks 1/2: empty, Block 3: 8 fillers that don't show up in 1/2
-
-    [["sep", [41, 1]], "Separator", {transfer: 0}],
+/*    [["sep", [41, 1]], "Separator", {transfer: 0}],
     [["sep", [41, 1]], "Separator", {transfer: 0}],
     [["tf39", [41, 1]], "AcceptabilityJudgment", {s: "Mennyit ittak a vacsorán?", q: "János ivott meg egy korsóval a vacsorán."}],
 
@@ -347,8 +265,6 @@ var items = [
     ["f27", "AcceptabilityJudgment", {s: "Minden házkutatás ugyanúgy kezdődik.",                    q: "Megállnak a rendőrök a ház mellett."}],
     ["f28", "AcceptabilityJudgment", {s: "Minden házkutatás ugyanúgy kezdődik.",                    q: "A rendőrök a ház mellett álltak meg."}],
     ["f29", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                    q: "Ádám biztosan megeszi a vacsoráját."}],
-    ["f30", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                    q: "Ádám megeszi a vacsorát, az biztos."}],
+    ["f30", "AcceptabilityJudgment", {s: "Ma pörköltet föztem.",                                    q: "Ádám megeszi a vacsorát, az biztos."}], */
 
 ];
-
-
