@@ -76,9 +76,9 @@ possessum cannot appear in the focus position together:
 
 Szabolcsi argues that this extraction has to do with the interpretation of the
 possessed noun phrase: in clausal possessive constructions, the possessed noun
-has to be non-specific (cf. also English *```*I have the sister.```*). She
-argues that for the varieties of Hungarian speakers that allow possessed DOs
-without object agreement, this extraction is necessary too.
+has to be non-specific (cf. also English *`*I have the sister.`*). She argues
+that for the varieties of Hungarian speakers that allow possessed DOs without
+object agreement, this extraction is necessary too.
 
 Bartos (1999), assuming that all and only DPs trigger object agreement,
 explains this by suggesting that extracted possessors can extract from above DP
