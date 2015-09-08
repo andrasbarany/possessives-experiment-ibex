@@ -286,11 +286,11 @@ var items = [
     ["fc-41", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Elutaztak a barátjuk és a nővéremék.", "Elutazott a barátjuk és a nővéremék."]}] ,
     ["fc-42", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogatott János, Béla és a feleségeik."]}],
     ["fc-43", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogatott János, Béla és a feleségük."]}],
-    ["fc-44", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogattak, a feleségeik, és János és Béla.]}],
-    ["fc-45", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogatott, a feleségeik, és János, és Béla]}],
-    ["fc-46", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogatott, a feleségük, és János, és Béla.]}],
+    ["fc-44", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogattak, a feleségeik, és János és Béla."]}],
+    ["fc-45", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogatott, a feleségeik, és János, és Béla."]}],
+    ["fc-46", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogatott, a feleségük, és János, és Béla."]}],
     ["fc-47", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak János, Béla és a feleségeik.", "Meglátogattak, a feleségük, és János és Béla."]}],
-    ["fc-48", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségeik, és János, és Béla.]}],
+    ["fc-48", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségeik, és János, és Béla."]}],
     ["fc-49", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségük, és János, és Béla."]}],
     ["fc-50", "Question" , {q: "Melyik mondat helyesebb?" , as: ["Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségük, és János, és Béla."]}]
 
