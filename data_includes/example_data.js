@@ -6,7 +6,7 @@
 var shuffleSequence = /*seq("intro", */seq("practice",
             rshuffle(startsWith("t-"), startsWith("f-")),
             rshuffle(startsWith("tc1-"), startsWith("fc1-")),
-            rshuffle(startswith("tc2-"), startswith("fc2-")));//);
+            rshuffle(startsWith("tc2-"), startsWith("fc2-")));//);
 
 var practiceItemTypes = ["practice"];
 
