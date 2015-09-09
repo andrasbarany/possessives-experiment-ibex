@@ -1,6 +1,7 @@
 .sentence {
      background-color: white;
      clear: both;
+     font-weight: bold;
 }
 .question {
      padding-left: 0.6em;
