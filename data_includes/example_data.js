@@ -5,7 +5,9 @@
 
 var shuffleSequence = /*seq("intro", */seq("practice",
             rshuffle(startsWith("t-"), startsWith("f-")),
+            "intro2",
             rshuffle(startsWith("tc1-"), startsWith("fc1-")),
+            "intro2",
             rshuffle(startsWith("tc2-"), startsWith("fc2-")));//);
 
 var practiceItemTypes = ["practice"];
@@ -66,6 +68,10 @@ var items = [
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
+    } ],
+
+    ["intro2", "Form", {
+        html: { include: "interim_intro.html" }
     } ],
 
     // Three practice items for acceptability judgments. No groups necessary
