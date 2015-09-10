@@ -41,7 +41,7 @@ jqueryWidget: {
                             leftComment:         this.options.leftComment,
                             rightComment:        this.options.rightComment }],
             manipulators: [
-                [0, function(div) { div.css('font-size', "larger"); return div; }]
+                [0, function(div) { div.css('font-size', "larger", 'font-weight', "bold"); return div; }]
             ]
         };
 
