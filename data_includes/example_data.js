@@ -3,11 +3,11 @@
 // randomly selects elements from among the targets (...startsWith("t")...) and
 // fillers.
 
-var shuffleSequence = seq("intro2", "practice",
+var shuffleSequence = seq("intro", "acceptability_intro", "practice",
             rshuffle(startsWith("t-"), startsWith("f-")),
-            "intro2",
+             "FC_intro_NoCont",
             rshuffle(startsWith("tc1-"), startsWith("fc1-")),
-            "intro2",
+            "FC_intro_Context",
             rshuffle(startsWith("tc2-"), startsWith("fc2-")));//);
 
 var practiceItemTypes = ["practice"];
