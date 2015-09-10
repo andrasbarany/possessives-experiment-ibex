@@ -21,7 +21,7 @@ jqueryWidget: {
         if (this.transfer == "click") {
             this.continueMessage = dget(this.options, "continueMessage", "A folytatásért kattintson ide.");
             this.consentRequired = dget(this.options, "consentRequired", false);
-            this.consentMessage = dget(this.options, "consentMessage", "I have read the above and agree to do the experiment.");
+            this.consentMessage = dget(this.options, "consentMessage", "Elolvastam a fentieket és szeretnék a felmérésben résztvenni.");
             this.consentErrorMessage = dget(this.options, "consentErrorMessage", "You must consent before continuing.");
 
             // Add the consent checkbox if necessary.
