@@ -70,8 +70,16 @@ var items = [
         }
     } ],
 
-    ["intro2", "Form", {
-        html: { include: "interim_intro.html" }
+    ["acceptability_intro", "Form", {
+        html: { include: "acceptability_intro.html" }
+    } ],
+
+    ["FC_intro_NoCont", "Form", {
+        html: { include: "FC_intro_NoCont.html" }
+    } ],
+
+    ["FC_intro_Context", "Form", {
+        html: { include: "FC_intro_Context.html" }
     } ],
 
     // Three practice items for acceptability judgments. No groups necessary
