@@ -39,10 +39,10 @@ jqueryWidget: {
                             timeout:             this.options.timeout,
                             instructions:        this.options.instructions,
                             leftComment:         this.options.leftComment,
-                            rightComment:        this.options.rightComment }]/*,
+                            rightComment:        this.options.rightComment }],
             manipulators: [
-                [0, function(div) { div.css('font-size', "larger"); return div; }]
-            ]*/
+                [0, function(div) { div.css('font-size', "larger", 'font-weight', "bold"); return div; }]
+            ]
         };
 
         this.element.VBox(opts);

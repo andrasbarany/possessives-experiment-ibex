@@ -244,7 +244,6 @@ jqueryWidget: {
                                          [answerField, csv_url_encode(ans)],
                                          [correctField, correct],
                                          [timeField, answerTime - t.creationTime]]]);
-                    
                     return false;
                 }
             }
