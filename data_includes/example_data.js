@@ -64,7 +64,7 @@ var items = [
     // intro (this provides a simple consent checkbox).
 
     ["intro", "Form", {
-        html: { include: "example_intro.html" },
+        html: { include: "intro.html" },
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
