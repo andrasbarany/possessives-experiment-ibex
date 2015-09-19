@@ -1,0 +1,350 @@
+\documentclass[12pt]{beamer}
+
+\usepackage[language=british,
+            sortlocale=en-GB,
+            backend=biber,
+            natbib=true,
+            dashed=false,
+            citestyle=authoryear-comp,
+            bibstyle=authoryear,
+            doi=false,
+            useprefix=true,
+            sorting=ynt,
+            maxbibnames=9,
+            maxcitenames=2]{biblatex}
+
+\addbibresource{legenda.bib}
+ \renewcommand\nameyeardelim{\space}
+ \renewcommand\postnotedelim{\addcolon\space}
+ \DeclareFieldFormat{pages}{#1}
+ \DeclareFieldFormat{postnote}{#1} % no postnote prefix in "normal" citation commands
+ \AtEveryBibitem{%
+     \clearfield{labelmonth}%
+     \clearfield{issn}%
+ }
+
+%%% no navigation icons
+
+\setbeamertemplate{navigation symbols}{}
+
+%% stepwise uncovering
+
+\beamerdefaultoverlayspecification{<+->}
+
+%%% other colors
+
+\definecolor{camcosdark}{RGB}{0,145,193}
+\definecolor{camcosblue}{RGB}{0,163,218}
+\setbeamercolor*{section in head/foot}{parent=palette quaternary,fg=white,bg=camcosblue}%!90!black}
+\setbeamercolor*{subsection in head/foot}{parent=palette secondary,fg=white,bg=camcosblue}
+\setbeamercolor{structure}{bg=white,fg=black}
+\setbeamercolor*{palette primary}{use=structure,bg=white,fg=black}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=camcosblue}%!90!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=camcosblue}%!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=white,bg=camcosblue}%!90!black}
+
+\setbeamercolor*{alerted text}{fg=camcosblue}%!90!black}
+\setbeamercolor*{part in toc}{fg=camcosblue}
+\setbeamercolor*{section in toc}{fg=camcosblue}
+\setbeamercolor*{item}{fg=camcosblue}
+
+\setbeamertemplate{headline}
+{%
+\leavevmode
+\hbox{\begin{beamercolorbox}[wd=1.00\paperwidth, ht=3.0ex, dp=1.5ex, right, rightskip=.5cm]{section in head/foot}%
+        \usebeamerfont{title in head/foot}\scriptsize{\insertsection{}}
+    \end{beamercolorbox}
+
+    \begin{beamercolorbox}[wd=.00\paperwidth, ht=2.5ex, dp=1ex, left, leftskip=.5cm]{subsection in head/foot}%
+        \usebeamerfont{title in head/foot}%\insertsubsection
+    \end{beamercolorbox}
+    }
+}
+
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+
+  \begin{beamercolorbox}[wd=1\paperwidth,ht=2.5ex,dp=1.5ex,leftskip=.3cm plus1fill,rightskip=.3cm]{}%
+    \usebeamerfont{title in head/foot}\insertframenumber/\inserttotalframenumber%
+  \end{beamercolorbox}%
+}
+
+\setbeamertemplate{partpage}
+{%
+  \begin{centering}
+    {\usebeamerfont{part name}\usebeamercolor[bg]{part name}\partname~\insertpartnumber}
+    \begin{beamercolorbox}[sep=16pt,center]{part title}
+      \usebeamerfont{part title}\insertpart\par
+    \end{beamercolorbox}
+  \end{centering}
+}
+
+\defbeamertemplate*{title page}{customised}[1][]
+{%
+    \usebeamerfont{title}\alert{\inserttitle}\par
+    \usebeamerfont{subtitle}{\large\insertsubtitle}\par
+    \bigskip
+    \hrule
+    \usebeamerfont{author}\insertauthor\par
+    \usebeamerfont{institute}\small\insertinstitute\par
+    \bigskip
+    \hrule
+    \usebeamerfont{date}{\normalsize\insertdate}\par
+    \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic{}
+}
+
+%%%
+
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{:}
+\setbeamercolor{caption name}{fg=normal text.fg}
+
+\usepackage{amssymb,amsmath}
+\usepackage{mathtools}
+\usepackage{fixltx2e} % provides \textsubscript
+
+\usepackage{mathspec,xunicode,fontspec,xltxtra}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont[BoldFont = Source Sans Pro Semibold, BoldItalicFont = Source Sans Pro Semibold Italic]{Source Sans Pro}
+\setsansfont[BoldFont = Source Sans Pro Semibold, BoldItalicFont = Source Sans Pro Semibold Italic]{Source Sans Pro}
+\setmonofont[Scale=0.8]{Source Code Pro}
+\setmathfont(Digits,Latin,Greek)[Lowercase=Regular,Uppercase=Regular]{Clear Sans}
+
+\usepackage{microtype}
+
+% linguistics
+\usepackage{tikz-qtree}
+\usetikzlibrary{positioning,decorations.pathmorphing,decorations,trees,fit}
+\tikzstyle{arrow} = [thin, <-, below left, bend right, font = \scriptsize]
+\tikzset{>=latex}
+\tikzset{every tree node/.style={align=center,anchor=north}}
+\tikzset{execute at begin node=\vphantom{A}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle, draw, inner sep=2pt] (char) {#1};}}
+
+\usepackage{pgfplots}
+
+\usepackage{expex}
+\lingset{aboveglftskip=-1ex,
+        belowglpreambleskip=-1ex}
+
+\resetcountonoverlays{excnt}
+
+\usepackage{url}
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight0.8\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+\AtBeginPart{%
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame{\partpage}
+}
+\AtBeginSection{%
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame{\sectionpage}
+}
+\AtBeginSubsection{%
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame{\subsectionpage}
+}
+
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\setcounter{secnumdepth}{1}
+
+\title{Agreement with possessed direct objects in Hungarian}
+
+\subtitle{An experimental approach}
+
+\author{\textsuperscript{a}András Bárány, \textsuperscript{b}Ádám Szalontai}
+
+\date{SinFonIJA 8, Ljubljana, 25 September 2015}
+
+\institute{\textsuperscript{a}ReCoS/DTAL, University of Cambridge,\\
+        \textsuperscript{b}Research Institute for Linguistics,
+        Hungarian Academy of Sciences}
+
+\titlegraphic{%
+    \begin{tikzpicture}[overlay]
+        \node at (8.2, -2.5) {\includegraphics[height=2.5cm]{erc.eps}};
+    \end{tikzpicture}
+}
+
+\begin{document}
+
+\frame{%
+\thispagestyle{empty} % no page number here
+  \titlepage{}
+}
+
+\begin{frame}{Overview}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Intro: Object agreement and possessed NPs}\label{case-and-case}
+
+\begin{frame}{Object agreement in Hungarian}
+
+\pex
+    \a
+        \begingl
+            \gla    Mari lát egy kutyá-t.//
+            \glb    M.      see.\textsc{3sg} a   dog-\textsc{acc}//
+            \glft   ‘Mari sees a dog.’//
+        \endgl
+    \pause
+    \a
+        \begingl
+            \gla    Mari lát-ja a kutyá-t.//
+            \glb    M.   see-\textsc{\alert{3sg.obj}} the dog-\textsc{acc}//
+            \glft   ‘Mari sees the dog.’//
+        \endgl
+\xe
+
+    \begin{itemize}
+
+        \item Roughly sensitive to definiteness of the DO
+
+        \item Possessed direct objects are an exception
+
+        \item They can be indefinite yet require agreement
+
+        \item Standard Hungarian: all possessed DOs agree
+
+        \item But: dialectal variation?
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{This presentation}
+
+    \begin{block}{Claims}
+
+        \begin{itemize}
+
+        \item Variation is difficult to find
+
+        \item Speakers treat all possessed direct objects in the same way
+
+        \item Agreement is not semantic, but sensitive to \alert{syntactic structure}
+
+        \end{itemize}
+
+    \end{block}
+
+    \begin{block}{Methods}
+
+        \begin{itemize}
+
+            \item Series of online surveys
+
+            \item Acceptability judgments with and without contexts
+
+            \item Forced choice tests with and without contexts
+
+        \end{itemize}
+    \end{block}
+
+\end{frame}
+
+\section{The data}
+
+\begin{frame}{Object agreement}
+
+    \begin{itemize}
+
+        \item Definiteness often a good predictor; not with possessed DOs
+
+        \item Indefinite possessed DOs require agreement
+
+    \end{itemize}
+
+\pex
+    \a
+        \begingl
+            \gla    Mari {lát /} \ljudge*lát-ja egy kutyá-t.//
+            \glb    M.   see.\textsc{3sg} see-\textsc{3sg.obj} a   dog-\textsc{acc}//
+            \glft   ‘Mari sees a dog.’//
+        \endgl
+    \pause
+    \a
+        \begingl
+            \gla    Mari {lát-ja /} \ljudge\%lát egy kutyá-m-at.//
+            \glb    M.   see-\textsc{\alert{3sg.obj}} see.\textsc{3sg} the dog-\textsc{\alert{1sg.poss}-acc}//
+            \glft   ‘Mari sees a dog of mine.’//
+        \endgl
+\xe
+
+\end{frame}
+
+\begin{frame}{Structures}
+
+\ex
+    \begin{tikzpicture}[baseline]
+        \Tree   [.DP
+                    \node (specdp) {poss.\textsc{nom}};
+                    [.{D$'$}
+                        D
+                        [.PossP
+                            \node (t) {\sout{poss.\textsc{nom}}};
+                                [.{Poss$'$}
+                                    [.NP
+                                        N
+                                    ]
+                                    [.Poss
+                                        -\textsc{poss.$\phi$}
+                                    ]
+                                ]
+                        ]
+                    ]
+                ]
+        \draw [arrow, ->, bend left] (t) to (specdp.south);
+    \end{tikzpicture}
+\xe
+
+\end{frame}
+
+\section{Surveys}
+
+\begin{frame}{Acknowledgements}
+
+\begin{center}
+    \Large \textbf{Thank you!}
+\end{center}
+
+The first author's research is supported by ERC Grant No. 269752
+\enquote{Rethinking Comparative Syntax}. Thanks to: Theresa Biberauer, Anders
+Holmberg, Georg Höhn, Ian Roberts, Michelle Sheehan, and Jenneke van der Wal.
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+
+\small
+\setlength{\parindent}{-0.2in} \setlength{\leftskip}{0.2in}
+\setlength{\parskip}{3pt}
+\newrefcontext[sorting=nyt]
+\printbibliography
+\end{frame}
+
+\end{document}
