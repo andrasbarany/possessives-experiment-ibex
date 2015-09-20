@@ -3,29 +3,163 @@
 \usepackage[language=british,
             sortlocale=en-GB,
             backend=biber,
-            natbib=true,
             dashed=false,
             citestyle=authoryear-comp,
             bibstyle=authoryear,
-            doi=false,
+            doi=true,
             useprefix=true,
             sorting=ynt,
             maxbibnames=9,
             maxcitenames=2]{biblatex}
 
-\addbibresource{legenda.bib}
- \renewcommand\nameyeardelim{\space}
- \renewcommand\postnotedelim{\addcolon\space}
- \DeclareFieldFormat{pages}{#1}
- \DeclareFieldFormat{postnote}{#1} % no postnote prefix in "normal" citation commands
- \AtEveryBibitem{%
-     \clearfield{labelmonth}%
-     \clearfield{issn}%
- }
+\usepackage{filecontents}
+
+\begin{filecontents*}{refs.bib}
+
+@phdthesis{Bartos1999,
+	Author = {Bartos, Huba},
+	Location = {Budapest},
+	Title = {{Morfoszintaxis {\'e}s interpret{\'a}ci{\'o}: A magyar inflexi{\'o}s jelens{\'e}gek szintaktikai h{\'a}ttere [Morphosyntax and interpretation: the syntactic background of Hungarian inflection]}},
+	Year = {1999}}
+
+@article{Coppock2013P,
+	Author = {Coppock, Elizabeth},
+	Journaltitle = {Natural Language Semantics},
+	Pages = {345-371},
+	Title = {{A semantic solution to the problem of Hungarian object agreement}},
+	Volume = {21},
+	Year = {2013}}
+
+@article{Dekany2015,
+	Author = {D{\'e}k{\'a}ny, {\'E}va},
+	Doi = {10.1007/s11049-014-9278-0},
+	Journaltitle = {Natural Language \& Linguistic Theory},
+	Title = {The syntax of anaphoric possessives in Hungarian},
+	Year = {2015}}
+
+@incollection{denDikken1999,
+	Author = {den Dikken, Marcel},
+	Booktitle = {Crossing Boundaries: {Advances} in the Theory of Central and {Eastern European} Languages},
+	Editor = {Kenesei, Istv{\'a}n},
+	Location = {Amsterdam/Philadelphia},
+	Pages = {137-178},
+	Publisher = {John Benjamins},
+	Title = {On the Structural Representation of Possession and Agreement},
+	Year = {1999}}
+
+@incollection{Szabolcsi1994,
+	Author = {Szabolcsi, Anna},
+	Crossref = {KieKis1994},
+	Pages = {179-274},
+	Title = {The Noun Phrase}}
+
+@collection{KieKis1994,
+	Editor = {Kiefer, Ferenc and {\'E}. Kiss, Katalin},
+	Location = {New York},
+	Publisher = {Academic Press},
+	Series = {Syntax and Semantics},
+	Title = {The Syntactic Structure of {Hungarian}},
+	Volume = {27},
+	Year = {1994}}
+
+\end{filecontents*}
+
+\addbibresource{refs.bib}
+
+%\addbibresource{legenda.bib}
+
+\renewcommand\nameyeardelim{\space}
+\renewcommand\postnotedelim{\addcolon\space}
+\DeclareFieldFormat{pages}{#1}
+\DeclareFieldFormat{postnote}{#1} % no postnote prefix in "normal" citation commands
+\AtEveryBibitem{%
+    \clearfield{labelmonth}%
+    \clearfield{issn}%
+}
+
+\usepackage{xpatch}
+
+\xpatchbibmacro{name:andothers}{%
+  \bibstring{andothers}%
+}{%
+  \bibstring[\emph]{andothers}%
+}{}{}
+
+% No In: for journals
+
+\renewbibmacro{in:}{\ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+
+% Lower case for prefix in bibliography
+% \AtBeginBibliograph{...} is important, otherwise it breaks \Textcite{...}
+
+\AtBeginBibliography{%
+\renewbibmacro*{name:last-first}[4]{%
+  \ifuseprefix
+    {\usebibmacro{name:delim}{#3#1}%
+     \usebibmacro{name:hook}{#3#1}%
+     \ifblank{#3}{}{%
+       %\ifcapital% comment out
+       %  {\mkbibnameprefix{\MakeCapital{#3}}\isdot}% and get rid of this
+         {\mkbibnameprefix{#3}\isdot}%
+       \ifpunctmark{'}{}{\bibnamedelimc}}%
+     \mkbibnamelast{#1}\isdot
+     \ifblank{#4}{}{\bibnamedelimd\mkbibnameaffix{#4}\isdot}%
+     \ifblank{#2}{}{\revsdnamepunct\bibnamedelimd\mkbibnamefirst{#2}\isdot}}
+    {\usebibmacro{name:delim}{#1}%
+     \usebibmacro{name:hook}{#1}%
+     \mkbibnamelast{#1}\isdot
+     \ifblank{#4}{}{\bibnamedelimd\mkbibnameaffix{#4}\isdot}%
+     \ifblank{#2#3}{}{\revsdnamepunct}%
+     \ifblank{#2}{}{\bibnamedelimd\mkbibnamefirst{#2}\isdot}%
+     \ifblank{#3}{}{\bibnamedelimd\mkbibnameprefix{#3}\isdot}}}
+
+\renewbibmacro*{name:last}[4]{%
+  \ifuseprefix
+    {\usebibmacro{name:delim}{#3#1}%
+     \usebibmacro{name:hook}{#3#1}%
+     \ifblank{#3}
+       {}
+       {%\ifcapital%<-- commented this out
+        %  {\mkbibnameprefix{\MakeCapital{#3}}\isdot}% and this
+          {\mkbibnameprefix{#3}\isdot}%
+        \ifpunctmark{'}{}{\bibnamedelimc}}}
+    {\usebibmacro{name:delim}{#1}%
+     \usebibmacro{name:hook}{#1}}%
+  \mkbibnamelast{#1}\isdot}%
+}
+
+% : as subtitlepunct
+
+\renewcommand{\subtitlepunct}{\addcolon\addspace}
+
+% Sentence case in certain fields
+
+\DeclareFieldFormat{sentencecase}{\MakeSentenceCase{#1}}
+
+\renewbibmacro*{title}{%
+\ifthenelse{\iffieldundef{title}\AND\iffieldundef{subtitle}}
+{}
+{\ifthenelse{\ifentrytype{article}\OR\ifentrytype{inbook}%
+  \OR\ifentrytype{incollection}\OR\ifentrytype{inproceedings}%
+  \OR\ifentrytype{phdthesis}\OR\ifentrytype{book}}
+  {\printtext[title]{%
+    \printfield[sentencecase]{title}%
+    \setunit{\subtitlepunct}%
+    \printfield[sentencecase]{subtitle}}}%
+  {\printtext[title]{%
+    \printfield[titlecase]{title}%
+    \setunit{\subtitlepunct}%
+    \printfield[titlecase]{subtitle}}}%
+ \newunit}%
+\printfield{titleaddon}}
 
 %%% no navigation icons
 
 \setbeamertemplate{navigation symbols}{}
+
+%%% no bibliography icons?
+
+\setbeamertemplate{bibliography item}{}
 
 %% stepwise uncovering
 
@@ -127,7 +261,8 @@
 
 \usepackage{expex}
 \lingset{aboveglftskip=-1ex,
-        belowglpreambleskip=-1ex}
+        belowglpreambleskip=-1ex,
+        belowexskip=-1ex}
 
 \resetcountonoverlays{excnt}
 
@@ -238,21 +373,21 @@
 
 \begin{frame}{This presentation}
 
-    \begin{block}{Claims}
+    \begin{block}{Questions}
 
         \begin{itemize}
 
-        \item Variation is difficult to find
+        \item What kind of variation do we find?
 
-        \item Speakers treat all possessed direct objects in the same way
+        \item What kinds of factors determine variation?
 
-        \item Agreement is not semantic, but sensitive to \alert{syntactic structure}
+        \item What determines object agreement?
 
         \end{itemize}
 
     \end{block}
 
-    \begin{block}{Methods}
+    \begin{block}{Methods and results}
 
         \begin{itemize}
 
@@ -261,6 +396,8 @@
             \item Acceptability judgments with and without contexts
 
             \item Forced choice tests with and without contexts
+
+            \item Speakers treat all possessed DOs alike: \alert{syntactic} trigger?
 
         \end{itemize}
     \end{block}
@@ -279,11 +416,12 @@
 
     \end{itemize}
 
+\onslide<3->{%
 \pex
     \a
         \begingl
             \gla    Mari {lát /} \ljudge*lát-ja egy kutyá-t.//
-            \glb    M.   see.\textsc{3sg} see-\textsc{3sg.obj} a   dog-\textsc{acc}//
+            \glb    M.   see.\textsc{3sg} see-\textsc{\alert{3sg.obj}} a   dog-\textsc{acc}//
             \glft   ‘Mari sees a dog.’//
         \endgl
     \pause
@@ -293,34 +431,177 @@
             \glb    M.   see-\textsc{\alert{3sg.obj}} see.\textsc{3sg} the dog-\textsc{\alert{1sg.poss}-acc}//
             \glft   ‘Mari sees a dog of mine.’//
         \endgl
-\xe
+\xe}
 
 \end{frame}
 
-\begin{frame}{Structures}
+\begin{frame}{Types of possessed NPs}
 
-\ex
+\pex
+    \a
+        \begingl\rightcomment{Nominative possessor}
+            \gla    Mari (*a) kutyá-ja//
+            \glb    Mari.\textsc{nom}  (the) dog-\textsc{3sg.poss}//
+            \glft   `Mari's dog'//
+        \endgl
+    \a
+        \begingl\rightcomment{Dative possessor}
+            \gla    Mari-nak a kutyá-ja//
+            \glb    Mari-\textsc{dat} the dog-\textsc{3sg.poss}//
+            \glft   `Mari's dog'//
+        \endgl
+    \a
+        \begingl\rightcomment{Pronominal possessor}
+            \gla    az ő kutyá-ja//
+            \glb    the s/he.\textsc{nom} dog-\textsc{3sg.poss}//
+            \glft   `her/his dog'//
+        \endgl
+\xe
+
+\begin{itemize}
+
+    \item Distribution suggests different heights in the NP \parencite{denDikken1999,Bartos1999,Dekany2015}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Structures: \textsc{nom} possessor}
+
+\ex\rightcomment{\emph{Mari kutyája} `Mari's dog'}
     \begin{tikzpicture}[baseline]
-        \Tree   [.DP
-                    \node (specdp) {poss.\textsc{nom}};
+        \Tree   [.{\textcolor<2->{camcosblue}{DP}}
+                    \node (specdp) {\textcolor<2->{camcosblue}{\emph{Mari.\textsc{nom}}}};
                     [.{D$'$}
                         D
                         [.PossP
-                            \node (t) {\sout{poss.\textsc{nom}}};
+                            \node (t) {\emph{\sout{Mari}}};
                                 [.{Poss$'$}
                                     [.NP
-                                        N
+                                        \node {\emph{kutyája}\\dog};
                                     ]
                                     [.Poss
-                                        -\textsc{poss.$\phi$}
+                                        \node (poss) {\emph{-ja}\\\textsc{3sg.poss}};
                                     ]
                                 ]
                         ]
                     ]
                 ]
-        \draw [arrow, ->, bend left] (t) to (specdp.south);
+        \draw [arrow, ->, bend left=55] (t.south) to (specdp.south);
     \end{tikzpicture}
 \xe
+
+\end{frame}
+
+\begin{frame}{Structures: \textsc{dat} possessor}
+
+\ex\rightcomment{\emph{Marinak a kutyája} `Mari's dog'}
+    \begin{tikzpicture}[baseline]
+        \Tree   [.{\textcolor<2->{camcosblue}{DP}}
+                    \node (specdp) {\textcolor<2->{camcosblue}{\emph{Marinak-\textsc{dat}}}};
+                    [.{\textcolor<2->{camcosblue}{DP}}
+                        \node (d) {D\\\emph{a}\\the};
+                        [.PossP
+                            \node (t) {\emph{\sout{Mari}}};
+                                [.{Poss$'$}
+                                    [.NP
+                                        \node {\emph{kutyája}\\dog};
+                                    ]
+                                    [.Poss
+                                        \node (poss) {\emph{-ja}\\\textsc{3sg.poss}};
+                                    ]
+                                ]
+                        ]
+                    ]
+                ]
+        \draw [arrow, ->, bend left=55] (t.south) to (specdp.south);
+    \end{tikzpicture}
+\xe
+
+\end{frame}
+
+\begin{frame}{Structures: pronominal possessor}
+
+\ex\rightcomment{\emph{az ő kutyája} `her/his dog'}
+    \begin{tikzpicture}[baseline]
+        \Tree   [.{\textcolor<2->{camcosblue}{DP}}
+                    \node (d) {\textcolor<2->{camcosblue}{D}\\\emph{az}\\\emph{the}};
+                    [.PossP
+                        \node (t) {\textcolor<2->{camcosblue}{\emph{ő}}\\\textcolor<2->{camcosblue}{s/he}};
+                            [.{Poss$'$}
+                                [.NP
+                                    \node {\emph{kutyája}\\dog};
+                                ]
+                                [.Poss
+                                    \node (poss) {\emph{-ja}\\\textsc{3sg.poss}};
+                                ]
+                            ]
+                    ]
+                ]
+    \end{tikzpicture}
+\xe
+
+\end{frame}
+
+\begin{frame}{Syntactic and semantic properties}
+
+    \begin{block}{Extraction}
+
+        \begin{itemize}
+
+            \item Dative possessors can be extracted \parencite{Szabolcsi1994}
+
+            \item Only extracted possessors in definiteness effect-contexts (\nextx a)
+
+            \item Non-specific reading in (\nextx a)
+
+        \end{itemize}
+
+    \end{block}
+
+\onslide<2->{%
+\pex
+    \a
+        \begingl
+            \gla    Mari-nak van kutyá-ja.//
+            \glb    Mari-\textsc{dat} is dog-\textsc{3sg.poss}//
+            \glft   `Mari has a dog/dogs.'//
+        \endgl
+    \a
+        \begingl
+            \gla    \ljudge*Mari van kutyá-ja.//
+            \glb    Mari.\textsc{nom} is dog-\textsc{3sg.poss}//
+        \endgl
+\xe}
+
+\end{frame}
+
+\begin{frame}{What triggers object agreement?}
+
+    \begin{block}{Syntax?}
+        \begin{itemize}
+
+            \item DP structure\hfill\parencite{Bartos1999}
+
+        \end{itemize}
+    \end{block}
+
+    \begin{block}{Semantics?}
+        \begin{itemize}
+
+            \item A feature [\textsc{def}] introduces presupposition\hfill\parencite{Coppock2013P}
+
+        \end{itemize}
+    \end{block}
+
+    \begin{block}{Both? Neither?}
+        \begin{itemize}
+
+            \item Possessed DOs have DP but they can be non-specific?
+            \item How does this influence agreement?
+
+        \end{itemize}
+    \end{block}
 
 \end{frame}
 
@@ -338,13 +619,13 @@ Holmberg, Georg Höhn, Ian Roberts, Michelle Sheehan, and Jenneke van der Wal.
 
 \end{frame}
 
-\begin{frame}[allowframebreaks]{References}
+\begin{frame}[t, allowframebreaks]
 
-\small
-\setlength{\parindent}{-0.2in} \setlength{\leftskip}{0.2in}
-\setlength{\parskip}{3pt}
-\newrefcontext[sorting=nyt]
-\printbibliography
+    \frametitle{References}
+    \newrefcontext[sorting=nyt]
+    \renewcommand*{\bibfont}{\footnotesize}
+    \printbibliography[heading=none]
+
 \end{frame}
 
 \end{document}
