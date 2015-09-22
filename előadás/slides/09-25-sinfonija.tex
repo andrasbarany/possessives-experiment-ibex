@@ -94,7 +94,7 @@
 
 \AtBeginBibliography{%
 \renewbibmacro*{name:last-first}[4]{%
-  \ifuseprefix
+  \ifuseprefix%
     {\usebibmacro{name:delim}{#3#1}%
      \usebibmacro{name:hook}{#3#1}%
      \ifblank{#3}{}{%
@@ -102,19 +102,19 @@
        %  {\mkbibnameprefix{\MakeCapital{#3}}\isdot}% and get rid of this
          {\mkbibnameprefix{#3}\isdot}%
        \ifpunctmark{'}{}{\bibnamedelimc}}%
-     \mkbibnamelast{#1}\isdot
+     \mkbibnamelast{#1}\isdot%
      \ifblank{#4}{}{\bibnamedelimd\mkbibnameaffix{#4}\isdot}%
      \ifblank{#2}{}{\revsdnamepunct\bibnamedelimd\mkbibnamefirst{#2}\isdot}}
     {\usebibmacro{name:delim}{#1}%
      \usebibmacro{name:hook}{#1}%
-     \mkbibnamelast{#1}\isdot
+     \mkbibnamelast{#1}\isdot%
      \ifblank{#4}{}{\bibnamedelimd\mkbibnameaffix{#4}\isdot}%
      \ifblank{#2#3}{}{\revsdnamepunct}%
      \ifblank{#2}{}{\bibnamedelimd\mkbibnamefirst{#2}\isdot}%
      \ifblank{#3}{}{\bibnamedelimd\mkbibnameprefix{#3}\isdot}}}
 
 \renewbibmacro*{name:last}[4]{%
-  \ifuseprefix
+  \ifuseprefix%
     {\usebibmacro{name:delim}{#3#1}%
      \usebibmacro{name:hook}{#3#1}%
      \ifblank{#3}
@@ -444,12 +444,14 @@
             \glb    Mari.\textsc{nom}  (the) dog-\textsc{3sg.poss}//
             \glft   `Mari's dog'//
         \endgl
+    \pause
     \a
         \begingl\rightcomment{Dative possessor}
             \gla    Mari-nak a kutyá-ja//
             \glb    Mari-\textsc{dat} the dog-\textsc{3sg.poss}//
             \glft   `Mari's dog'//
         \endgl
+    \pause
     \a
         \begingl\rightcomment{Pronominal possessor}
             \gla    az ő kutyá-ja//
@@ -457,6 +459,8 @@
             \glft   `her/his dog'//
         \endgl
 \xe
+
+\pause
 
 \begin{itemize}
 
@@ -583,7 +587,7 @@
         \item \textcite{Szabolcsi1994}: DOs with extracted possessors show
             variation
 
-        \item \alert{Semantic agreement}: only speficic DOs agree
+        \item \alert{Semantic agreement?} only specific DOs agree
 
     \end{itemize}
 
@@ -620,9 +624,9 @@
 
             \item Mapping the variation
 
-            \item Determining which factors cause variation \dots
+            \item Finding out which factors determine variation \dots
 
-            \item \dots{} and determine agreement
+            \item \dots{} and agreement
 
         \end{itemize}
 
