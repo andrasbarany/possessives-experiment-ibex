@@ -139,3 +139,24 @@ They do form a natural class if their possessors are taken into account:
 nominative and pronominal possessors clearly require a DP projection — but
 dative possessors less obviously so. They are compatible with an overt definite
 determiner, but is there evidence for a null determiner?
+
+### További megjegyzések
+
+#### Igék
+
+A második felmérésben a harmadik blokkban ilyeneket néztünk meg:
+
+```
+Ádám keresett/kereste Monetnek tájképét.
+Juli talált/találta az írónak regényét.
+```
+
+É. Kiss (2000) a “talál”-igét használja az ilyen mondatokban, mert azt mondja,
+hogy az nem-specifikus tárgyat követel; a “keres“ meg intenzionális ige, tehát
+nincs preszuppozició hogy létezik a tárgy. Lehet, hogy ezek arra utalnak, hogy
+itt valamilyen szemantikai konfliktus van.
+
+#### Baranya, Hajdú-Bihar
+
+Itt elfogadhatóbbak voltak a mondatok az alanyi ragozással; itt a névelő
+nélküli birtokosok is jobbak?
