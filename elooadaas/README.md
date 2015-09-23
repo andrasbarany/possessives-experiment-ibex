@@ -142,7 +142,7 @@ determiner, but is there evidence for a null determiner?
 
 ### További megjegyzések
 
-#### Igék
+### Igék
 
 A második felmérésben a harmadik blokkban ilyeneket néztünk meg:
 
@@ -155,11 +155,6 @@ Juli talált/találta az írónak regényét.
 hogy az nem-specifikus tárgyat követel; a “keres“ meg intenzionális ige, tehát
 nincs preszuppozició hogy létezik a tárgy. Lehet, hogy ezek arra utalnak, hogy
 itt valamilyen szemantikai konfliktus van.
-
-#### Baranya, Hajdú-Bihar
-
-Itt elfogadhatóbbak voltak a mondatok az alanyi ragozással; itt a névelő
-nélküli birtokosok is jobbak?
 
 ### Eredmények
 
@@ -183,3 +178,28 @@ structures and non-possessed noun phrases
 - If presuppositions trigger object agreement, we'd expect less variation?
   Also the suffix is not a presupposition trigger, we know this from the
 have-construction
+
+### Igazi eredmények
+
+- SUBJ-AGR bad with any kind of possessed DO
+    - We don't find the results from the literature
+    - Too few participants?
+
+- What's the trigger?
+    - Indefinite objects cannot trigger object agreement;
+    - But indefinite possessed objects do
+    - uniqueness vs. non-uniqueness
+    - specificity doesn't play a role in either case
+
+- So something about possessed DOs triggers agreement?
+    - *-ja/-je*: Do not correlate with interpretation (Szabolcsi 1994)
+    - What's in the DP hypothesis?
+    - We find **significant differences** between
+        - possessed DOs with nom possessors (which **cannot** take a determiner)
+        - and possessed DOs with DAT and null possessors without determiners
+    - Are there significant differences between
+        - null possessors with and without determiners (B1 vs. B2)?
+        - dative possessors with and without determiners (last experiment)
+
+- The data seem to point towards a syntactic trigger: not so much the DP
+  itself, but the presence of a determiner?
