@@ -200,6 +200,12 @@ have-construction
     - Are there significant differences between
         - null possessors with and without determiners (B1 vs. B2)?
         - dative possessors with and without determiners (last experiment)
+    - There **nearly significant** (p = 0.052) differences between
+        - null possessors with and without determiners (B1.obs vs. B2.obj)
+        - null possessors with and without determiners (with subject agreement too!)
+    - and **highly significant** (p = 0.045) differences between
+        - dative possessors with definite and indefinite determiners
+        - dative possessors with determiners and no determiners
 
 - The data seem to point towards a syntactic trigger: not so much the DP
   itself, but the presence of a determiner?
