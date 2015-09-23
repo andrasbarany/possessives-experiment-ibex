@@ -163,4 +163,4 @@ nélküli birtokosok is jobbak?
 
 ### Eredmények
 
-- Nincs nulla D datviszus birtokossal?
+- Nincsa nulla D dativusz birtokossal?
