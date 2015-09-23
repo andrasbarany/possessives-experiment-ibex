@@ -203,3 +203,6 @@ have-construction
 
 - The data seem to point towards a syntactic trigger: not so much the DP
   itself, but the presence of a determiner?
+    - Why could that be the case?
+    - Nominative possessor only allow for one possibility: null D
+    - Dative possessors appear in a variety of contexts, so speakers need the extra hint?
