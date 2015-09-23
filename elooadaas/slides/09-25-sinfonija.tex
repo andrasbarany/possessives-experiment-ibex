@@ -220,10 +220,12 @@
     \usebeamerfont{subtitle}{\large\insertsubtitle}\par
     \bigskip
     \hrule
+    \par
     \usebeamerfont{author}\insertauthor\par
     \usebeamerfont{institute}\small\insertinstitute\par
     \bigskip
     \hrule
+    \par
     \usebeamerfont{date}{\normalsize\insertdate}\par
     \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic{}
 }
@@ -258,6 +260,7 @@
     \node[shape=circle, draw, inner sep=2pt] (char) {#1};}}
 
 \usepackage{pgfplots}
+\usepackage{tabulary}
 
 \usepackage{expex}
 \lingset{aboveglftskip=-1ex,
@@ -399,6 +402,8 @@
 
             \item Speakers treat all possessed DOs alike: \alert{syntactic} trigger?
 
+            \item {}???
+
         \end{itemize}
     \end{block}
 
@@ -440,16 +445,16 @@
 \pex
     \a
         \begingl\rightcomment{Nominative possessor}
-            \gla    Mari (*a) kutyá-ja//
-            \glb    Mari.\textsc{nom}  (the) dog-\textsc{3sg.poss}//
-            \glft   `Mari's dog'//
+            \gla    Mari {(*a) /} egy kutyá-ja//
+            \glb    Mari.\textsc{nom} (the) a dog-\textsc{3sg.poss}//
+            \glft   `Mari's dog', `Mari's one dog'//
         \endgl
     \pause
     \a
         \begingl\rightcomment{Dative possessor}
-            \gla    Mari-nak a kutyá-ja//
-            \glb    Mari-\textsc{dat} the dog-\textsc{3sg.poss}//
-            \glft   `Mari's dog'//
+            \gla    Mari-nak {a /} egy kutyá-ja//
+            \glb    Mari-\textsc{dat} the a dog-\textsc{3sg.poss}//
+            \glft   `Mari's dog', `a dog of Mari's'//
         \endgl
     \pause
     \a
@@ -635,6 +640,156 @@
 \end{frame}
 
 \section{Surveys}
+
+\begin{frame}{Methodology}
+
+    \begin{itemize}
+
+        \item Online surveys hosted on \texttt{http://spellout.net/ibexfarm/}
+
+        \item April, May, September 2015: xxx participants
+
+        \item Acceptability judgments (7 point scale):
+
+            \begin{itemize}
+
+                \item Subject vs.~object agreement
+
+                \item Nominative vs.~dative possessors
+
+                \item Positive vs.~negative polarity (semantic effect?)
+
+                \item Word order (no effect?)
+
+                \item Contexts: definite (unique) vs.~indefinite (non-unique) reading of the DO
+
+            \end{itemize}
+
+        \item Forced choice:
+
+            \begin{itemize}
+
+                \item Nominative vs.~dative possessors
+
+                \item Presence vs.~absence of determiner
+
+                \item Contexts: definite (unique) vs.~indefinite (non-unique) reading of the DO
+
+            \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Data: Acceptability judgments}
+
+    \pex In literature class, the children were reading Petőfi and Arany.
+        \a
+            \begingl
+                \gla    Mari olvas-ott Petőfi vers-ét.//
+                \glb    Mari read-\textsc{3sg.past} Petőfi.\textsc{nom} poem-\textsc{3sg.poss}//
+            \endgl
+        \a
+            \begingl
+                \gla    Mari olvas-t-a Petőfi vers-ét.//
+                \glb    Mari read-\textsc{past-\alert{3sg.obj}} Petőfi.\textsc{nom} poem-\textsc{3sg.poss}//
+            \endgl
+        \a
+            \begingl
+                \gla    Mari olvas-ott Petőfi-nek vers-ét.//
+                \glb    Mari read-\textsc{3sg.past} Petőfi-\textsc{\textcolor{red!70!black}{dat}} poem-\textsc{3sg.poss}//
+            \endgl
+        \a
+            \begingl
+                \gla    Mari olvas-t-a Petőfi-nek vers-ét.//
+                \glb    Mari read-\textsc{past-\alert{3sg.obj}} Petőfi-\textsc{\textcolor{red!70!black}{dat}} poem-\textsc{3sg.poss}//
+                \glft   \fbox{intended: `Mari read Petőfi's poem / a poem by Petőfi.'}//
+            \endgl
+    \xe
+
+\end{frame}
+
+\begin{frame}{Data: Forced choice I, no context}
+
+%{\small
+\hspace{-.5cm}\begin{tabulary}{1\linewidth}{ll}
+Ismerte a szomszéd nővérét.        & Ismerte a szomszéd\textcolor{red!70!black}{nak} nővérét.\\
+Ismerte a szomszéd nővérét.        & Ismerte a szomszéd\textcolor{red!70!black}{nak} \textcolor{green!70!black}{a} nővérét.\\
+Ismerte a szomszéd nővérét.        & Ismerte a szomszéd\textcolor{red!70!black}{nak} \alert{egy} nővérét.\\
+Ismerte a szomszéd nővérét.        & Ismerte a szomszéd \alert{egy} nővérét.\\
+Ismerte a szomszéd \alert{egy} nővérét.    & Ismerte a szomszéd\textcolor{red!70!black}{nak} nővérét.\\
+\multicolumn{1}{c}{\vdots} & \multicolumn{1}{c}{\vdots}\\
+\end{tabulary}
+%}
+
+\begin{itemize}
+    \item \emph{S/he knew the neighbour's daughter / \textcolor{green!70!black}{the} daughter \textcolor{red!70!black}{of the} neighbour / \alert{a} daughter \textcolor{red!70!black}{of the} neigbour \dots}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Data: Forced choice II, def.\ context}
+
+\onslide<1->{%
+\begin{itemize}
+    \item \emph{\dots{} is a famous writer, but she also painted a landscape.}
+\end{itemize}}
+
+{\small
+\hspace{-.5cm}\begin{tabulary}{1\linewidth}{ll}
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő tájképet.\\
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő\textcolor{red!70!black}{nek} tájképet.\\
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő\textcolor{red!70!black}{nek} \alert{egy} tájképet.\\
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő\textcolor{red!70!black}{nek} \textcolor{green!70!black}{a} tájképet.\\
+Péter látta a költő tájképet.     & Péter látta a költő\textcolor{red!70!black}{nek} tájképet.\\
+\multicolumn{1}{c}{\vdots} & \multicolumn{1}{c}{\vdots}\\
+\end{tabulary}
+}
+
+\begin{itemize}
+    \item \emph{Péter saw the painter \alert{one} landscape / the painter's landscape / \textcolor{green!70!black}{the} landscape \textcolor{red!70!black}{of the} painter \dots}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Data: Forced choice III, indef.\ context}
+
+\begin{itemize}
+    \item \emph{\dots{} is a famous writer, but she also painted \alert{several} landscapes.}
+\end{itemize}
+
+{\small
+\hspace{-.5cm}\begin{tabulary}{1\linewidth}{ll}
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő tájképet.\\
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő\textcolor{red!70!black}{nek} tájképet.\\
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő\textcolor{red!70!black}{nek} \alert{egy} tájképet.\\
+Péter látta a költő \alert{egy} tájképét. & Péter látta a költő\textcolor{red!70!black}{nek} \textcolor{green!70!black}{a} tájképet.\\
+Péter látta a költő tájképet.     & Péter látta a költő\textcolor{red!70!black}{nek} tájképet.\\
+\multicolumn{1}{c}{\vdots} & \multicolumn{1}{c}{\vdots}\\
+\end{tabulary}
+}
+
+\begin{itemize}
+    \item \emph{Péter saw the painter \alert{one} landscape / the painter's landscape / \textcolor{green!70!black}{the} landscape \textcolor{red!70!black}{of the} painter \dots}
+\end{itemize}
+
+\end{frame}
+
+\section{Results}
+
+\begin{frame}{Results}
+
+    \begin{itemize}
+
+        \item Object agreement is always better than subject agreement. (sig)
+
+        \item Subject agreement is always judged fairly badly.
+
+        \item
+
+    \end{itemize}
+
+\end{frame}
 
 \begin{frame}{Acknowledgements}
 
