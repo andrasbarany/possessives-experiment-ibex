@@ -160,3 +160,7 @@ itt valamilyen szemantikai konfliktus van.
 
 Itt elfogadhatóbbak voltak a mondatok az alanyi ragozással; itt a névelő
 nélküli birtokosok is jobbak?
+
+### Eredmények
+
+- Nincs nulla D datviszus birtokossal?
