@@ -163,4 +163,21 @@ nélküli birtokosok is jobbak?
 
 ### Eredmények
 
-- Nincsa nulla D dativusz birtokossal?
+- Geographical distribution: Hajdú-Bihar and Baranya have some speakers who
+  allow subject agreement with possessed DOs?
+
+- In general: difficult to find judgments confirming what is reported in the
+  literature.
+
+- Object agreement with indefinite possessed direct objects definitely happens
+  (and is quite acceptable), so there is a clear difference between these
+structures and non-possessed noun phrases
+
+- Could this be a DP layer?
+
+- What's the role of D? Dative possessors with null determiners aren't very
+  good (in general and compared to dative possessors with determiners);
+
+- But either D or Num is fine — and null D is fine with nominative possessors
+
+- If presuppositions trigger object agreement, we'd expect less variation?
