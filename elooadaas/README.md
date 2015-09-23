@@ -181,3 +181,5 @@ structures and non-possessed noun phrases
 - But either D or Num is fine — and null D is fine with nominative possessors
 
 - If presuppositions trigger object agreement, we'd expect less variation?
+  Also the suffix is not a presupposition trigger, we know this from the
+have-construction
