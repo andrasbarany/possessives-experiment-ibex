@@ -212,3 +212,6 @@ have-construction
     - Why could that be the case?
     - Nominative possessor only allow for one possibility: null D
     - Dative possessors appear in a variety of contexts, so speakers need the extra hint?
+
+- Null Ds: is there actually **no D** in have-constructions? That would explain
+  the lack of specificity? No D, no Spec? → Nothing to host the possessor?
