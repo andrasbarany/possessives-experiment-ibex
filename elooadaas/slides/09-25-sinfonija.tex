@@ -47,6 +47,14 @@
 	Title = {On the Structural Representation of Possession and Agreement},
 	Year = {1999}}
 
+@collection{HoeKli2008,
+	Editor = {M{\"u}ller, Henrik H{\o}eg and Klinge, Alex},
+	Location = {Amsterdam/Philadelphia},
+	Publisher = {John Benjamins},
+	Subtitle = {From morphology to discourse management},
+	Title = {Essays on Nominal Determination},
+	Year = {2008}}
+
 @incollection{Szabolcsi1994,
 	Author = {Szabolcsi, Anna},
 	Crossref = {KieKis1994},
@@ -61,6 +69,35 @@
 	Title = {The Syntactic Structure of {Hungarian}},
 	Volume = {27},
 	Year = {1994}}
+
+@article{Bernstein2008,
+	Author = {Bernstein, Judy B.},
+	Doi = {10.1111/j.1749-818x.2008.00091.x},
+	Journaltitle = {Language and Linguistics Compass},
+	Number = {6},
+	Pages = {1246-1270},
+	Title = {Reformulating the Determiner Phrase Analysis},
+	Volume = {2},
+	Year = {2008}}
+
+@incollection{EKiss2010b,
+	Author = {{\'E}. Kiss, Katalin},
+	Booktitle = {Information Structure},
+	Crossref = {ZimFer2010},
+	Location = {Oxford/New York},
+	Pages = {64-88},
+	Publisher = {Oxford University Press},
+	Subtitle = {Theoretical, Typological and Experimental Perspectives},
+	Title = {Structural focus and exhaustivity},
+	Year = {2010}}
+
+@incollection{Longobardi2008,
+	Author = {Longobardi, Giuseppe},
+	Crossref = {HoeKli2008},
+	Location = {Amster\-dam/Phila\-delphia},
+	Pages = {189-211},
+	Publisher = {John Benjamins},
+	Title = {Reference to individuals, person, and the variety of mapping parameters}}
 
 \end{filecontents*}
 
@@ -364,11 +401,9 @@
 
         \item Possessed direct objects are an exception
 
-        \item They can be indefinite yet require agreement
+        \item Indefinite possessed DOs trigger agreement
 
-        \item Standard Hungarian: all possessed DOs agree
-
-        \item But: dialectal variation?
+        \item But: \alert{dialectal variation?}
 
     \end{itemize}
 
@@ -399,10 +434,6 @@
             \item Acceptability judgments with and without contexts
 
             \item Forced choice tests with and without contexts
-
-            \item Speakers treat all possessed DOs alike: \alert{syntactic} trigger?
-
-            \item {}???
 
         \end{itemize}
     \end{block}
@@ -469,7 +500,8 @@
 
 \begin{itemize}
 
-    \item Distribution suggests different heights in the NP \parencite{denDikken1999,Bartos1999,Dekany2015}
+    \item Distribution suggests different heights in the NP
+        \parencite{Szabolcsi1994,denDikken1999,Bartos1999,EKiss2000b,Dekany2015}
 
 \end{itemize}
 
@@ -481,8 +513,8 @@
     \begin{tikzpicture}[baseline]
         \Tree   [.{\textcolor<2->{camcosblue}{DP}}
                     \node (specdp) {\textcolor<2->{camcosblue}{\emph{Mari.\textsc{nom}}}};
-                    [.{D$'$}
-                        D
+                    [.{\textcolor<2->{camcosblue}{D$'$}}
+                        \textcolor<2->{camcosblue}{D}
                         [.PossP
                             \node (t) {\emph{\sout{Mari}}};
                                 [.{Poss$'$}
@@ -509,7 +541,7 @@
         \Tree   [.{\textcolor<2->{camcosblue}{DP}}
                     \node (specdp) {\textcolor<2->{camcosblue}{\emph{Marinak-\textsc{dat}}}};
                     [.{\textcolor<2->{camcosblue}{DP}}
-                        \node (d) {D\\\emph{a}\\the};
+                        \node (d) {\textcolor<2->{camcosblue}{D}\\\emph{a}\\the};
                         [.PossP
                             \node (t) {\emph{\sout{Mari}}};
                                 [.{Poss$'$}
@@ -592,7 +624,7 @@
         \item \textcite{Szabolcsi1994}: DOs with extracted possessors show
             variation
 
-        \item \alert{Semantic agreement?} only specific DOs agree
+        \item \alert{Semantic agreement?} Only specific DOs agree
 
     \end{itemize}
 
@@ -649,7 +681,7 @@
 
         \item April, May, September 2015: xxx participants
 
-        \item Acceptability judgments (7 point scale):
+        \item Acceptability judgments (7 point Likert-scale):
 
             \begin{itemize}
 
@@ -723,7 +755,7 @@ Ismerte a szomszéd \alert{egy} nővérét.    & Ismerte a szomszéd\textcolor{r
 %}
 
 \begin{itemize}
-    \item \emph{S/he knew the neighbour's daughter / \textcolor{green!70!black}{the} daughter \textcolor{red!70!black}{of the} neighbour / \alert{a} daughter \textcolor{red!70!black}{of the} neigbour \dots}
+    \item \emph{S/he knew the neighbour's daughter / \textcolor{green!70!black}{the} daughter \textcolor{red!70!black}{of the} neighbour / \alert{a} daughter \textcolor{red!70!black}{of the} neigbour / \dots}
 \end{itemize}
 
 \end{frame}
@@ -747,7 +779,7 @@ Péter látta a költő tájképet.     & Péter látta a költő\textcolor{red!
 }
 
 \begin{itemize}
-    \item \emph{Péter saw the painter \alert{one} landscape / the painter's landscape / \textcolor{green!70!black}{the} landscape \textcolor{red!70!black}{of the} painter \dots}
+    \item \emph{Péter saw the painter \alert{one} landscape / the painter's landscape / \textcolor{green!70!black}{the} landscape \textcolor{red!70!black}{of the} painter / \dots}
 \end{itemize}
 
 \end{frame}
@@ -770,7 +802,7 @@ Péter látta a költő tájképet.     & Péter látta a költő\textcolor{red!
 }
 
 \begin{itemize}
-    \item \emph{Péter saw the painter \alert{one} landscape / the painter's landscape / \textcolor{green!70!black}{the} landscape \textcolor{red!70!black}{of the} painter \dots}
+    \item \emph{Péter saw the painter \alert{one} landscape / the painter's landscape / \textcolor{green!70!black}{the} landscape \textcolor{red!70!black}{of the} painter / \dots}
 \end{itemize}
 
 \end{frame}
@@ -797,12 +829,10 @@ Péter látta a költő tájképet.     & Péter látta a költő\textcolor{red!
 
         \begin{itemize}
 
-        \item Cannot be (in)definiteness: possessed DOs can be indefinite,
-            yet trigger agreement
+        \item Not (in){}definiteness: possessed DOs can be indefinite, yet
+            trigger agreement
 
-        \item Cannot be the possessive suffix: independent of interpretation
-
-        \item But:
+        \item The possessive suffix does not influence definiteness
 
         \end{itemize}
 
@@ -831,15 +861,46 @@ Péter látta a költő tájképet.     & Péter látta a költő\textcolor{red!
 
 \end{frame}
 
+\section{Conclusions}
+
+\begin{frame}{Conclusions and future}
+
+    \begin{itemize}
+
+        \item We have not found data corroborating the variation reported
+
+        \item All our speakers judged subject agreement with possessed objects
+            as very low in acceptability
+
+        \item The results highlight \alert{the role of determiners for acceptability}
+
+        \item Why D\@?
+
+        \begin{itemize}
+
+            \item \textcite{Longobardi2008,Bernstein2008}: D as the syntactic
+                locus of referentiality; DPs as arguments?
+
+            \item Arguably explains extraction facts: no place for possessor?
+
+        \end{itemize}
+
+        \item Future: Non-specific possessed DOs? Other determiners?
+
+    \end{itemize}
+
+\end{frame}
+
 \begin{frame}{Acknowledgements}
 
 \begin{center}
     \Large \textbf{Thank you!}
 \end{center}
 
-The first author's research is supported by ERC Grant No. 269752
-\enquote{Rethinking Comparative Syntax}. Thanks to: Theresa Biberauer, Anders
-Holmberg, Georg Höhn, Ian Roberts, Michelle Sheehan, and Jenneke van der Wal.
+The author's names are ordered by the size of their beards.  The first author's
+research is supported by ERC Grant No. 269752 \enquote{Rethinking Comparative
+    Syntax}. Thanks to: Theresa Biberauer, Anders Holmberg, Georg Höhn, Ian
+Roberts, Michelle Sheehan, and Jenneke van der Wal.  The second author \dots
 
 \end{frame}
 
