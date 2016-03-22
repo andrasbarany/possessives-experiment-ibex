@@ -1,10 +1,107 @@
 # possessives-experiment-ibex
 
-Aktuális felmérés:
+## Március/április 2016
+
+### Általános kérdések:
+
+- Miért rosszabb a DAT-os birtokos mint a NOM-os?
+- Miért jobb a DET mint a ø?
+- *talál* vs. *megtalál*, *ír* vs. *megír*, *rajzol* vs. *megrajzol*, **még egy**?
+- Tárgyas ragozás felszólító módban?
+    - *hozzál egy könyvemet* vs. *hozd egy könyvemet*
+
+### Felszólító mód
+
+- igék: *hoz*, *mutat*, *ad*, *dob*
+- mindegyikhez egy kontextus
+
+```
+1.      Egy autoszerelő műhelyében
+    a.  Hozzál egy csavarhúzóm!         élettelen tárgy/-ACC/SBJ
+    b.  Hozd egy csavarhúzóm!           élettelen tárgy/-ACC/OBJ
+    c.  Hozzál egy csavarhúzómat!       élettelen tárgy/+ACC/SBJ
+    d.  Hozd egy csavarhúzómat!         élettelen tárgy/+ACC/OBJ
+
+2.      Egy ügyvédi irodában
+    a.  Hozzál be egy ügyfelem!         élő tárgy/-ACC/SBJ
+    b.  Hozd be egy ügyfelem!           élő tárgy/-ACC/OBJ
+    c.  Hozzál be egy ügyfelemet!       élő tárgy/+ACC/SBJ
+    d.  Hozd be egy ügyfelemet!         élő tárgy/+ACC/OBJ
+
+3.      Egy ügyvédi irodában
+    a.  Adjál egy dossziém!             élettelen tárgy/-ACC/SBJ
+    b.  Add egy dossziém!               élettelen tárgy/-ACC/OBJ
+    c.  Adjál egy dossziémat!           élettelen tárgy/+ACC/SBJ
+    d.  Add egy dossziémat!             élettelen tárgy/+ACC/OBJ
+
+4.      Egy főnöknő mondja a titkárnak
+    a.  Hívjál (be) egy titkárnőm.      élő tárgy/-ACC/SBJ
+    b.  Hívd egy titkárnőm.             élő tárgy/-ACC/OBJ
+    c.  Hívjál egy titkárnőmet.         élő tárgy/+ACC/SBJ
+    d.  Hívd egy titkárnőmet.           élő tárgy/+ACC/OBJ
+```
+
+- + forced choice?
+- + gap: ______ (hoz) egy csavarhúzómat! stb.
+
+### Igekötő: +/-
+
+```
+1A.     Juli sok időt töltött könyvesboltban.
+    a.  Végül talált a híres írónak egy könyvét.            -MEG/+DEF/SBJ
+    b.  Végül találta a híres írónak egy könyvét.           -MEG/+DEF/OBJ
+    c.  Végül megtalált a híres íronak egy könyvét.         +MEG/+DEF/SBJ
+    d.  Végül megtalálta a híres íronak egy könyvét.        +MEG/+DEF/SBJ
+
+1B.     Juli sok időt töltött könyvesboltban.
+    a.  Végül talált egy híres írónak egy könyvét.          -MEG/-DEF/SBJ
+    b.  Végül találta egy híres írónak egy könyvét.         -MEG/-DEF/OBJ
+    c.  Végül megtalált egy híres íronak egy könyvét.       +MEG/-DEF/SBJ
+    d.  Végül megtalálta egy híres íronak egy könyvét.      +MEG/-DEF/SBJ
+
+2A.     Zsuzsa ...
+    a.  Zsuzsa festett a völgynek egy tájképét.             -MEG/+DEF/SBJ
+    b.  Zsuzsa festette a völgynek egy tájképét.            -MEG/+DEF/OBJ
+    c.  Zsuzsa megfestett a völgynek egy tájképét.          +MEG/+DEF/SBJ
+    d.  Zsuzsa megfestette a völgynek egy tájképét.         +MEG/+DEF/SBJ
+                                                                          
+2B.     Zsuzsa ...                                                        
+    a.  Zsuzsa festett egy völgynek egy tájképét.           -MEG/-DEF/SBJ
+    b.  Zsuzsa festette egy völgynek egy tájképét.          -MEG/-DEF/OBJ
+    c.  Zsuzsa megfestett egy völgynek egy tájképét.        +MEG/-DEF/SBJ
+    d.  Zsuzsa megfestette egy völgynek egy tájképét.       +MEG/-DEF/SBJ
+
+3A.     Péternek alig volt ideje a disszertációjával foglalkozni.
+    a.  Végre írt a könyvnek egy fejezetét.                 -MEG/+DEF/SBJ
+    b.  Végre írta a könyvnek egy fejezetét.                -MEG/+DEF/OBJ
+    c.  Végre megírt a könyvnek egy fejezetét.              +MEG/+DEF/SBJ
+    d.  Végre megírta a könyvnek egy fejezetét.             +MEG/+DEF/SBJ
+                                                                          
+3A.     Péternek párhumazosan kell különböző projekten dolgoznia.
+    a.  Végre írt egy könyvnek egy fejezetét.               -MEG/-DEF/SBJ
+    b.  Végre írta egy könyvnek egy fejezetét.              -MEG/-DEF/OBJ
+    c.  Végre megírt egy könyvnek egy fejezetét.            +MEG/-DEF/SBJ
+    d.  Végre megírta egy könyvnek egy fejezetét.           +MEG/-DEF/SBJ
+
+4A.     A város már régóta tervezte a környék felújítását.
+    a.  Gyorsan épített egy parknak egy játszórterét.       -MEG/+DEF/SBJ
+    b.  Gyorsan építette egy parknak egy játszórterét.      -MEG/+DEF/OBJ
+    c.  Gyorsan megépített egy parknak egy játszórterét.    +MEG/+DEF/SBJ
+    d.  Gyorsan megépítette egy parknak egy játszórterét.   +MEG/+DEF/SBJ
+                                                                          
+4A.     A város már régóta tervezte a környék felújítását.
+    a.  Gyorsan épített a parknak egy játszórterét.         -MEG/-DEF/SBJ
+    b.  Gyorsan építette a parknak egy játszórterét.        -MEG/-DEF/OBJ
+    c.  Gyorsan megépített a parknak egy játszórterét.      +MEG/-DEF/SBJ
+    d.  Gyorsan megépítette a parknak egy játszórterét.     +MEG/-DEF/SBJ
+```
+
+- ezt további "verbs of creation"-nel kéne letesztelni: *(meg)fest*,
+*(meg)rajzol*, *(meg)ír*
+
+## SEP 2015
 
 http://spellout.net/ibexexps/Andraas/magyar3/experiment.html
-
-Aktuális mondatok:
 
 ### Első rész: Acceptability judgments — 5 target fejenként
 
