@@ -1,0 +1,138 @@
+FILLERS
+
+
+
+WITH CONTEXTS:
+
+Néhány barátom a rádiónál dolgozik, de nincs állandó feladatuk.
+"Géza olvasta fel ma a híreket.",  "Géza olvasta ma a híreket fel."
+"Géza olvasta ma fel a híreket.",  "Géza olvasta ma a híreket fel."
+"Géza olvasta ma fel a híreket.",  "Géza olvasta fel ma a híreket."
+"Géza olvasta fel ma a híreket.",  "Géza olvasta a híreket ma fel."
+"Géza olvasta ma fel a híreket.",  "Géza olvasta a híreket ma fel."
+"Géza olvasta fel ma a híreket.",  "Géza olvasta a híreket fel ma."
+"Géza olvasta ma fel a híreket.",  "Géza olvasta a híreket fel ma."
+"Géza olvasta a híreket ma fel.",  "Géza olvasta a híreket fel ma."
+"Géza olvasta fel a híreket ma.",  "Géza olvasta ma a híreket fel."
+
+
+A barátaim mindig befogadnak kóbor állatokat, ma is ez történt.
+A szomszédnak megint vannak macskái, de nem tudom honnan szerezték őket.
+A hétvégén az emberek sok állatot ott hagytak a pályaudvaron, de nem tudom aztán mi lett velük.
+"János vitte haza a cicákat a pályaudvarról.",  "János vitte a cicákat haza a pályaudvarról."
+"János vitte haza a cicákat a pályaudvarról.",  "János vitte a cicákat a pályaudvarról haza." 
+"János vitte a cicákat haza a pályaudvarról.",  "János vitte a cicákat a pályaudvarról haza."
+
+
+Tudom, hogy Tamás hirtelen híres lett, de nem tudom miért.
+Tudom, hogy egy híres ember volt Tamásnál, de nem tudom ki.
+Tudom, hogy egy híres ember volt Tamásnál, de nem tudom miért.
+"Tamás hívta meg az angol herceget vacsorára.",  "Tamás hívta az angol herceget meg vacsorára." 
+"Tamás hívta meg az angol herceget vacsorára.",  "Tamás hívta vacsorára meg az angol herceget." 
+"Tamás hívta vacsorára meg az angol herceget.",  "Tamás hívta az angol herceget meg vacsorára."
+
+
+
+Láttam Pétert az esküvőn, de nem tudom miért volt ott.
+Tudom, hogy Péter ma nincs itthon, de nem tudom hova ment.
+"István hívta meg őt az esküvőre.", "István hívta őt meg az esküvőre." 
+"István hívta meg őt az esküvőre.", "István hívta őt az esküvőre meg." 
+"István hívta meg őt az esküvőre.", "István hívta meg az esküvőre őt." 
+
+"István hívta őt az esküvőre meg.", "István hívta meg az esküvőre őt." 
+"István hívta az esküvőre meg őt.", "István hívta az esküvőre őt meg." 
+"István hívta őt az esküvőre meg.", "István hívta őt meg az esküvőre."
+
+
+
+
+
+Tudam, hogy a testvérem otthon volt, de nem tudtam mit csinál.
+Hallom, hogy valaki használja a régi írógépet, de nem tudom ki.
+Hallom, hogy valaki használja a régo írógépet, de nem tudom hol.
+Hallom, hogy valaki használja a régi írógépet, de nem tudom mit csinál velet.
+
+"Kálmán levlet írt a nappaliban.", "Kálmán írt levelet a nappaliban."
+"Kálmán levelet írt a nappaliban.", "Kálmán írt a nappaliban levelet."
+"kálmán írt levlet a nappliban.", "Kálmán írt a nappaliban levelet."
+
+
+WITHOUT CONTEXT 
+
+
+
+"Felmondtak János és Béla.", "Felmondott János és Béla."
+
+
+"Felmondtak János és a kollégái.", "Felmondott János és a kollégái."
+"Felmondtak János és a kollégái.", "Felmondtak a kollégái és János."
+"Felmondtak János és a kollégái.", "Felmondott a kollégái és János." 
+"Felmondott János és a kollégái.", "Felmondtak a kollégái és János."
+"Felmondott János és a kollégái.", "Felmondott a kollégái és János." 
+"Felmondtak a kollégái és János.", "Felmondott a kollégái és János." 
+
+
+
+"Elutaztak a nővéremék és a barátjuk.", "Elutazott a nővéremék és a barátjuk."
+"Elutaztak a nővéremék és a barátjuk.", "Elutaztak a barátjuk és a nővéremék."
+"Elutaztak a nővéremék és a barátjuk.", "Elutazott a barátjuk és a nővéremék."
+"Elutazott a nővéremék és a barátjuk.", "Elutaztak a barátjuk és a nővéremék."
+"Elutazott a nővéremék és a barátjuk.", "Elutazott a barátjuk és a nővéremék."
+"Elutaztak a barátjuk és a nővéremék.", "Elutazott a barátjuk és a nővéremék."
+
+
+
+"Meglátogattak János és Béla és a feleségük.", "Meglátogattak János és Béla és a feleségeik."
+"Meglátogattak János és Béla és a feleségük.", "Meglátogattak János és Béla és a feleségeik."
+"Meglátogattak János és Béla és a feleségük.", "Meglátogatott János és Béla és a feleségük."
+
+"Meglátogattak János és Béla és a feleségük.", "Meglátogattak, a feleségeik, és János és Béla."
+"Meglátogattak János és Béla és a feleségük.", "Meglátogatott, a feleségeik, és János, és Béla."
+"Meglátogattak János és Béla és a feleségük.", "Meglátogattak, a feleségük, és János és Béla."
+"Meglátogattak János és Béla és a feleségük.", "Meglátogatott, a feleségük, és János, és Béla."
+
+
+"Meglátogattak János, Béla és a feleségeik.", "Meglátogatott János, Béla és a feleségeik."
+"Meglátogattak János, Béla és a feleségeik.", "Meglátogatott János, Béla és a feleségük."
+"Meglátogattak János, Béla és a feleségeik.", "Meglátogattak, a feleségeik, és János és Béla."
+"Meglátogattak János, Béla és a feleségeik.", "Meglátogatott, a feleségeik, és János, és Béla."
+"Meglátogattak János, Béla és a feleségeik.", "Meglátogatott, a feleségük, és János, és Béla."
+"Meglátogattak János, Béla és a feleségeik.", "Meglátogattak, a feleségük, és János és Béla."
+
+
+"Meglátogatott János, Béla és a feleségeik.", "Meglátogatott János, Béla és a feleségük."
+"Meglátogatott János, Béla és a feleségeik.", "Meglátogattak, a feleségeik, és János és Béla"
+"Meglátogatott János, Béla és a feleségeik.", "Meglátogatott, a feleségeik, és János, és Béla."
+"Meglátogatott János, Béla és a feleségeik.", "Meglátogatott, a feleségük, és János, és Béla."
+"Meglátogatott János, Béla és a feleségeik.", "Meglátogattak, a feleségük, és János és Béla."
+
+"Meglátogatott János, Béla és a feleségük.", "Meglátogattak, a feleségeik, és János és Béla"
+"Meglátogatott János, Béla és a feleségük.", "Meglátogatott, a feleségeik, és János, és Béla."
+"Meglátogatott János, Béla és a feleségük.", "Meglátogatott, a feleségük, és János, és Béla."
+"Meglátogatott János, Béla és a feleségük.", "Meglátogattak, a feleségük, és János és Béla."
+
+
+"Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségeik, és János, és Béla."
+"Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségük, és János, és Béla."
+"Meglátogattak, a feleségeik, és János és Béla", "Meglátogatott, a feleségük, és János, és Béla."
+"Meglátogattak, a feleségeik, és János és Béla", "Meglátogattak, a feleségük, és János és Béla."
+
+
+
+Megjegyzések:
+
+Lehet, hogy a meglátogatottak.... mondatból nem kell mindet használni, mert nagyon sok van belőlle, 
+ez esetben ki lehetne vágni az olyanokat ahol a szórendet variáltam. 
+Minden esetre ilyen fillerekre gondoltam, mit szólsz?
+
+
+
+
+
+
+
+
+
+
+
+
