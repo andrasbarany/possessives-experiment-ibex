@@ -6,7 +6,7 @@
 var shuffleSequence = seq("intro", "acceptability_intro", "practice",
             rshuffle(startsWith("t-"), startsWith("fc-")),
              "FC_intro_NoCont",
-            rshuffle(startsWith("tc1-"), startsWith("fc1-")),
+            rshuffle(startsWith("form-"), startsWith("fc1-")),
             "FC_intro_Context",
             rshuffle(startsWith("tc2-"), startsWith("fc2-")));//);
 
@@ -137,9 +137,11 @@ var items = [
     ["fc-C1-doss-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziémat!",  "Add egy dossziémat!"  ]}],
 
     ["fc-D1-bete-acc-sbj", "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegem!",  "Hívd be egy betegem!"  ]}],
-    ["fc-D1-bete-nom-sbj", "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegemet!",  "Hívd be egy betegemet!"  ]}]//,
+    ["fc-D1-bete-nom-sbj", "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegemet!",  "Hívd be egy betegemet!"  ]}],
 
     // Forms?
+
+    ["form-", "Form", { html: { include: "felsz1.html" }} ]//,
 
     // fillers: 30 AJ, 50 FC (27 kontextussal, 23 kontextus nélkül)
 
