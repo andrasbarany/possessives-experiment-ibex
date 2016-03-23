@@ -4,11 +4,11 @@
 // fillers.
 
 var shuffleSequence = seq("intro", "acceptability_intro", "practice",
-            rshuffle(startsWith("t-"), startsWith("fc-")),
-             "FC_intro_NoCont",
-            rshuffle(startsWith("form-"), startsWith("fc3-")),
-            "FC_intro_Context",
-            rshuffle(startsWith("tc2-"), startsWith("fc3-")));//);
+            rshuffle(startsWith("t-"), startsWith("form-"), startsWith("fc-")));//,
+//             "FC_intro_NoCont",
+//            rshuffle(startsWith("form-"), startsWith("fc3-")),
+//            "FC_intro_Context",
+//            rshuffle(startsWith("tc2-"), startsWith("fc3-")));//);
 
 var practiceItemTypes = ["practice"];
 
@@ -93,9 +93,8 @@ var items = [
 
     // ["target", "AcceptabilityJudgment", {s: "Látunk Marinak egy nővérét."}],
 
-    // Két blokkunk van ebben a felmérésben (2015 szeptember)
-    // Blokk A: 5 AJ, 10 FC, 20 FC, 10 AJ, plusz fillerek
-    // Blokk B: 5 AJ, 10 FC, 20 FC, 10 AJ, plusz fillerek
+    // 2016 március:
+    // 1 FC/2 AJ/1 FO: minden alany négy különböző igét lát
     //
     // [["...", 1], A]
     // [["...", 1], B]
@@ -103,53 +102,57 @@ var items = [
     // [["...", [2, 1], A]
     // [["...", [2, 1], B]
     //
-    // 01-05: Acceptability judgments.
+    //
+    // 1 forced choice, kontextussal.
+
+//    [["fc-A1-auto-acc-sbj", 1], "ForcedQuestion" , {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől." , q: "Melyik mondat helyesebb?" , as: ["Hozzál egy csavarhúzómat!",  "Hozd egy csavarhúzómat!"  ]}],
+//    ["fc-A1-auto-nom-sbj", "ForcedQuestion" , {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől." , q: "Melyik mondat helyesebb?" , as: ["Hozzál egy csavarhúzóm!",  "Hozd egy csavarhúzóm!"  ]}],
+
+    [["fc-B1-ugyf-acc-sbj", 1], "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül." , q: "Melyik mondat helyesebb?" , as: ["Hozzon be egy ügyfelem!",  "Hozd be egy ügyfelem!"  ]}],
+//    ["fc-B1-ugyf-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül." , q: "Melyik mondat helyesebb?" , as: ["Hozzon be egy ügyfelemet!",  "Hozd be egy ügyfelemet!"  ]}],
+    [["t-E1-pszi-acc-sbj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémádat!"}],
+    [["t-E1-pszi-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémádat!"}],
+    [["form-4", "Form", [4, 1]], { html: { include: "felsz4.html" }} ]//,
+
+    [["fc-C1-doss-acc-sbj", 1], "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziém!",  "Add egy dossziém!"  ]}],
+//    ["fc-C1-doss-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziémat!",  "Add egy dossziémat!"  ]}],
+    [["t-D1-bete-acc-sbj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívjál be egy betegemet!"}],
+    [["t-D1-bete-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívd be egy betegemet!"}],
+    [["form-1", "Form", [4, 1]], { html: { include: "felsz1.html" }} ],
+
+    [["fc-D1-bete-acc-sbj", 1], "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegem!",  "Hívd be egy betegem!"  ]}],
+//    ["fc-D1-bete-nom-sbj", "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegemet!",  "Hívd be egy betegemet!"  ]}],
+    [["t-C1-doss-acc-sbj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Adjál egy dosszíemat!"}],
+    [["t-C1-doss-acc-boj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Add egy dossziémat!"}],
+    [["form-2", "Form", [4, 1]], { html: { include: "felsz2.html" }} ],
+
+    [["fc-E1-pszi-acc-sbj", 1], "ForcedQuestion" , {s: "Egy pszichológus megvigasztalja egy barátját és megkéri, hogy meséljen az életéből." , q: "Melyik mondat helyesebb?" , as: ["Mondjál el egy problémádat!",  "Mondd egy problémádat!"  ]}],
+//    ["fc-E1-pszi-nom-sbj", "ForcedQuestion" , {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől." , q: "Melyik mondat helyesebb?" , as: ["Hozzál egy csavarhúzóm!",  "Hozd egy csavarhúzóm!"  ]}],
+    [["t-B1-ugyf-acc-sbj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozzon be egy ügyfelemet!"}],
+    [["t-B1-ugyf-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelemet!"}],
+    [["form-3", "Form", [4, 1]], { html: { include: "felsz3.html" }} ],
+
+    // 2 Acceptability judgment.
 
 //    [["t-A1-auto-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozzál egy csavarhúzóm!"}],
 //    [["t-A1-auto-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozd egy csavarhúzóm!"}],
 //    [["t-A1-auto-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozzál egy csavarhúzómat!"}],
 //    [["t-A1-auto-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozd egy csavarhúzómat!"}],
 
-    [["t-B1-ugyf-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozzon be egy ügyfelem!"}],
-    [["t-B1-ugyf-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelem!"}],
-    [["t-B1-ugyf-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozzon be egy ügyfelemet!"}],
-    [["t-B1-ugyf-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelemet!"}],
+//    [["t-B1-ugyf-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozzon be egy ügyfelem!"}],
+//    [["t-B1-ugyf-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelem!"}],
 
-    [["t-C1-doss-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Adjál egy dossziém!"}],
-    [["t-C1-doss-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Add egy dossziém!"}],
-    [["t-C1-doss-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Adjál egy dosszíemat!"}],
-    [["t-C1-doss-acc-boj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Add egy dossziémat!"}],
+//    [["t-C1-doss-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Adjál egy dossziém!"}],
+//    [["t-C1-doss-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét.", q: "Add egy dossziém!"}],
 
-    [["t-D1-bete-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívjál be egy betegem!"}],
-    [["t-D1-bete-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívd be egy betegemet!"}],
-    [["t-D1-bete-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívjál be egy betegemet!"}],
-    [["t-D1-bete-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívd be egy betegemet!"}],
+//    [["t-D1-bete-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívjál be egy betegem!"}],
+//    [["t-D1-bete-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívd be egy betegemet!"}],
 
-    [["t-E1-bete-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémád!"}],
-    [["t-E1-bete-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémád!"}],
-    [["t-E1-bete-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémádat!"}],
-    [["t-E1-bete-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémádat!"}],
+//    [["t-E1-pszi-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémád!"}],
+//    [["t-E1-pszi-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémád!"}],
 
-    // 06-15: Forced choice, kontextussal.
+    // 1 Form
 
-    ["fc-A1-auto-acc-sbj", "ForcedQuestion" , {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől." , q: "Melyik mondat helyesebb?" , as: ["Hozzál egy csavarhúzómat!",  "Hozd egy csavarhúzómat!"  ]}],
-    ["fc-A1-auto-nom-sbj", "ForcedQuestion" , {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől." , q: "Melyik mondat helyesebb?" , as: ["Hozzál egy csavarhúzóm!",  "Hozd egy csavarhúzóm!"  ]}],
-
-    ["fc-B1-ugyf-acc-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül." , q: "Melyik mondat helyesebb?" , as: ["Hozzon be egy ügyfelem!",  "Hozd be egy ügyfelem!"  ]}],
-    ["fc-B1-ugyf-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül." , q: "Melyik mondat helyesebb?" , as: ["Hozzon be egy ügyfelemet!",  "Hozd be egy ügyfelemet!"  ]}],
-
-    ["fc-C1-doss-acc-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziém!",  "Add egy dossziém!"  ]}],
-    ["fc-C1-doss-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziémat!",  "Add egy dossziémat!"  ]}],
-
-    ["fc-D1-bete-acc-sbj", "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegem!",  "Hívd be egy betegem!"  ]}],
-    ["fc-D1-bete-nom-sbj", "ForcedQuestion" , {s: "Egy orvosi rendelőben megkéri az orvos egy apolót:" , q: "Melyik mondat helyesebb?" , as: ["Hívjál be egy betegemet!",  "Hívd be egy betegemet!"  ]}],
-
-    // Forms?
-
-    ["form-1", "Form", { html: { include: "felsz1.html" }} ],
-    ["form-2", "Form", { html: { include: "felsz2.html" }} ],
-    ["form-3", "Form", { html: { include: "felsz3.html" }} ],
-    ["form-4", "Form", { html: { include: "felsz4.html" }} ]//,
 
     // fillers: 30 AJ, 50 FC (27 kontextussal, 23 kontextus nélkül)
 
