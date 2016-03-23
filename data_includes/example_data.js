@@ -4,7 +4,7 @@
 // fillers.
 
 var shuffleSequence = seq("intro", "acceptability_intro", "practice",
-            rshuffle(startsWith("t-"), startsWith("f-")),
+            rshuffle(startsWith("t-"), startsWith("fc-")),
              "FC_intro_NoCont",
             rshuffle(startsWith("tc1-"), startsWith("fc1-")),
             "FC_intro_Context",
@@ -63,17 +63,17 @@ var items = [
     // NOTE: You could also use the 'Message' controller for the experiment
     // intro (this provides a simple consent checkbox).
 
-    ["intro", "Form", {
-        html: { include: "intro.html" },
-        validators: {
-            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
-        }
-    } ],
-
-    ["acceptability_intro", "Form", {
-        html: { include: "acceptability_intro.html" }
-    } ],
-
+//    ["intro", "Form", {
+//        html: { include: "intro.html" },
+//        validators: {
+//            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+//        }
+//    } ],
+//
+//    ["acceptability_intro", "Form", {
+//        html: { include: "acceptability_intro.html" }
+//    } ],
+//
     ["FC_intro_NoCont", "Form", {
         html: { include: "FC_intro_NoCont.html" }
     } ],
