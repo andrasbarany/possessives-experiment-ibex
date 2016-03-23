@@ -34,7 +34,7 @@
     c.  Adjál egy dossziémat!           élettelen tárgy/+ACC/SBJ
     d.  Add egy dossziémat!             élettelen tárgy/+ACC/OBJ
 
-4.      Egy főnöknő mondja a titkárnak
+4.      Egy orvos mondja egy apólónak
     a.  Hívjál (be) egy titkárnőm.      élő tárgy/-ACC/SBJ
     b.  Hívd egy titkárnőm.             élő tárgy/-ACC/OBJ
     c.  Hívjál egy titkárnőmet.         élő tárgy/+ACC/SBJ
@@ -64,8 +64,8 @@
     b.  Zsuzsa festette a völgynek egy tájképét.            -MEG/+DEF/OBJ
     c.  Zsuzsa megfestett a völgynek egy tájképét.          +MEG/+DEF/SBJ
     d.  Zsuzsa megfestette a völgynek egy tájképét.         +MEG/+DEF/SBJ
-                                                                          
-2B.     Zsuzsa ...                                                        
+
+2B.     Zsuzsa ...
     a.  Zsuzsa festett egy völgynek egy tájképét.           -MEG/-DEF/SBJ
     b.  Zsuzsa festette egy völgynek egy tájképét.          -MEG/-DEF/OBJ
     c.  Zsuzsa megfestett egy völgynek egy tájképét.        +MEG/-DEF/SBJ
@@ -76,7 +76,7 @@
     b.  Végre írta a könyvnek egy fejezetét.                -MEG/+DEF/OBJ
     c.  Végre megírt a könyvnek egy fejezetét.              +MEG/+DEF/SBJ
     d.  Végre megírta a könyvnek egy fejezetét.             +MEG/+DEF/SBJ
-                                                                          
+
 3A.     Péternek párhumazosan kell különböző projekten dolgoznia.
     a.  Végre írt egy könyvnek egy fejezetét.               -MEG/-DEF/SBJ
     b.  Végre írta egy könyvnek egy fejezetét.              -MEG/-DEF/OBJ
@@ -88,7 +88,7 @@
     b.  Gyorsan építette egy parknak egy játszórterét.      -MEG/+DEF/OBJ
     c.  Gyorsan megépített egy parknak egy játszórterét.    +MEG/+DEF/SBJ
     d.  Gyorsan megépítette egy parknak egy játszórterét.   +MEG/+DEF/SBJ
-                                                                          
+
 4A.     A város már régóta tervezte a környék felújítását.
     a.  Gyorsan épített a parknak egy játszórterét.         -MEG/-DEF/SBJ
     b.  Gyorsan építette a parknak egy játszórterét.        -MEG/-DEF/OBJ

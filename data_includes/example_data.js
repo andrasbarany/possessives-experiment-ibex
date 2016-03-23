@@ -112,7 +112,7 @@ var items = [
 //    ["fc-B1-ugyf-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül." , q: "Melyik mondat helyesebb?" , as: ["Hozzon be egy ügyfelemet!",  "Hozd be egy ügyfelemet!"  ]}],
     [["t-E1-pszi-acc-sbj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémádat!"}],
     [["t-E1-pszi-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémádat!"}],
-    [["form-4", "Form", [4, 1]], { html: { include: "felsz4.html" }} ]//,
+    [["form-4", "Form", [4, 1]], { html: { include: "felsz4.html" }} ],
 
     [["fc-C1-doss-acc-sbj", 1], "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziém!",  "Add egy dossziém!"  ]}],
 //    ["fc-C1-doss-nom-sbj", "ForcedQuestion" , {s: "Egy ügyvédi irodában megkéri az ügyvéd a titkárját, hogy hozzon neki egy dossziét." , q: "Melyik mondat helyesebb?" , as: ["Adjál egy dossziémat!",  "Add egy dossziémat!"  ]}],
@@ -129,8 +129,8 @@ var items = [
     [["fc-E1-pszi-acc-sbj", 1], "ForcedQuestion" , {s: "Egy pszichológus megvigasztalja egy barátját és megkéri, hogy meséljen az életéből." , q: "Melyik mondat helyesebb?" , as: ["Mondjál el egy problémádat!",  "Mondd egy problémádat!"  ]}],
 //    ["fc-E1-pszi-nom-sbj", "ForcedQuestion" , {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől." , q: "Melyik mondat helyesebb?" , as: ["Hozzál egy csavarhúzóm!",  "Hozd egy csavarhúzóm!"  ]}],
     [["t-B1-ugyf-acc-sbj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozzon be egy ügyfelemet!"}],
-    [["t-B1-ugyf-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelemet!"}]//,
-    [["form-3", "Form", [4, 1]], { html: { include: "felsz3.html" }} ],
+    [["t-B1-ugyf-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelemet!"}],
+    [["form-3", "Form", [4, 1]], { html: { include: "felsz3.html" }} ]//,
 
     // 2 Acceptability judgment.
 
