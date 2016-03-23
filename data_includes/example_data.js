@@ -105,10 +105,10 @@ var items = [
     //
     // 01-05: Acceptability judgments.
 
-    [["t-A1-auto-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozzál egy csavarhúzóm!"}],
-    [["t-A1-auto-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozd egy csavarhúzóm!"}],
-    [["t-A1-auto-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozzál egy csavarhúzómat!"}],
-    [["t-A1-auto-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozd egy csavarhúzómat!"}],
+//    [["t-A1-auto-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozzál egy csavarhúzóm!"}],
+//    [["t-A1-auto-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozd egy csavarhúzóm!"}],
+//    [["t-A1-auto-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozzál egy csavarhúzómat!"}],
+//    [["t-A1-auto-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy autószerelő műhelyében a szerelő csavarhúzót kér egy segédjétől.", q: "Hozd egy csavarhúzómat!"}],
 
     [["t-B1-ugyf-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozzon be egy ügyfelem!"}],
     [["t-B1-ugyf-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelem!"}],
@@ -124,6 +124,11 @@ var items = [
     [["t-D1-bete-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívd be egy betegemet!"}],
     [["t-D1-bete-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívjál be egy betegemet!"}],
     [["t-D1-bete-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy orvosi rendelőben megkéri az orvos az egyik apolót:", q: "Hívd be egy betegemet!"}],
+
+    [["t-E1-bete-nom-sbj", 1], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémád!"}],
+    [["t-E1-bete-nom-obj", [2, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémád!"}],
+    [["t-E1-bete-acc-sbj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémádat!"}],
+    [["t-E1-bete-acc-obj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémádat!"}],
 
     // 06-15: Forced choice, kontextussal.
 
