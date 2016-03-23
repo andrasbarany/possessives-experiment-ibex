@@ -6,9 +6,9 @@
 var shuffleSequence = seq("intro", "acceptability_intro", "practice",
             rshuffle(startsWith("t-"), startsWith("fc-")),
              "FC_intro_NoCont",
-            rshuffle(startsWith("form-"), startsWith("form-")),
+            rshuffle(startsWith("form-"), startsWith("fc3-")),
             "FC_intro_Context",
-            rshuffle(startsWith("tc2-"), startsWith("fc2-")));//);
+            rshuffle(startsWith("tc2-"), startsWith("fc3-")));//);
 
 var practiceItemTypes = ["practice"];
 
@@ -141,7 +141,19 @@ var items = [
 
     // Forms?
 
-    ["form-", "Form", { html: { include: "felsz1.html" }} ]//,
+    ["form-1", "Form", { html: { include: "felsz1.html" }} ],
+    ["form-2", "Form", { html: { include: "felsz2.html" }} ],
+    ["form-3", "Form", { html: { include: "felsz3.html" }} ],
+    ["form-4", "Form", { html: { include: "felsz4.html" }} ]//,
+
+    // fillers: 30 AJ, 50 FC (27 kontextussal, 23 kontextus nélkül)
+
+
+    // fillers: 30 AJ, 50 FC (27 kontextussal, 23 kontextus nélkül)
+
+
+    // fillers: 30 AJ, 50 FC (27 kontextussal, 23 kontextus nélkül)
+
 
     // fillers: 30 AJ, 50 FC (27 kontextussal, 23 kontextus nélkül)
 
