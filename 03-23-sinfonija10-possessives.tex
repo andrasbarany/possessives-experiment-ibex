@@ -1,4 +1,170 @@
-\input{\string~/Cloud/LaTeX/Templates/abstract-preamble.tex}
+%TC:ignore
+\documentclass[fontsize=12pt]{scrartcl}
+
+%% Geometry
+
+\usepackage[margin=1in]%        % shows the frame; useful for adjusting trees
+    {geometry}
+\geometry{a4paper}
+
+%% biblatex, biber, citation commands
+
+\usepackage[language=british,sortlocale=en-GB,backend=biber,
+    citestyle=sp-authoryear-comp,bibstyle=biblatex-sp-unified,doi=false,
+    useprefix=true,backref=false,uniquename=init,giveninits,terseinits=true,%
+    backrefstyle=two,sorting=ynt,maxbibnames=2,maxcitenames=2]{biblatex}
+\addbibresource{legenda.bib}
+\renewcommand\nameyeardelim{\space}
+\renewcommand\postnotedelim{\addcolon\space}
+\DeclareFieldFormat{pages}{#1}
+\DeclareFieldFormat{postnote}{#1} % no postnote prefix in "normal" citation commands
+\AtEveryBibitem{%
+    \clearfield{subtitle}%
+    \clearfield{booksubtitle}%
+    \clearfield{labelmonth}%
+    \clearfield{issn}%
+    \clearlist{location}
+    \clearfield{series}
+    \clearfield{number}
+}
+
+% shortjournals, minimal formatting
+
+\DeclareSourcemap{%
+    \maps[datatype=bibtex]{%
+        \map[overwrite]{% Notice the overwrite: replace one field with another
+            \step[fieldsource=shortjournaltitle,fieldtarget=journaltitle]
+            \step[fieldsource=shortpublisher,fieldtarget=publisher]
+        }
+    }
+}
+
+\defbibheading{bibliography}[References]{%
+%    \section*{#1}%
+    \noindent\normalsize{\textbf{\textsf{#1}}}
+}
+
+\defbibenvironment{bibliography}
+    {\footnotesize}
+    {}
+    {}
+
+\AtBeginBibliography{%
+    \renewcommand*{\mkbibnamefamily}[1]{\mkbibbold{#1}}
+%    \renewcommand*{\mkbibnamelast}[1]{\mkbibbold{#1}}
+}
+
+% citeapos: \citeauthor{#1}s (német), \citeauthor{#1}'s (angol)
+
+\def\citeapos#1{\citeauthor{#1}'s (\citeyear{#1})}
+\def\citespos#1{\citeauthor{#1}' (\citeyear{#1})}
+
+%% csquotes for better quotations
+\usepackage[autostyle,english=american]{csquotes}
+
+%% Fonts, languages
+
+\usepackage{pifont}
+\usepackage{mathtools}  % for bmatrix
+\usepackage{unicode-math}
+
+% polyglossia
+\usepackage{polyglossia}
+\setmainlanguage[variant=british,               % this gives a date like 24 July 2015
+                ordinalmonthday=false]{english}
+
+% xetex
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Numbers=Lining]{TeX Gyre Termes}
+\setsansfont[Scale = 0.9, BoldFont = SourceSansPro-Semibold.otf,
+            BoldItalicFont = SourceSansPro-SemiboldIt.otf]
+            {SourceSansPro-Regular.otf}
+\setmonofont[Scale = 0.9]{SourceCodePro-Regular.otf}
+
+\setmathfont{texgyretermes-math.otf}
+
+%% Other things
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{appendix}       % for the subappendix-environment
+\usepackage[normalem]{ulem} % for strikethrough \sout
+
+%% Commands
+\newcommand{\tuple}[1]{\ensuremath{\left \langle #1 \right \rangle }}
+
+%% captions
+\usepackage[margin=00pt,
+            format=hang,
+            font=small,
+            labelfont=bf,
+            labelsep=quad]{caption}
+
+% footnotes
+\usepackage[marginal]{footmisc}         % makes footnotes flush with
+\setlength{\footnotemargin}{-0.8em}     % left margin of text and puts
+                                        % the footnotemark -.8em to its left
+
+%% Headers and footers
+\usepackage{scrlayer-scrpage}           % should work for “twoside” as well,
+                                        % including the chaptermark
+\pagestyle{plain}
+\clearscrheadfoot{}
+\setkomafont{pagenumber}{\footnotesize\sffamily}
+\setkomafont{pageheadfoot}{\footnotesize\sffamily}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\quad #1}{}}
+\ofoot[\pagemark]{\pagemark}
+\ohead{\headmark}
+
+%% Titles and headings (KOMA-Script)
+
+% Titlepage
+\setkomafont{title}{\large\sffamily}
+\setkomafont{author}{\large\sffamily}
+\setkomafont{date}{\large\sffamily}
+
+% TOC
+\setcounter{tocdepth}{2}
+\setkomafont{partentry}{\large\sffamily\bfseries}
+
+% Chapter/section headings
+\setcounter{secnumdepth}{3}
+\setkomafont{section}{\sffamily\bfseries}
+\RedeclareSectionCommand[beforeskip=.2em, afterskip=-.5em]{section}
+\setkomafont{subsection}{\normalsize\normalfont\sffamily\bfseries}
+\RedeclareSectionCommand[afterskip=-.5em]{subsection}
+\setkomafont{subsubsection}{\normalsize\normalfont\sffamily\itshape}
+
+%%% Linguistics
+\usepackage{expex}
+\lingset{aboveglftskip=0ex,
+        everygla=\small\itshape,
+        everyglb=\small,
+        everyglft=\small,
+        aboveexskip=0.5ex,
+        belowexskip=1.0ex}
+\let\expexgla\gla
+\AtBeginDocument{\let\gla\expexgla}
+
+%% glossary of abbreviations
+\usepackage[unicode]{hyperref}
+%\usepackage{glossaries}
+%\usepackage{glossary-inline}
+\usepackage{leipzig}
+%\makeglossaries{}
+%% additional glosses
+
+%% Line breaks
+\widowpenalty=10000
+\clubpenalty=10000
+
+%TC:endignore
 
 \begin{document}
 
