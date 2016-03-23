@@ -6,7 +6,7 @@
 var shuffleSequence = seq("intro", "acceptability_intro", "practice",
             rshuffle(startsWith("t-"), startsWith("fc-")),
              "FC_intro_NoCont",
-            rshuffle(startsWith("form-"), startsWith("fc1-")),
+            rshuffle(startsWith("form-"), startsWith("form-")),
             "FC_intro_Context",
             rshuffle(startsWith("tc2-"), startsWith("fc2-")));//);
 
