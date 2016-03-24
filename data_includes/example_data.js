@@ -149,13 +149,13 @@ var items = [
     [["t-A-acc-obj", [3, 1]], "AcceptabilityJudgment",  {s: "Egy ügyvédi irodában megkéri az ügyvédnő a titkárját, hogy engedjen be valakit a váró ügyfelek közül.", q: "Hozd be egy ügyfelemet!"}],
     [["t-B-acc-sbj", [4, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondjál el egy problémádat!"}],
     [["t-B-acc-obj", [5, 1]], "AcceptabilityJudgment",  {s: "Egy pszichológus megvigasztalja egy barátját.", q: "Mondd el egy problémádat!"}],
-    [["form-C", [6, 1]], "Form", { html: { include: "C.html" }} ] //, // hív, beteg
+    [["form-C", [6, 1]], "Form", { html: { include: "C.html" }} ], // hív, beteg
     [["fc-H-acc-sbj", [7, 1]], "ForcedQuestion" , {s: "Az üzletember elfelejtette a telefonszámát és megkéri a titkárnőjét:" , as: ["Keress egy névjegyemet!",  "Keresd egy névjegyemet!"  ]}],
     [["t-E-acc-sbj", [8, 1]], "AcceptabilityJudgment",  {s: "Színházba készül egy pár és megkéri a nő a férjét:", q: "Készíts elő egy ruhámat!"}],
     [["t-E-acc-obj", [9, 1]], "AcceptabilityJudgment",  {s: "Színházba készül egy pár és megkéri a nő a férjét:", q: "Készítsd elő egy ruhámat!"}],
     [["t-F-acc-sbj", [10, 1]], "AcceptabilityJudgment",  {s: "Alvás előtt megkéri egy gyerek az anyját:", q: "Olvass fel egy mesémet!"}],
     [["t-F-acc-obj", [11, 1]], "AcceptabilityJudgment",  {s: "Alvás előtt megkéri egy gyerek az anyját:", q: "Olvasd fel egy mesémet!"}],
-    [["form-G", [12, 1]], "Form", { html: { include: "G.html" }} ], // hív, orvos
+    [["form-G", [12, 1]], "Form", { html: { include: "G.html" }} ]//, // hív, orvos
 
     // 2 Acceptability judgment.
 
